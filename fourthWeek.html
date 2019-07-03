@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Umieć frontend</title>
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <button class="menuButton" aria-label="otwórz menu strony"><span
+            class="menuButton__line menuButton__line-js">|</span></button>
+    <nav class="menu">
+        <section class="menu__section">
+            <h2 class="menu__header">O czym jest ta strona</h2>
+            <p class="menu__text">Na tej stronie opisuję przebieg mojej nauki podstaw frontendu. Traktuję
+                ją jako swoisty notatnik. Jeżeli chcesz zostać frontendowcem, to tutaj możesz zobaczyć, jak
+                może przebiegać twój
+                proces nauczania od zera. Zapraszam!</p>
+        </section>
+        <ul class="menu__list">
+            <li class="menu__item"><a class="menu__link" href="index.html"><strong class="strong__header">pierwszy
+                        tydzień</strong>
+                    <ul class="menu__description">
+                        <li class="menu__item">Warstwy</li>
+                        <li class="menu__item">HTML</li>
+                        <li class="menu__item">CSS</li>
+                        <li class="menu__item">Programowanie</li>
+                    </ul>
+                </a></li>
+            <li class="menu__item"><a class="menu__link" href="secondWeek.html"><strong class="strong__header">drugi
+                        tydzień</strong>
+                    <ul class="menu__description">
+                        <li class="menu__item">Organizacja nauki/pracy</li>
+                        <li class="menu__item">HTML - znaczniki i atrybuty</li>
+                        <li class="menu__item">CSS - Sposoby stylowania</li>
+                        <li class="menu__item">Działanie przeglądarki</li>
+                        <li class="menu__item">JavaScript</li>
+                        <li class="menu__item">Terminal</li>
+                    </ul>
+                </a></li>
+            <li class="menu__item"><a class="menu__link" href="thirdWeek.html"><strong class="strong__header">trzeci
+                        tydzień</strong>
+                    <ul class="menu__description">
+                        <li class="menu__item">Git</li>
+                        <li class="menu__item">Box model</li>
+                        <li class="menu__item">BEM</li>
+                        <li class="menu__item">DOM</li>
+                    </ul>
+                </a></li>
+            <li class="menu__item"><a class="menu__link" href="fourthWeek.html"><strong class="strong__header">czwarty
+                        tydzień</strong>
+                    <ul class="menu__description">
+                        <li class="menu__item">JavaScript</li>
+                        <li class="menu__item">Funkcja w JS</li>
+                        <li class="menu__item">Debugging</li>
+                        <li class="menu__item">Markup</li>
+                        <li class="menu__item">Normalizacja</li>
+                        <li class="menu__item">Flexbox</li>
+                        <li class="menu__item">Tło</li>
+                    </ul>
+                </a></li>
+            <li class="menu__item"><a class="menu__link" href="fifthWeek.html"><strong class="strong__header">piąty
+                        tydzień</strong>
+                    <ul class="menu__description">
+                        <li class="menu__item">Formularze</li>
+                        <li class="menu__item">Grid</li>
+                        <li class="menu__item">Media queries</li>
+                        <li class="menu__item">Event</li>
+                        <li class="menu__item">Hamburger</li>
+                    </ul>
+                </a></li>
+            <li class="menu__item"><a class="menu__link" href="sixthWeek.html"><strong class="strong__header">szósty
+                        tydzień</strong></a></li>
+            <li class="menu__item"><a class="menu__link" href="seventhWeek.html"><strong class="strong__header">siódmy
+                        tydzień</strong></a></li>
+            <li class="menu__item"><a class="menu__link" href="eightWeek.html"><strong class="strong__header">ósmy
+                        tydzień</strong></a></li>
+            <li class="menu__item"><a class="menu__link" href="ninthWeek.html"><strong class="strong__header">dziewiąty
+                        tydzień</strong></a></li>
+            <li class="menu__item"><a class="menu__link" href="tenthWeek.html"><strong class="strong__header">dziesiąty
+                        tydzień</strong></a></li>
+            <li class="menu__item"><a class="menu__link" href="eleventhWeek.html"><strong
+                        class="strong__header">jedenasty tydzień</strong></a></li>
+        </ul>
+    </nav>
+    <main class="main">
+        <header class="hero">
+            <h1 class="hero__header">Jak uczyłem się frontendu</h1>
+        </header>
+        <article class="article">
+            <button class="article__button article__button-position" aria-label="otwórz menu sekcji"><span
+                    class="menuButton__line article__button__line-js">|</span></button>
+            <header class="article__nav">
+                <nav class="article__menu">
+                    <ul class="article__list">
+                        <li class="article__item"><a class="article__link" href="#js">JavaScript</a></li>
+                        <li class="article__item"><a class="article__link" href="#function">funkcja w JS</a></li>
+                        <li class="article__item"><a class="article__link" href="#debugging">debugging</a></li>
+                        <li class="article__item"><a class="article__link" href="#markup">markup</a></li>
+                        <li class="article__item"><a class="article__link" href="#normalization">normalizacja</a></li>
+                        <li class="article__item"><a class="article__link" href="#flexbox">flexbox</a></li>
+                        <li class="article__item"><a class="article__link" href="#background">tło</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <h2 class="article__header">Czwarty tydzień nauki</h2>
+            <div class="wrapper">
+                <section class="section" id="js">
+                    <h3 class="section__header">logika w JS</h3>
+                    <section class="card">
+                        <h4 class="card__header">Operatory porównania</h4>
+                        <ul class="card__list">
+                            <li><strong>></strong> - lewa strona większa od prawej</li>
+                            <li><strong>&lt;</strong> - lewa strona mniejsza od prawej</li>
+                            <li><strong>>=</strong> - lewa strona większa / równa od prawej</li>
+                            <li><strong>&lt;=</strong> - lewa strona mniejsza / równa od prawej</li>
+                            <li><strong>==</strong> - obie strony równe, konwersja typów</li>
+                            <li><strong>===</strong> - obie strony równe, bez konwersji typów </li>
+                            <li><strong>!=</strong> - obie strony różne, konwersja typów</li>
+                            <li><strong>!==</strong> - obie strony różne, bez konwersji typów </li>
+                        </ul>
+                    </section>
+                    <table class=table>
+                        <caption class="table__caption">Truthy and Falsy</caption>
+                        <thead class="table__head">
+                            <tr class="table__row">
+                                <th class="table__cell table__cell--truthy">Truthy </th>
+                                <th class="table__cell table__cell--falsy">Falsy </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table__row">
+                                <td class="table__cell">'Tekst' - string </td>
+                                <td class="table__cell">false </td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell">14 - liczba </td>
+                                <td class="table__cell">0 - zero </td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell">-8 - liczba ujemna </td>
+                                <td class="table__cell">'', "", `` - pusty string </td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell">{ } - pusty obiekt </td>
+                                <td class="table__cell">null </td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell">[ ] - pusta tablica </td>
+                                <td class="table__cell">undefined </td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell">function( ){ } - pusta funkcja itd. </td>
+                                <td class="table__cell">NaN - not a number</td>
+                            </tr>
+                        </tbody>
+                        <tfoot class="table__footer">
+                            <tr class="table__row">
+                                <th class="table__cell table__cell--truthy"><a class="section__link"
+                                        href="https://developer.mozilla.org/en-US/docs/Glossary/Truthy">https://developer.mozilla.org/en-US/docs/Glossary/Truthy</a>
+                                </th>
+                                <th class="table__cell table__cell--falsy"><a class="section__link"
+                                        href="https://developer.mozilla.org/en-US/docs/Glossary/Falsy">https://developer.mozilla.org/en-US/docs/Glossary/Falsy</a>
+                                </th>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                    <p class="section__paragraph">Instrukcja warunkowa</p>
+                    <code class="section__code">if (warunek){<br>blok kodu <br>gdy warunek jest prawdziwy (true), to kod
+                        się wykona <br> }</code>
+                    <p class="section__paragraph">AND - wszystkie warunki muszą być true</p>
+                    <code class="section__code">if (warunek && warunek){<br>blok kodu <br>gdy wszystkie warunki są
+                        prawdziwe (true), to kod się wykona <br> }</code>
+                    <p class="section__paragraph">OR - przynajmniej jeden warunek ma być true</p>
+                    <code class="section__code">if (warunek || warunek){<br>blok kodu <br>gdy przynajmniej jeden warunek
+                        jest prawdziwy (true), to kod się wykona <br> }</code>
+                    <p class="section__paragraph">NOT - odwraca wartość wyrażenia logicznego</p>
+                    <code class="section__code">if (!(warunek)){<br>!false => true <br>
+                        !true => false <br>
+                        blok kodu <br>gdy warunek jest prawdziwy (true),
+                        to kod się wykona <br> }</code>
+                    <p class="section__paragraph">else</p>
+                    <code class="section__code">if (warunek) { <br>
+                        // wykonaj kod jeśli true <br>
+                        } else { <br>
+                        // wykonaj kod jeśli false <br>
+                        }
+                    </code>
+                    <p class="section__paragraph">else if</p>
+                    <code class="section__code">if (warunek) { <br>
+                        // wykonaj kod jeśli true, jeśli false przejdź do następnego if <br>
+                        } else if (warunek) { <br>
+                        // wykonaj kod jeśli true <br>
+                        }
+                    </code>
+                    <p class="section__paragraph">Zapis skrócony</p>
+                    <code class="section__code">(zmienna1 > zmienna2) ? console.log('true') : console.log('false')
+                        <br> <br>(warunek) ? kod wykonuje gdy warunek jest true : kod wykonuje gdy warunek jest false
+                    </code>
+                    <p class="section__paragraph">Switch - przełącznik</p>
+                    <code class="section__code">const fruit = 'banana'; <br>
+                        switch (fruit) { <br> case apple: <br>console.log(kod się nie wykona); <br>break; <br> case
+                        banana: <br>console.log(kod się wykona); <br>break; <br>default: <br> console.log(kod się wykona
+                        tylko wtedy, gdy żadne z powyższych warunków nie zostaną spełnione); <br>}</code>
+                    <section class="card">
+                        <h4 class="card__header">Troszkę logicznego śmiechu :)</h4>
+                        <a class="card__link"
+                            href="https://www.destroyallsoftware.com/talks/wat">https://www.destroyallsoftware.com/talks/wat</a>
+                    </section>
+                    <section class="section" id="function">
+                        <h3 class="section__header">funkcje</h3>
+                        <section class="card">
+                            <h4 class="card__header">Funkcja w JS</h4>
+                            <ul class="card__list">
+                                <li>Deklarujemy nazwę funkcji (nie zawsze)</li>
+                                <li>W środku dokonujemy obliczeń / wykonujemy zadania</li>
+                                <li>Funkcja może przyjmować argumenty</li>
+                                <li>Funkcja zwraca zawsze coś (nawet jeśli nie mamy return - wtedy funkcja zwraca
+                                    undefined)</li>
+                            </ul>
+                        </section>
+                        <p class="section__paragrapf">Stworzenie funkcji</p>
+                        <code class="section__code">function calculate(x) { <br>
+                            x = x + 5; <br>
+                            console.log(x); <br>
+                            return x*8; <br>
+                            }
+                        </code>
+                        <p class="section__paragrapf">Wywołanie funkcji</p>
+                        <code class="section__code">calculate(5);</code>
+                        <section class="card">
+                            <h4 class="card__header">Po co funkcje?</h4>
+                            <ul class="card__list">
+                                <li>Deklarujemy kod, który się powtarza (DRY - don't repeat yourself)</li>
+                                <li>Zwiększamy czytelność kodu</li>
+                                <li>Łatwiejsze szukanie błędów</li>
+                                <li>Odpowiedzialność za wykonywanie zadania w jednym miejscu</li>
+                            </ul>
+                        </section>
+                        <p class="section__paragrph">(Fat) arrow functions - funkcja strzałkowa</p>
+                        <code class="section__code">const calculate = (x) => { <br>
+                            x = x + 5; <br>
+                            return x*8; <br>
+                            }
+                        </code>
+                        <p class="section__paragrph">Skrócony zapis</p>
+                        <code class="section__code">const calculate = x => (x+5)*8 <br></code>
+                        <section class="card">
+                            <h4 class="card__header">Funkcja strzałkowa</h4>
+                            <ul class="card__list">
+                                <li>Skraca zapis deklaracji funkcji</li>
+                                <li>Zwiększa czytelność (dyskusyjne)</li>
+                                <li>Nie tworzy nowego kontekstu this, nie ma dostępu do arguments i super</li>
+                                <li>Nie jest zamiennikiem "tradycyjnej" funkcji (ale w większości przypadków nie
+                                    zobaczysz różnicy)</li>
+                            </ul>
+                        </section>
+                    </section>
+                </section>
+                <section class="section" id="debugging">
+                    <h3 class="section__header">U mnie nie działa</h3>
+                    <p class="section__paragraph">Debugging - proces poszukiwania błędów i ich usuwania.</p>
+                    <ul class="section__list">
+                        <li>Sprawdź czy plik jest zapisany.</li>
+                        <li>Sprawdź czy edytujesz właściwy plik.</li>
+                        <li>Sprawdź czy odświeżyłaś/eś przeglądarkę.</li>
+                        <li>Sprawdź czy nie masz błędów w edytorze / w devtoolsach.</li>
+                        <li>Zajrzyj w zakładkę network.</li>
+                        <li>Pogadaj z kolegą, koleżanką.</li>
+                        <li>Google it! Najlepiej odpowiedzi do roku wstecz.</li>
+                        <li>Stack Overflow.</li>
+                        <li>w3c != w3schools - Nie wchodzimy na w3schools.</li>
+                    </ul>
+                    <section class="card">
+                        <h4 class="card__header">Dobre źródła</h4>
+                        <ul class="card__list">
+                            <li>GitHub issues</li>
+                            <li><a href="https://developer.mozilla.org">https://developer.mozilla.org</a></li>
+                            <li><a href="https://devdocs.io/ ">https://devdocs.io/ </a></li>
+                            <li><a href="https://caniuse.com/ ">https://caniuse.com/ </a></li>
+                            <li><a href="https://css-tricks.com/almanac/ ">https://css-tricks.com/almanac/ </a></li>
+                            <li><a href="https://www.w3.org/TR/html52/ ">https://www.w3.org/TR/html52/ </a></li>
+                            <li><a href="https://www.w3.org/TR/CSS/ ">https://www.w3.org/TR/CSS/ </a></li>
+                        </ul>
+                    </section>
+                </section>
+                <section class="section" id="markup">
+                    <h3 class="section__header">Znaczniki - listy, tabele, definicje</h3>
+                    <ul class="section__list">
+                        <li><strong>&lt;ul&gt;...&lt;/ul&gt;</strong> - UnorderedList, lista nieuporządkowana</li>
+                        <li><strong>&lt;ol&gt;...&lt;/ol&gt;</strong> - Ordered List, lista uporządkowana</li>
+                        <li><strong>&lt;li&gt;...&lt;/li&gt;</strong> - List Item, element listy </li>
+                        <li><strong>&lt;dl&gt;...&lt;/dl&gt;</strong> - Description list, lista opisów </li>
+                        <li><strong>&lt;dt&gt;...&lt;/dt&gt;</strong> - Description term, np. tytuł zagadnienia</li>
+                        <li><strong>&lt;dd&gt;...&lt;/dd&gt;</strong> - Description details, opis szczegółowy</li>
+                        <li><strong>&lt;table&gt;...&lt;/table&gt;</strong> - tabela</li>
+                        <li><strong>&lt;tr&gt;...&lt;/tr&gt;</strong> - table row, wiersz tabeli</li>
+                        <li><strong>&lt;td&gt;...&lt;/td&gt;</strong> - table data (cell), dane tabeli</li>
+                        <li><strong>&lt;thead&gt;...&lt;/thead&gt;</strong> - nagłówek tabeli</li>
+                        <li><strong>&lt;th&gt;...&lt;/th&gt;</strong> - komórka w nagłówku tabeli</li>
+                        <li><strong>&lt;tbody&gt;...&lt;/tbody&gt;</strong> - "ciało" tabeli</li>
+                        <li><strong>&lt;caption&gt;...&lt;/caption&gt;</strong> - opis tabeli</li>
+                        <li><strong>&lt;tfoot&gt;...&lt;/tfoot&gt;</strong> - stopka tabeli</li>
+                    </ul>
+                    <p class="section__paragraph">Tabele używamy do danych tabelarycznych. <strong
+                            class="wrong">Tabelami nie budujemy layoutów.</strong> </p>
+                </section>
+                <section class="section" id="normalization">
+                    <h3 class="section__header">Normalizacja, reset</h3>
+                    <p class="section__paragraph">Każda przeglądarka posiada swoje style domyślne. Normalizację i
+                        reset stosujemy, żeby te style były wszędzie takie same.</p>
+                    <p class="section__paragrph">Przykładowy reset:</p>
+                    <code class="section__code">* { <br>
+                        margin:0; <br>
+                        padding: 0; <br>
+                        box-sizing: border box; <br>
+                        }
+                    </code>
+                    <p class="section__paragraph">Plik normalizacji: <a
+                            href="https://necolas.github.io/normalize.css/">https://necolas.github.io/normalize.css/</a>
+                    </p>
+                    <p class="section__paragraph">Normalizację z resetem możemy miksować.</p>
+                </section>
+                <section class="section" id="flexbox">
+                    <h3 class="section__header">Flexbox</h3>
+                    <p class="section__paragraph">Flexbox - system rozmieszczania i pozycjonowania elementów w dwóch
+                        osiach. W pionie i poziomie.</p>
+                    <img class="image" src="img/flex-direction.webp" alt="flexbox">
+                    <p class="section__paragraph"> <strong>flex-direction:</strong> row, column, row-reverse,
+                        column-reverse - wybór osi rozmieszczania elementów</p>
+                    <p class="section__paragraph"><strong>flex-wrap:</strong> nowrap, wrap, wrap-reverse - określa czy
+                        elementy w wierszu, kolumnie mają być w jednej lini czy zwijane</p>
+                    <p class="section__paragraph"><strong>flex-flow:</strong> - skrócona własność, w której możemy
+                        określić flex-direction i flex-wrap</p>
+                    <p class="section__paragraph"><strong>justify-content:</strong> flex-start, flex-end, center,
+                        space-between, space-around - ustawianie elementów wzdłuż osi flex-direction</p>
+                    <p class="section__paragraph"><strong>align-content:</strong> stretch, flex-start, flex-end, center,
+                        space-between, space-around - ustawianie wierszy/kolumn wzdłuż osi przeciwnej do flex-direction
+                    </p>
+                    <p class="section__paragraph"><strong>align-items:</strong> stretch, flex-start, flex-end, center,
+                        baseline - ustawianie elementów wzdłuż osi przeciwnej do flex-direction</p>
+                    <p class="section__paragraph"><strong>align-self:</strong> stretch, flex-start, flex-end, center,
+                        baseline - ustawianie <strong>elementu</strong> wzdłóż osi przeciwnej do flex-direction</p>
+                    <p class="section__paragraph"><strong>order:</strong> 0, liczba całkowita (-/+) - określa kolejność
+                        elementów</p>
+                    <p class="section__paragraph"><strong>flex-grow:</strong> 0, liczba/proporcja - jak bardzo elementy
+                        mają rosnąć</p>
+                    <p class="section__paragraph"><strong>flex-shrink:</strong> 1, liczba/proporcja - jak bardzo
+                        elementy mają maleć</p>
+                    <p class="section__paragraph"><strong>flex-basis:</strong> none, rozmiar bazowy - ustawia rozmiar
+                        początkowy/główny elementów</p>
+                    <p class="section__paragraph"><strong>flex:</strong> flex-grow, flex-shrink, flex-basis - zapis
+                        skrócony</p>
+                </section>
+                <section class="section" id="background">
+                    <h3 class="section__header">Tło</h3>
+                    <p class="section__paragraph"> <strong>background-image:</strong> url('sciezka-do-pliku') -
+                        ustawienie obrazku jako tło</p>
+                    <p class="section__paragraph"> <strong>background-position:</strong> pozycja <strong>y:</strong>
+                        top, bottom, center, yy%, yypx pozycja <strong>x:</strong> right, left, center, xx%, xxpx -
+                        pozycjonowanie tła</p>
+                    <p class="section__paragraph"> <strong>background-repeat:</strong> repeat, repeat-x, repeat-y,
+                        no-repeat, round, space - powtarzanie tła</p>
+                    <p class="section__paragraph"> <strong>background-attachment:</strong> scroll, fixed, local - </p>
+                    <p class="section__paragraph"> <strong>background-origin:</strong> border-box, padding-box,
+                        content-box - definiuje w którym miejscu tło powinno się zaczynać</p>
+                    <p class="section__paragraph"> <strong>background-clip:</strong> border-box, padding-box,
+                        content-box - w którym miejscu tło ma być cięte</p>
+                    <p class="section__paragraph"> <strong>background-color:</strong> wartość koloru - ustawia kolor tła
+                    </p>
+                    <p class="section__paragraph"> <strong>background-size:</strong> auto, cover, contain, &lt;width&gt;
+                        &lt;height&gt; - określa wielkość obrazka</p>
+                    <section class="card">
+                        <h4 class="card__header">Gradienty</h4>
+                        <p class="card__paragraph">Gradient – wypełnienie określonego obszaru płynnym przejściem
+                            tonalnym pomiędzy co najmniej dwoma kolorami.</p>
+                        <a href="https://cssgradient.io/gradient-backgrounds/" class="card__link">
+                            https://cssgradient.io/gradient-backgrounds/</a>
+                    </section>
+                </section>
+            </div>
+        </article>
+    </main>
+    <footer class="footer">
+        <p class="footer__paragraph">Projekt stworzony przez Andrzeja</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

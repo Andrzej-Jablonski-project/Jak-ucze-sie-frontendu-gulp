@@ -17,17 +17,20 @@ import webpackStream from 'webpack-stream';
 sass.compiler = require("node-sass");
 
 const errorHandler = (err) => {
-    notify.onError({
-      title: `Gulp error in ${err.plugin}`,
-      message: err.toString()
-    })(err);
+  notify.onError({
+    title: `Gulp error in ${err.plugin}`,
+    message: err.toString()
+  })(err);
 }
 
-gulp.task("assets", function() {
+gulp.task("assets", function () {
   return gulp.src("./src/assets/**/*").pipe(gulp.dest("./dist/assets/"));
 });
+gulp.task("img", function () {
+  return gulp.src("./src/img/**/*").pipe(gulp.dest("./dist/img/"));
+});
 
-gulp.task("html", function() {
+gulp.task("html", function () {
   return gulp
     .src("./src/content/**/*.html")
     .pipe(
@@ -36,7 +39,7 @@ gulp.task("html", function() {
     .pipe(gulp.dest("./dist/"));
 });
 
-gulp.task("js", function() {
+gulp.task("js", function () {
   return gulp
     .src("src/js/main.js")
     .pipe(
@@ -53,7 +56,7 @@ gulp.task("sass", () => {
     .src("./src/scss/main.scss")
     .pipe(
       plumber({
-        errorHandler: function(err) {
+        errorHandler: function (err) {
           notify.onError({
             title: `Gulp error in ${err.plugin}`,
             message: err.toString()
@@ -66,7 +69,10 @@ gulp.task("sass", () => {
     .on("error", sass.logError)
     .pipe(
       postcss([
-        autoprefixer({ grid: true, browsers: ["> 5%", "last 4 versions"] })
+        autoprefixer({
+          grid: true,
+          browsers: ["> 5%", "last 4 versions"]
+        })
       ])
     )
     .pipe(sourcemaps.write("."))
@@ -76,7 +82,7 @@ gulp.task("sass", () => {
 
 gulp.task(
   "serve",
-  gulp.series("sass", "html", "js", "assets", function() {
+  gulp.series("sass", "html", "js", "assets", "img", function () {
     browserSync.init({
       server: "./dist",
       open: true // set to false to disable browser autostart
@@ -85,9 +91,10 @@ gulp.task(
     gulp.watch("src/content/**/*.html", gulp.series("html"));
     gulp.watch("src/js/*.js", gulp.series("js"));
     gulp.watch("src/assets/**/*", gulp.series("assets"));
+    gulp.watch("src/img/**/*", gulp.series("img"));
     gulp.watch("dist/**/*").on("change", browserSync.reload);
   })
 );
 
-gulp.task("build", gulp.series("sass", "html", "js", "assets"));
+gulp.task("build", gulp.series("sass", "html", "js", "assets", "img"));
 gulp.task("default", gulp.series("serve"));

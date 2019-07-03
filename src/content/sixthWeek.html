@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Umieć frontend</title>
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <button class="menuButton" aria-label="otwórz menu strony"><span
+            class="menuButton__line menuButton__line-js">|</span></button>
+    <nav class="menu">
+        <section class="menu__section">
+            <h2 class="menu__header">O czym jest ta strona</h2>
+            <p class="menu__text">Na tej stronie opisuję przebieg mojej nauki podstaw frontendu. Traktuję
+                ją jako swoisty notatnik. Jeżeli chcesz zostać frontendowcem, to tutaj możesz zobaczyć, jak
+                może przebiegać twój
+                proces nauczania od zera. Zapraszam!</p>
+        </section>
+        <ul class="menu__list">
+            <li class="menu__item"><a class="menu__link" href="index.html"><strong class="strong__header">pierwszy
+                        tydzień</strong>
+                    <ul class="menu__description">
+                        <li class="menu__item">Warstwy</li>
+                        <li class="menu__item">HTML</li>
+                        <li class="menu__item">CSS</li>
+                        <li class="menu__item">Programowanie</li>
+                    </ul>
+                </a></li>
+            <li class="menu__item"><a class="menu__link" href="secondWeek.html"><strong class="strong__header">drugi
+                        tydzień</strong>
+                    <ul class="menu__description">
+                        <li class="menu__item">Organizacja nauki/pracy</li>
+                        <li class="menu__item">HTML - znaczniki i atrybuty</li>
+                        <li class="menu__item">CSS - Sposoby stylowania</li>
+                        <li class="menu__item">Działanie przeglądarki</li>
+                        <li class="menu__item">JavaScript</li>
+                        <li class="menu__item">Terminal</li>
+                    </ul>
+                </a></li>
+            <li class="menu__item"><a class="menu__link" href="thirdWeek.html"><strong class="strong__header">trzeci
+                        tydzień</strong>
+                    <ul class="menu__description">
+                        <li class="menu__item">Git</li>
+                        <li class="menu__item">Box model</li>
+                        <li class="menu__item">BEM</li>
+                        <li class="menu__item">DOM</li>
+                    </ul>
+                </a></li>
+            <li class="menu__item"><a class="menu__link" href="fourthWeek.html"><strong class="strong__header">czwarty
+                        tydzień</strong>
+                    <ul class="menu__description">
+                        <li class="menu__item">JavaScript</li>
+                        <li class="menu__item">Funkcja w JS</li>
+                        <li class="menu__item">Debugging</li>
+                        <li class="menu__item">Markup</li>
+                        <li class="menu__item">Normalizacja</li>
+                        <li class="menu__item">Flexbox</li>
+                        <li class="menu__item">Tło</li>
+                    </ul>
+                </a></li>
+            <li class="menu__item"><a class="menu__link" href="fifthWeek.html"><strong class="strong__header">piąty
+                        tydzień</strong>
+                    <ul class="menu__description">
+                        <li class="menu__item">Formularze</li>
+                        <li class="menu__item">Grid</li>
+                        <li class="menu__item">Media queries</li>
+                        <li class="menu__item">Event</li>
+                        <li class="menu__item">Hamburger</li>
+                    </ul>
+                </a></li>
+            <li class="menu__item"><a class="menu__link" href="sixthWeek.html"><strong class="strong__header">szósty
+                        tydzień</strong></a></li>
+            <li class="menu__item"><a class="menu__link" href="seventhWeek.html"><strong class="strong__header">siódmy
+                        tydzień</strong></a></li>
+            <li class="menu__item"><a class="menu__link" href="eightWeek.html"><strong class="strong__header">ósmy
+                        tydzień</strong></a></li>
+            <li class="menu__item"><a class="menu__link" href="ninthWeek.html"><strong class="strong__header">dziewiąty
+                        tydzień</strong></a></li>
+            <li class="menu__item"><a class="menu__link" href="tenthWeek.html"><strong class="strong__header">dziesiąty
+                        tydzień</strong></a></li>
+            <li class="menu__item"><a class="menu__link" href="eleventhWeek.html"><strong
+                        class="strong__header">jedenasty tydzień</strong></a></li>
+        </ul>
+    </nav>
+    <main class="main">
+        <header class="hero">
+            <h1 class="hero__header">Jak uczyłem się frontendu</h1>
+        </header>
+        <article class="article">
+            <button class="article__button article__button-position" aria-label="otwórz menu sekcji"><span
+                    class="menuButton__line article__button__line-js">|</span></button>
+            <header class="article__nav">
+                <nav class="article__menu">
+                    <ul class="article__list">
+                        <li class="article__item"><a class="article__link" href="#object">obiekty</a></li>
+                        <li class="article__item"><a class="article__link" href="#pseudo">pseudo*</a>
+                        </li>
+                        <li class="article__item"><a class="article__link" href="#sass">sass</a> </li>
+                        <li class="article__item"><a class="article__link" href="#node">node.js</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <h2 class="article__header">Szósty tydzień nauki</h2>
+            <div class="wrapper">
+                <section class="section" id="object">
+                    <h3 class="section__header">Objekty</h3>
+                    <p class="section__paragarph">Obiekt jest strukturą danych w JS.</p>
+                    <p class="section__paragraph"><strong>key:value</strong> (klucz:wartość) - format zapisu własności
+                        (property), metod (methods) obiektu</p>
+                    <p class="section__paragraph">klucz - musi być unikalny w ramach obiektu</p>
+                    <p class="section__paragraph">wartość - prymitywy / funkcje / zagnieżdżenia</p>
+                    <p class="ection__paragraph">Dot notation - notacja kropkowa:</p>
+                    <code class="section__code">const deathStar = { <br>
+                        diameter: 120000, <br>
+                        fire: (target) => { <br>
+                        console.log(`${target} destroyed 💥`) <br>
+                        }, <br>
+                        isOperating: true, <br>
+                        levels: 357, <br>
+                        name: 'Death Star', <br>
+                        population: 10000, <br>
+                        } <br> <br>
+                        deathStar.population
+                    </code>
+                    <p class="section__paragraph">Bracket notation - notacja nawiasów:</p>
+                    <code class="section__code">const deathStar = { <br>
+                        diameter: 120000, <br>
+                        fire: (target) => { <br>
+                        console.log(`${target} destroyed 💥`) <br>
+                        }, <br>
+                        isOperating: true, <br>
+                        levels: 357, <br>
+                        name: 'Death Star', <br>
+                        population: 10000, <br>
+                        } <br> <br>
+                        deathStar["population"]
+                    </code>
+                    <p class="section__paragrap">JSON = JavaScript Object Notation, uniwersalny format wymiany danych.
+                    </p>
+                    <code class="section__code">{ <br>
+                        "diameter": 120000, <br>
+                        "isOperating": true, <br>
+                        "levels": 357, <br>
+                        "name": "Death Star", <br>
+                        "population": 10000, <br>
+                        }
+                    </code>
+                </section>
+                <section class="section" id="pseudo">
+                    <h3 class="section__header">Pseudoelementy</h3>
+                    <p class="section__paragarph">Pesudoelement umożliwia stylizowanie określonej części elementu, może
+                        dodawać treść. Jest częścią elementu, więc wszystkie zmiany zachodzące są w obrębie tego
+                        elementu. </p>
+                    <ul class="section__list">
+                        <li><strong>element::before</strong> - występuje przed treścią elementu</li>
+                        <li><strong>element::after</strong> - występuje po treści elementu</li>
+                        <li><strong>content: " "</strong> - dodaje treść do pseudoelementów before i after</li>
+                        <li><strong>element::first-line</strong> - stylowanie pierwszej lini treści w elemencie blokowym
+                        </li>
+                        <li><strong>element::first-letter</strong> - dotyczy pierwszej litery w pierwszym wierszu
+                            elementu blokowego</li>
+                    </ul>
+                    <a class="section__link"
+                        href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements">https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements</a>
+                    <h3 class="section__header">Pseudoklasy</h3>
+                    <ul class="section__list">
+                        <li><strong>selektor:hover</strong> - wskazuje element, zmienia stan elementu po najechaniu</li>
+                        <li><strong>selektor:visited</strong> - odpowiada za odwiedzone linki</li>
+                        <li><strong>selektor:focus</strong> - odpowiada za aktywne pole input</li>
+                        <li><strong>selektor:first-child</strong> - reprezentuje pierwsze dziecko elementu</li>
+                        <li><strong>selektor:last-child</strong> - reprezentuje ostatnie dziecko elementu</li>
+                        <li><strong>selektor:not(selektor)</strong> - odpowiada za elementy niepasujące do listy
+                            selektorów</li>
+                    </ul>
+                    <a class="section__link"
+                        href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes">https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes</a>
+                </section>
+                <section class="section" id="sass">
+                    <h3 class="section__header">Sass</h3>
+                    <p class="section__paragarph">Sass jest preprocesorem CSS, dzięki któremu stylizowanie jest
+                        efektywniejsze, szybsze a sam kod staje się bardziej uporządkowany, co za tym idzie
+                        czytelniejszy.</p>
+                    <p class="section__paragarph">Sass oferuje dwie składnie pisania. Składnia SASS, która opiera się na
+                        wcięciach, oraz SCSS, która używa nawiasów klamrowych podobnie jak CSS.</p>
+                    <p class="section__paragarph"><strong>$zmienna</strong> - definiowanie zmiennej</p>
+                    <p class="section__paragarph"><strong>@mixin @include</strong> - przykład domieszki:</p>
+                    <img class="image" src="img/mixin.webp" alt="mixin w sass">
+                    <p class="section__paragarph"><strong>@extend</strong> - przykład:</p>
+                    <img src="img/extend.webp" alt="extend w sass" class="image">
+                    <p class="section__paragarph"><strong>&</strong> - parent selector:</p>
+                    <img src="img/patentSelector.webp" alt="parent selector dla sass" class="image">
+                    <a class="section__link"
+                        href="https://sass-lang.com/documentation">https://sass-lang.com/documentation</a>
+                    <a class="section__link" href="https://www.sassmeister.com/">https://www.sassmeister.com/</a>
+                </section>
+                <section class="section" id="node">
+                    <h3 class="section__header">Node.js</h3>
+                    <p class="section__paragarph">Node.js to środowisko do uruchamiania aplikacji napisanych w języku JS
+                        poza przeglądarką.</p>
+                    <a class="section__link" href="https://nodejs.org">https://nodejs.org</a>
+                    <p class="section__paragraph">npm - menadżer paczek rozszerzających funkcjonalność środowiska
+                        node.js</p>
+                    <p class="section__paragraph"><strong>npm init</strong> - polecenie które tworzy pakiet npm,
+                        wynikiem jest plik packages.json zawierający informacje dotyczące naszego projektu. Dzięki temu
+                        możemy podzielić się projektem publicznie i może być on rozwijany przez inne osoby.</p>
+                    <p class="section__paragraph"><strong>npm install &lt;nazwa_paczki&gt; --save</strong> - instalacja
+                        paczki, wykorzystujemy wtedy kiedy paczki są niezbędne do uruchamiania aplikacji.</p>
+                    <p class="section__paragraph"><strong>npm install &lt;nazwa_paczki&gt; --save-dev</strong> -
+                        wykorzystujemy wtedy kiedy paczka jest niezbędna do rozwijania i testowania aplikacji.</p>
+                    <p class="section__paragraph">node_modules - katalog zawierający zainstalowane paczki. Ten katalog
+                        nie dodajemy do repozytorium projektu.</p>
+                    <section class="card">
+                        <h4 class="card__header">.gitignore</h4>
+                        <p class="card__paragraph">W przypadku repozytorium GIT tworzymy plik ".gitignore" i umieszczamy
+                            w nim nazwę katalogu "node_modules".</p>
+                    </section>
+                    <a class="section__link" href="https://www.npmjs.com/">https://www.npmjs.com/</a>
+                    <p class="section__paragraph">Alternatywą dla npm jest YARN</p>
+                    <a href="https://yarnpkg.com/" class="section__link">https://yarnpkg.com/</a>
+                </section>
+            </div>
+        </article>
+    </main>
+    <footer class="footer">
+        <p class="footer__paragraph">Projekt stworzony przez Andrzeja</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

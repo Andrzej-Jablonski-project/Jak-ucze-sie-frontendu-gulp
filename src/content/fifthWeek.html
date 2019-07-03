@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Umieć frontend</title>
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <button class="menuButton" aria-label="otwórz menu strony"><span
+            class="menuButton__line menuButton__line-js">|</span></button>
+    <nav class="menu">
+        <section class="menu__section">
+            <h2 class="menu__header">O czym jest ta strona</h2>
+            <p class="menu__text">Na tej stronie opisuję przebieg mojej nauki podstaw frontendu. Traktuję
+                ją jako swoisty notatnik. Jeżeli chcesz zostać frontendowcem, to tutaj możesz zobaczyć, jak
+                może przebiegać twój
+                proces nauczania od zera. Zapraszam!</p>
+        </section>
+        <ul class="menu__list">
+            <li class="menu__item"><a class="menu__link" href="index.html"><strong class="strong__header">pierwszy
+                        tydzień</strong>
+                    <ul class="menu__description">
+                        <li class="menu__item">Warstwy</li>
+                        <li class="menu__item">HTML</li>
+                        <li class="menu__item">CSS</li>
+                        <li class="menu__item">Programowanie</li>
+                    </ul>
+                </a></li>
+            <li class="menu__item"><a class="menu__link" href="secondWeek.html"><strong class="strong__header">drugi
+                        tydzień</strong>
+                    <ul class="menu__description">
+                        <li class="menu__item">Organizacja nauki/pracy</li>
+                        <li class="menu__item">HTML - znaczniki i atrybuty</li>
+                        <li class="menu__item">CSS - Sposoby stylowania</li>
+                        <li class="menu__item">Działanie przeglądarki</li>
+                        <li class="menu__item">JavaScript</li>
+                        <li class="menu__item">Terminal</li>
+                    </ul>
+                </a></li>
+            <li class="menu__item"><a class="menu__link" href="thirdWeek.html"><strong class="strong__header">trzeci
+                        tydzień</strong>
+                    <ul class="menu__description">
+                        <li class="menu__item">Git</li>
+                        <li class="menu__item">Box model</li>
+                        <li class="menu__item">BEM</li>
+                        <li class="menu__item">DOM</li>
+                    </ul>
+                </a></li>
+            <li class="menu__item"><a class="menu__link" href="fourthWeek.html"><strong class="strong__header">czwarty
+                        tydzień</strong>
+                    <ul class="menu__description">
+                        <li class="menu__item">JavaScript</li>
+                        <li class="menu__item">Funkcja w JS</li>
+                        <li class="menu__item">Debugging</li>
+                        <li class="menu__item">Markup</li>
+                        <li class="menu__item">Normalizacja</li>
+                        <li class="menu__item">Flexbox</li>
+                        <li class="menu__item">Tło</li>
+                    </ul>
+                </a></li>
+            <li class="menu__item"><a class="menu__link" href="fifthWeek.html"><strong class="strong__header">piąty
+                        tydzień</strong>
+                    <ul class="menu__description">
+                        <li class="menu__item">Formularze</li>
+                        <li class="menu__item">Grid</li>
+                        <li class="menu__item">Media queries</li>
+                        <li class="menu__item">Event</li>
+                        <li class="menu__item">Hamburger</li>
+                    </ul>
+                </a></li>
+            <li class="menu__item"><a class="menu__link" href="sixthWeek.html"><strong class="strong__header">szósty
+                        tydzień</strong></a></li>
+            <li class="menu__item"><a class="menu__link" href="seventhWeek.html"><strong class="strong__header">siódmy
+                        tydzień</strong></a></li>
+            <li class="menu__item"><a class="menu__link" href="eightWeek.html"><strong class="strong__header">ósmy
+                        tydzień</strong></a></li>
+            <li class="menu__item"><a class="menu__link" href="ninthWeek.html"><strong class="strong__header">dziewiąty
+                        tydzień</strong></a></li>
+            <li class="menu__item"><a class="menu__link" href="tenthWeek.html"><strong class="strong__header">dziesiąty
+                        tydzień</strong></a></li>
+            <li class="menu__item"><a class="menu__link" href="eleventhWeek.html"><strong
+                        class="strong__header">jedenasty tydzień</strong></a></li>
+        </ul>
+    </nav>
+    <main class="main">
+        <header class="hero">
+            <h1 class="hero__header">Jak uczyłem się frontendu</h1>
+        </header>
+        <article class="article">
+            <button class="article__button article__button-position" aria-label="otwórz menu sekcji"><span
+                    class="menuButton__line article__button__line-js">|</span></button>
+            <header class="article__nav">
+                <nav class="article__menu">
+                    <ul class="article__list">
+                        <li class="article__item"><a class="article__link" href="#form">formularze</a></li>
+                        <li class="article__item"><a class="article__link" href="#grid">grid</a></li>
+                        <li class="article__item"><a class="article__link" href="#mQueries">media queries</a></li>
+                        <li class="article__item"><a class="article__link" href="#event">event</a></li>
+                        <li class="article__item"><a class="article__link" href="#hamburger">hamburger</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <h2 class="article__header">Piąty tydzień nauki</h2>
+            <div class="wrapper">
+                <section class="section" id="form">
+                    <h3 class="section__header">Formularze</h3>
+                    <p class="section__paragarph"><strong>&lt;form&gt;...&lt;/form&gt;</strong> - znacznik formularza,
+                        opakowujący</p>
+                    <p class="section__paragraph">Atrybuty:</p>
+                    <ul class="section__list">
+                        <li><strong>action="url"</strong> - adres serwera/programu przetwarzającego dane formularza</li>
+                        <li><strong>method="post"</strong> - metoda wysłania danych, get - dane w adresie url, post -
+                            dane są w treści formularza</li>
+                    </ul>
+                    <p class="section__paragarph"><strong>&lt;input&gt;...&lt;/input&gt;</strong> - znacznik
+                        wprowadzania danych </p>
+                    <p class="section__paragraph">Atrybuty:</p>
+                    <ul class="section__list">
+                        <li><strong>name="nazwaPola"</strong> - nazwa wykorzystywana do identyfikacji danych wejściowych
+                        </li>
+                        <li><strong>id="idPola"</strong> - używamy do odniesienia się do label for=""</li>
+                        <li><strong>type="text"</strong> - określa typ wprowadzanych danych</li>
+                        <li><strong>value="wartość pola"</strong> - aktualna wartość pola</li>
+                        <li><strong>placeholder= "Tekst podpowiedzi"</strong></li>
+                    </ul>
+                    <section class="card">
+                        <h4 class="card__header">Typy danych input</h4>
+                        <ul class="card__list">
+                            <li><strong>text</strong> - wprowadzane dane tekstowe</li>
+                            <li><strong>radio</strong> - przycisk radio, wybór jednej wartości z wielu opcji</li>
+                            <li><strong>checkbox</strong> - pole wyboru poprzez jego zaznaczenie/odznaczenie</li>
+                            <li><strong>number</strong> - do wprowadzania liczb</li>
+                            <li><strong>tel</strong> - do numeru telefonu</li>
+                            <li><strong>email</strong> - adres email</li>
+                            <li><strong>range</strong> - wprowadzenie wartości liczbowej z danego przedziału<br><code
+                                    class="card__code">&lt;input type="range" min="0" max="100" step="5"&gt;</code>
+                            </li>
+                            <li><strong>password</strong> - do wprowadzania haseł</li>
+                            <li><strong>file</strong> - wybór pliku</li>
+                            <li><strong>submit</strong> - wysłanie danych formularza</li>
+                        </ul>
+                    </section>
+                    <p class="section__paragarph"><strong>&lt;label&gt;...&lt;/label&gt;</strong> - etykieta pola input
+                    </p>
+                    <p class="section__paragraph">Atrybut:</p>
+                    <ul class="section__list">
+                        <li><strong>for="name"</strong> - wartość id input</li>
+                    </ul>
+                    <p class="section__paragraph wrong">Atrybut <strong>placeholder</strong> nie zastępuje elementu
+                        label.</p>
+                    <p class="section__paragarph"><strong>&lt;fieldset&gt;...&lt;/fieldset&gt;</strong> - do grupowania
+                        input</p>
+                    <p class="section__paragarph"><strong>&lt;legend&gt;...&lt;/legend&gt;</strong> - opis grupy input
+                        &lt;fieldset&gt;</p>
+                    <p class="section__paragarph"><strong>&lt;select&gt;...&lt;/select&gt;</strong> - grupowanie opcji
+                        wyboru</p>
+                    <p class="section__paragarph"><strong>&lt;option&gt;...&lt;/option&gt;</strong> - dziecko znacznika
+                        select, opcje wyboru</p>
+                    <p class="section__paragarph"><strong>&lt;textarea&gt;...&lt;/textarea&gt;</strong> - wprowadzanie
+                        dłuższego tekstu</p>
+                    <p class="section__paragraph">Walidacja:</p>
+                    <p class="section__paragraph"><strong>required</strong> - pole jest wymagane</p>
+                    <p class="section__paragraph"><strong>pattern= "[a-zA-Z0-9]+"</strong> - walidacja za pomocą wyrażeń
+                        regularnych</p>
+                    <a class="section__link" href="http://html5pattern.com/Names">http://html5pattern.com/Names</a>
+                </section>
+                <section class="section" id="grid">
+                    <h3 class="section__header">CSS Grid</h3>
+                    <p class="section__paragarph">Grid służy do tworzenia layoutów.</p>
+                    <img class="image" src="img/grid-concepts.svg" alt="grid">
+                    <p class="section__paragraph">Źródło: <a class="section__link"
+                            href="https://webkit.org/blog/7434/css-grid-layout-a-new-layout-module-for-the-web/">https://webkit.org/blog/7434/css-grid-layout-a-new-layout-module-for-the-web/</a>
+                    </p>
+                    <section class="card">
+                        <h4 class="card__header">Właściwości</h4>
+                        <p class="card__paragraph">Grid container</p>
+                        <ul class="card__list">
+                            <li><strong>grid-template-columns</strong> - ustawianie kolumn</li>
+                            <li><strong>grid-template-rows</strong> - ustawianie wierszy</li>
+                            <li><strong>grid-column-gap</strong> - odstęp między elementami w kontekście kolumny</li>
+                            <li><strong>grid-row-gap</strong> - odstęp między elementami w kontekście wierszy</li>
+                            <li><strong>grid-template-areas</strong> - umieszczanie elementów za pomocą nazwanych
+                                obszarów <code class="card__code">grid-template-areas:"header header header" <br>
+                                    "content . menu" <br>
+                                    "footer footer footer";
+                                </code></li>
+                        </ul>
+                        <p class="card__paragraph">Grid item</p>
+                        <ul class="card__list">
+                            <li><strong>grid-area</strong> - określa wielkość i położenie elementu w obrębie siatki</li>
+                            <li><strong>grid-row-start:</strong> numer / [nazwa] / span - definiuje, od której linii
+                                poziomej element ma się
+                                zaczynać</li>
+                            <li><strong>grid-row-end:</strong> numer / [nazwa] / span - definiuje, od której linii
+                                poziomej element ma się
+                                kończyć
+                            </li>
+                            <li><strong>grid-column-start:</strong> numer / [nazwa] / span - definiuje, od której linii
+                                pionowej element ma się
+                                zaczynać</li>
+                            <li><strong>grid-column-end:</strong> numer / [nazwa] / span - definiuje, od której linii
+                                pionowej element ma się
+                                kończyć</li>
+
+                        </ul>
+                    </section>
+                    <p class="section__paragarph">Jednostka <strong>fr</strong>, czyli ułamek wolnej przestrzeni.</p>
+                </section>
+                <section class="section" id="mQueries">
+                    <h3 class="section__header">Media queries</h3>
+                    <p class="section__paragarph">RWD (Responsive web design) to tworzenie stron dopasowujących się do
+                        urządzenia, na którym jest wyświetlana.</p>
+                    <p class="section__paragarph"><strong>@media</strong> - słowo kluczowe, własność, dzięki któremu
+                        możemy decydować co się ma zadziać na danym urządzeniu, w danej rozdzielczości.</p>
+                    <p class="section__paragarph"><strong>@media</strong> screen, print, all... - wybór typu
+                        urządzenia (media type).</p>
+                    <p class="section__paragarph"><strong>@media</strong> min-width, max-width, color, aspect-ratio,
+                        orientation... - określamy jakie style, w którym momencie powinny się znajdować (media feature).
+                    </p>
+                    <p class="section__paragarph"><strong>and / not / ,</strong> - operatory
+                    </p>
+                    <code class="section__code">@media screen and (min-width: 812px) and (orientation: landscape){ <br>
+                        .header { <br>
+                        font-size: 1rem; <br>
+                        padding: 8px; <br>
+                        } <br>
+                        <br>}</code>
+                </section>
+                <section class="section" id="event">
+                    <h3 class="section__header">Event</h3>
+                    <p class="section__paragraph"><strong>element.addEventListener(type, listener [, options])</strong>
+                        - nasłuchiwanie zdarzenia</p>
+                    <section class="card">
+                        <h4 class="card__header">mouse events</h4>
+                        <ul class="card__list">
+                            <li>click</li>
+                            <li>mouseenter</li>
+                            <li>mouseleave</li>
+                            <li>mouseover</li>
+                        </ul>
+                        <a class="card__link"
+                            href="https://developer.mozilla.org/en-US/docs/Web/Events#Mouse_events">https://developer.mozilla.org/en-US/docs/Web/Events#Mouse_events</a>
+                    </section>
+                    <p class="section__paragraph">Przykłady:</p>
+                    <code class="section__code">function nameFunction() { <br>
+                        console.log('dajesz klika'); <br>
+                        } <br><br>
+                        element.addEventListener('click', nameFunction);
+                    </code>
+                    <code class="section__code">element.addEventListener('click', (<strong>e</strong>) => { <br>
+                        console.log('dajesz klika'); <br>
+                        })</code>
+                    <p class="section__paragraph"><strong>e</strong> = Event</p>
+                    <a class="section__link"
+                        href="https://developer.mozilla.org/en-US/docs/Web/API/Event">https://developer.mozilla.org/en-US/docs/Web/API/Event</a>
+                </section>
+                <section class="section" id="hamburger">
+                    <h3 class="section__header">Hamburger menu - elementy użyte przy tworzeniu hamburger menu</h3>
+                    <p class="section__paragraph"><strong>&lt;button&gt;...&lt;/button&gt;</strong> - znacznik przycisku
+                    </p>
+                    <p class="section__paragraph"><strong>element.classList.add</strong> - dodaje klasę</p>
+                    <p class="section__paragraph"><strong>element.classList.remove</strong> - usuwa klasę</p>
+                    <p class="section__paragraph"><strong>element.classList.toggle</strong> - przełącza klasę</p>
+                    <p class="section__paragraph"><strong>element.classList.contains</strong> - sprawdza czy klasa
+                        istnieje</p>
+                </section>
+            </div>
+        </article>
+    </main>
+    <footer class="footer">
+        <p class="footer__paragraph">Projekt stworzony przez Andrzeja</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

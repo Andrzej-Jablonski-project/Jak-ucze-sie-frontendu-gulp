@@ -11,11 +11,11 @@ menuButton.addEventListener('click', (e) => {
     const mainMenu = document.querySelector('.menu');
     if (!menuButton.classList.contains('menuButton__switch-off') & !menuButton.classList.contains('menuButton__switch-on')) {
         menuButton.classList.add('menuButton__switch-on');
-        line.classList.add('switch__line-on');
+        line.classList.add('menuButton__line-on');
         mainMenu.classList.add('menu-on');
     } else {
-        line.classList.toggle('switch__line-off');
-        line.classList.toggle('switch__line-on');
+        line.classList.toggle('menuButton__line-off');
+        line.classList.toggle('menuButton__line-on');
         menuButton.classList.toggle('menuButton__switch-on');
         menuButton.classList.toggle('menuButton__switch-off');
         mainMenu.classList.toggle('menu-on');
@@ -29,11 +29,11 @@ articleButton.addEventListener('click', (e) => {
     const articleMenu = document.querySelector('.article__list');
     if (!articleButton.classList.contains('menuButton__switch-off') & !articleButton.classList.contains('menuButton__switch-on')) {
         articleButton.classList.add('menuButton__switch-on');
-        articleButtonLine.classList.add('switch__line-on');
+        articleButtonLine.classList.add('menuButton__line-on');
         articleMenu.classList.add('article__list-on');
     } else {
-        articleButtonLine.classList.toggle('switch__line-off');
-        articleButtonLine.classList.toggle('switch__line-on');
+        articleButtonLine.classList.toggle('menuButton__line-off');
+        articleButtonLine.classList.toggle('menuButton__line-on');
         articleButton.classList.toggle('menuButton__switch-on');
         articleButton.classList.toggle('menuButton__switch-off');
         articleMenu.classList.toggle('article__list-on');

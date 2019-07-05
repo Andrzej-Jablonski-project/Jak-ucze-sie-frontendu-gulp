@@ -12,7 +12,7 @@
 
 <body>
     <button class="menuButton" aria-label="otwórz menu strony"><span
-            class="menuButton__line menuButton__line-js">|</span></button>
+            class="menuButton__line menuButton__line--js">|</span></button>
     <nav class="menu">
         <section class="menu__section">
             <h2 class="menu__header">O czym jest ta strona</h2>
@@ -100,8 +100,8 @@
             <h1 class="hero__header">Jak uczyłem się frontendu</h1>
         </header>
         <article class="article">
-            <button class="article__button article__button-position" aria-label="otwórz menu sekcji"><span
-                    class="menuButton__line article__button__line-js">|</span></button>
+            <button class="article__button article__button--position" aria-label="otwórz menu sekcji"><span
+                    class="menuButton__line article__button__line--js">|</span></button>
             <header class="article__nav">
                 <nav class="article__menu">
                     <ul class="article__list">
@@ -288,12 +288,16 @@
                         <h4 class="card__header">Dobre źródła</h4>
                         <ul class="card__list">
                             <li>GitHub issues</li>
-                            <li><a href="https://developer.mozilla.org">https://developer.mozilla.org</a></li>
-                            <li><a href="https://devdocs.io/ ">https://devdocs.io/ </a></li>
-                            <li><a href="https://caniuse.com/ ">https://caniuse.com/ </a></li>
-                            <li><a href="https://css-tricks.com/almanac/ ">https://css-tricks.com/almanac/ </a></li>
-                            <li><a href="https://www.w3.org/TR/html52/ ">https://www.w3.org/TR/html52/ </a></li>
-                            <li><a href="https://www.w3.org/TR/CSS/ ">https://www.w3.org/TR/CSS/ </a></li>
+                            <li><a class="card__link"
+                                    href="https://developer.mozilla.org">https://developer.mozilla.org</a></li>
+                            <li><a class="card__link" href="https://devdocs.io/ ">https://devdocs.io/ </a></li>
+                            <li><a class="card__link" href="https://caniuse.com/ ">https://caniuse.com/ </a></li>
+                            <li><a class="card__link"
+                                    href="https://css-tricks.com/almanac/ ">https://css-tricks.com/almanac/ </a></li>
+                            <li><a class="card__link"
+                                    href="https://www.w3.org/TR/html52/ ">https://www.w3.org/TR/html52/ </a></li>
+                            <li><a class="card__link" href="https://www.w3.org/TR/CSS/ ">https://www.w3.org/TR/CSS/ </a>
+                            </li>
                         </ul>
                     </section>
                 </section>
@@ -329,7 +333,7 @@
                         box-sizing: border box; <br>
                         }
                     </code>
-                    <p class="section__paragraph">Plik normalizacji: <a
+                    <p class="section__paragraph">Plik normalizacji: <a class="section__link"
                             href="https://necolas.github.io/normalize.css/">https://necolas.github.io/normalize.css/</a>
                     </p>
                     <p class="section__paragraph">Normalizację z resetem możemy miksować.</p>

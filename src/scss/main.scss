@@ -208,12 +208,17 @@ body {
   &__section {
     display: none;
 
-    @media (min-width: 1024px) {
+    @media (min-width: 904px) {
       display: flex;
       flex-direction: column;
       align-items: center;
       width: 100%;
-      max-width: 600px;
+      max-width: 660px;
+    }
+
+    @media (min-width: 1024px) {
+      width: 100%;
+      max-width: 900px;
     }
 
     @media (min-width: 1366px) {
@@ -317,15 +322,27 @@ body {
   }
 
   &__text {
-    @media (min-width: 1366px) {
+    @media (min-width: 904px) {
       max-width: 800px;
       width: 100%;
       margin: 20px auto;
       text-align: center;
     }
+
+    @media (min-width: 1024px) {
+      max-width: 800px;
+      width: 100%;
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    @media (min-width: 1366px) {
+      max-width: 900px;
+      width: 100%;
+    }
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 904px) {
     align-items: center;
   }
 }

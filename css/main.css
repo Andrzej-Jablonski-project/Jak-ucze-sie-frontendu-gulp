@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Rubik:400,700&display=swap&subset=latin-ext");
 html {
   line-height: 1.15;
   /* 1 */
@@ -558,7 +559,7 @@ body {
       margin: 20px 20px; } }
   .menu__section {
     display: none; }
-    @media (min-width: 1024px) {
+    @media (min-width: 904px) {
       .menu__section {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -571,7 +572,11 @@ body {
             -ms-flex-align: center;
                 align-items: center;
         width: 100%;
-        max-width: 600px; } }
+        max-width: 660px; } }
+    @media (min-width: 1024px) {
+      .menu__section {
+        width: 100%;
+        max-width: 900px; } }
     @media (min-width: 1366px) {
       .menu__section {
         font-size: 1.1rem; } }
@@ -690,13 +695,23 @@ body {
         -webkit-transform: none;
             -ms-transform: none;
                 transform: none; } }
-  @media (min-width: 1366px) {
+  @media (min-width: 904px) {
     .menu__text {
       max-width: 800px;
       width: 100%;
       margin: 20px auto;
       text-align: center; } }
   @media (min-width: 1024px) {
+    .menu__text {
+      max-width: 800px;
+      width: 100%;
+      margin: 20px auto;
+      text-align: center; } }
+  @media (min-width: 1366px) {
+    .menu__text {
+      max-width: 900px;
+      width: 100%; } }
+  @media (min-width: 904px) {
     .menu {
       -webkit-box-align: center;
           -ms-flex-align: center;
@@ -962,9 +977,18 @@ body {
         display: inline-block;
         font-size: 1rem; } }
   .section__link {
-    display: block;
+    display: inline-block;
     margin: 8px;
-    word-break: break-all; }
+    word-break: break-all;
+    color: #0b862a;
+    background: url("../assets/external-link.png") no-repeat 100% 0;
+    background-size: 16px 16px;
+    text-decoration: none;
+    outline: none;
+    padding-right: 19px; }
+    .section__link:hover {
+      color: #807F75;
+      text-decoration: underline; }
   @media (min-width: 1366px) {
     .section {
       padding-top: 86px;
@@ -978,9 +1002,18 @@ body {
   .card__header {
     color: #4ECC6F; }
   .card__link {
-    display: block;
+    display: inline-block;
     margin: 8px;
-    word-break: break-all; }
+    word-break: break-all;
+    color: #0b862a;
+    background: url("../assets/external-link.png") no-repeat 100% 0;
+    background-size: 16px 16px;
+    text-decoration: none;
+    outline: none;
+    padding-right: 19px; }
+    .card__link:hover {
+      color: #807F75;
+      text-decoration: underline; }
   .card__list {
     word-break: break-word; }
   .card__code {

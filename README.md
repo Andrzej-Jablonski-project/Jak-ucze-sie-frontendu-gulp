@@ -27,3 +27,5 @@ Podczas jakiejkolwiek nauki każdy z nas robi notatki. Jako że obecnie uczę si
 `gulp`
 
 Publikacja strony na github pages `npm run deploy`
+
+[NOTATNIK Frontendu](https://andrzej-jablonski-project.github.io/Notatnik-frontendu/index.html)

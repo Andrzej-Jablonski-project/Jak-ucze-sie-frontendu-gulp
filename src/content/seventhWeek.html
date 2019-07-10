@@ -111,6 +111,7 @@
                         <li class="article__item"><a class="article__link" href="#branche">Branche</a></li>
                         <li class="article__item"><a class="article__link" href="#markdown">Markdown</a></li>
                         <li class="article__item"><a class="article__link" href="#arrays">Tablice</a></li>
+                        <li class="article__item"><a class="article__link" href="#loops">Pętle</a></li>
                     </ul>
                 </nav>
             </header>
@@ -215,7 +216,7 @@
                         Cztery spacje tworzą sublistę.</code>
                 </section>
                 <section class="section" id="arrays">
-                    <h3 class="section__header">Tablice</h3>
+                    <h3 class="section__header">JS: tablice</h3>
                     <p class="section__paragraph">Tablica jest strukturą danych.</p>
                     <p class="section__paragraph">Index - liczymy od zera.</p>
                     <p class="section__paragraph">Tablice mogą zawierać różnego typu dane jak stringi, obiekty, liczby
@@ -248,6 +249,71 @@
                         elementów od danej poycji</p>
                     <p class="section__paragraph"><strong>tablica.slice(index, stop)</strong> - pobieranie n elementów
                         od danej pozycji</p>
+                </section>
+                <section class="section" id="loops">
+                    <h3 class="section__header">JS: pętle</h3>
+                    <p class="section__paragraph"><strong>pętla for:</strong></p>
+                    <code class="section__code">for (inicjalizacja; warunek stopu; wyrażenie inkrementacji) { <br>
+                        kod <br>
+                        }
+                    </code>
+                    <p class="section__paragraph"><strong>i</strong> - licznik pętli</p>
+                    <code class="section__code">for (let i = 0; i &lt; 3; i++) { <br>
+                        console.log(`${i} wykonanie pętli`); <br>
+                        }
+                    </code>
+                    <p class="section__paragraph"><strong>i++</strong> - postinkrementacja</p>
+                    <p class="section__paragraph"><strong>i--</strong> - postdekrementacja</p>
+                    <p class="section__paragraph"><strong>++i</strong> - preinkrementacja</p>
+                    <p class="section__paragraph"><strong>--i</strong> - predekrementacja</p>
+                    <p class="section__paragraph"><strong>pętla while:</strong></p>
+                    <code class="section__code">while (warunek logiczny) { <br>
+                        kod <br>
+                        }
+                    </code>
+                    <p class="section__paragraph"> przykład:</p>
+                    <code class="section__code">let n = 3; <br> <br>
+                        while (n &lt; 9) { <br>
+                        console.log(n); <br>
+                        n = n + 3; <br>
+                        } <br> <br>
+                        console.log(n);
+                    </code>
+                    <p class="section__paragraph"><strong>pętla do while:</strong></p>
+                    <code class="section__code">do { <br>
+                        kod <br>
+                        } while (warunek logiczny) <br>
+                    </code>
+                    <p class="section__paragraph">przykład:</p>
+                    <code class="section__code">let n = 9; <br> <br>
+                        do { <br>
+                        console.log(n); <br>
+                        n = n + 3; <br>
+                        } while (n &lt; 9); <br> <br>
+                        console.log(n); <br> <br>
+                        blok kodu pierwszy raz zawsze się wykona
+                    </code>
+                    <p class="section__paragraph"><strong>pętla for in:</strong></p>
+                    <p class="section__paragraph">Pętla <strong>for in</strong> wykorzystujemy głównie do wypisywania
+                        obiektów.</p>
+                    <code class="section__code">for (wlasnosc in obiekt)</code>
+                    <p class="section__paragraph">przyklad:</p>
+                    <code class="section__code">const person = { <br>
+                        name: 'maciek', <br>
+                        age: 31 <br>
+                        } <br><br>
+                        for (let property in person) { <br>
+                        console.log(`${property}: ${person[property]}`); <br>
+                        }
+                    </code>
+                    <p class="section__paragraph"><strong>pętla for of:</strong></p>
+                    <code class="section__code">for (element of tablica)</code>
+                    <p class="section__paragraph">przykład:</p>
+                    <code class="section__code">const faces = ['😎', '🤯', '😱']; <br> <br>
+                        for (let face of faces) { <br>
+                        console.log(face); <br>
+                        }
+                    </code>
                 </section>
             </div>
         </article>

@@ -112,6 +112,7 @@
                         <li class="article__item"><a class="article__link" href="#markdown">Markdown</a></li>
                         <li class="article__item"><a class="article__link" href="#arrays">Tablice</a></li>
                         <li class="article__item"><a class="article__link" href="#loops">Pętle</a></li>
+                        <li class="article__item"><a class="article__link" href="#data">Dane</a></li>
                     </ul>
                 </nav>
             </header>
@@ -314,6 +315,40 @@
                         console.log(face); <br>
                         }
                     </code>
+                </section>
+                <section class="section" id="data">
+                    <h3 class="section__header">JS: Przechowywanie danych</h3>
+                    <p class="section__paragarph"><strong>document.cookie</strong> - pobranie ciastka</p>
+                    <p class="section__paragarph"><strong>document.cookie = "nazwa = wartość"</strong> - dodanie ciastka
+                    </p>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie
+                    " class="section__link">https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie</a>
+                    <p class="section__paragarph"><strong>Local / session storage:</strong></p>
+                    <p class="section__paragarph">Localstorage - trwa do ręcznego wyczyszczenia (trwalsze).</p>
+                    <p class="section__paragarph">Sessionstorage - trwa do zamknięcia sesji (zakładki przeglądarki).</p>
+                    <section class="card">
+                        <h4 class="card__header">Zastosowanie</h4>
+                        <p class="card__paragraph">Dodaje klucz i wartość, ustawia wartości w localstorage.</p>
+                        <code class="card__code">localStorage.setItem('nazwa', wartosc)</code>
+                        <p class="card__paragraph">Pobieranie danych.</p>
+                        <code class="card__code">localStorage.getItem('nazwa')</code>
+                        <p class="card__paragraph">Usuwanie danych.</p>
+                        <code class="card__code">localStorage.removeItem('nazwa')</code>
+                        <p class="card__paragraph">Dodawanie obiektów.</p>
+                        <code class="card__code">const person = { <br> name: 'Andrzej', <br> age = 35 <br>} <br> <br>
+                            const jsonPerson = JSON.stingify(person); <br><br> localStorage.setItem('person',
+                            jsonPerson);</code>
+                        <p class="card__paragraph">Pobieranie obiektów.</p>
+                        <code class="card__code">const personStringify = localStorage.getItem('person'); <br><br> const
+                            newPerson = JSON.parse(personStringify);
+                        </code>
+                        <p class="card__paragraph">Konwersja obiektu na string.</p>
+                        <code class="card__code">JSON.stringify(obiekt)</code>
+                        <p class="card__paragraph">Konwersja string na obiekt.</p>
+                        <code class="card__code">JSON.parse(JSONString)</code>
+                    </section>
+                </section>
+                <p class="section__paragarph"></p>
                 </section>
             </div>
         </article>

@@ -1,5 +1,5 @@
 # Notatnik frontendu
-![screenshot project](GitHub/Screenshot.png)
+![screenshot project](gh/screenshot.png)
 ## Opis projektu
 Podczas jakiejkolwiek nauki każdy z nas robi notatki. Jako że obecnie uczę się programowania webowego, również postanowiłem notować, jednak w formie cyfrowej. Takim sposobem szybciej zapamiętuję oraz utrwalam nową wiedzę. Dodatkowym atutem takiego rozwiązania może być dostępność z każdego miejsca. Więc w razie potrzeby skorzystania z notatek będzie to możliwe w sposób szybki i wygodny. Może też okazać się bardzo pomocny na początku w pracy. To miejsce jest moim cyfrowym notatnikiem.
 ## Technologie

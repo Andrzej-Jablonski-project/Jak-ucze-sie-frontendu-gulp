@@ -51,7 +51,7 @@ body {
   border: 3px solid #1a1a1a;
   background: #fefefe;
   transform: rotate(90deg);
-  z-index: 2;
+  z-index: 3;
 }
 
 .menuButton {
@@ -196,7 +196,7 @@ body {
   background: #8B7871;
   transform: translateX(-100%);
   padding: 2rem;
-  z-index: 1;
+  z-index: 2;
 
   &__header {
     @media (min-width: 1366px) {

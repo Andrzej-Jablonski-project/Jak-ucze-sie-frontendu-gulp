@@ -489,7 +489,7 @@ body {
   }
 
   &__link {
-    display: block;
+    display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
     color: black;
@@ -591,13 +591,14 @@ body {
     font-size: 0.8rem;
 
     @media (min-width: 1366px) {
-      display: inline-block;
+      width: fit-content;
       font-size: 1rem;
     }
   }
 
   &__link {
-    display: inline-block;
+    display: block;
+    width: fit-content;
     margin: 8px;
     word-break: break-all;
     color: #0b862a;
@@ -632,7 +633,8 @@ body {
   }
 
   &__link {
-    display: inline-block;
+    display: block;
+    width: fit-content;
     margin: 8px;
     word-break: break-all;
     color: #0b862a;

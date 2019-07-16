@@ -2,6 +2,110 @@
 @import "_variables";
 @import url('https://fonts.googleapis.com/css?family=Rubik:400,700&display=swap&subset=latin-ext');
 
+// keyframes
+
+@keyframes line-off {
+  from {
+    transform: rotate(135deg);
+    color: #efefef;
+  }
+
+  to {
+    transform: rotate(45deg);
+    color: #1a1a1a;
+  }
+}
+
+@keyframes line-on {
+  from {
+    transform: rotate(45deg);
+    color: #1a1a1a;
+  }
+
+  to {
+    transform: rotate(135deg);
+    color: #fff;
+  }
+}
+
+@keyframes switch-off {
+  from {
+    background-color: #1a1a1a;
+    border-color: #fefefe;
+  }
+
+  to {
+    background-color: #fefefe;
+    border-color: #1a1a1a;
+  }
+}
+
+@keyframes switch-on {
+  from {
+    background-color: #fefefe;
+    border-color: #1a1a1a;
+  }
+
+  to {
+    background-color: #1a1a1a;
+    border-color: #fefefe;
+  }
+}
+
+@keyframes menu-on {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes menu-off {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes heroHeader {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes articleList-on {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+
+  to {
+    height: auto;
+    opacity: 1;
+  }
+}
+
+@keyframes articleList-off {
+  from {
+    height: auto;
+    opacity: 1;
+  }
+
+  to {
+    height: 0;
+    opacity: 0;
+  }
+}
+
 // reset
 
 html {
@@ -113,74 +217,6 @@ body {
 
 .strong__header {
   text-transform: uppercase;
-}
-
-@keyframes line-off {
-  from {
-    transform: rotate(135deg);
-    color: #efefef;
-  }
-
-  to {
-    transform: rotate(45deg);
-    color: #1a1a1a;
-  }
-}
-
-@keyframes line-on {
-  from {
-    transform: rotate(45deg);
-    color: #1a1a1a;
-  }
-
-  to {
-    transform: rotate(135deg);
-    color: #fff;
-  }
-}
-
-@keyframes switch-off {
-  from {
-    background-color: #1a1a1a;
-    border-color: #fefefe;
-  }
-
-  to {
-    background-color: #fefefe;
-    border-color: #1a1a1a;
-  }
-}
-
-@keyframes switch-on {
-  from {
-    background-color: #fefefe;
-    border-color: #1a1a1a;
-  }
-
-  to {
-    background-color: #1a1a1a;
-    border-color: #fefefe;
-  }
-}
-
-@keyframes menu-on {
-  from {
-    transform: translateX(-100%);
-  }
-
-  to {
-    transform: translateX(0);
-  }
-}
-
-@keyframes menu-off {
-  from {
-    transform: translateX(0);
-  }
-
-  to {
-    transform: translateX(-100%);
-  }
 }
 
 // menu
@@ -396,16 +432,6 @@ body {
   }
 }
 
-@keyframes heroHeader {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
 // article
 .article {
   &__header {
@@ -526,30 +552,6 @@ body {
 
   @media (min-width: 1366px) {
     font-size: 1.2rem;
-  }
-}
-
-@keyframes articleList-on {
-  from {
-    height: 0;
-    opacity: 0;
-  }
-
-  to {
-    height: auto;
-    opacity: 1;
-  }
-}
-
-@keyframes articleList-off {
-  from {
-    height: auto;
-    opacity: 1;
-  }
-
-  to {
-    height: 0;
-    opacity: 0;
   }
 }
 

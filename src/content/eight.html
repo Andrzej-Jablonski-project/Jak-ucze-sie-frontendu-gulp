@@ -124,7 +124,7 @@
             <div class="wrapper">
                 <section class="section" id="animation">
                     <h3 class="section__header">Animacje i przejścia</h3>
-                    <p class="section__paragraph">Przejścia:</p>
+                    <p class="section__paragraph"><strong>Przejścia:</strong></p>
                     <code class="section__code">transition: name duration timing-function delay
                     </code>
                     <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition"
@@ -147,6 +147,27 @@
                     </code>
                     <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform"
                         class="section__link">https://developer.mozilla.org/en-US/docs/Web/CSS/transform</a>
+                    <p class="section__paragraph"><strong>Animacje:</strong></p>
+                    <p class="section__paragraph"><strong>animation: @keyframes duration | timing-function | delay |
+                            iteration-count | direction | fill-mode | play-state | name</strong> - wykorzystanie
+                        animacji</p>
+                    <code class="section__code">animation: backgroundChange 3s ease-in 1s infinite reverse both
+                        running;</code>
+                    <p class="section__paragraph">Definiowanie animacji:</p>
+                    <code class="section__code">@keyframes backgroundChange { <br> from { <br> background: red; <br> }
+                        <br> to { <br> background: green; <br> } <br>}</code>
+                    <code class="section__code">@keyframes backgroundChange { <br> 0% { <br> background: red; <br> }
+                        <br> 50% { <br> background: green; <br> } <br>100% { <br> background: blue; <br> } <br>}</code>
+                    <div class="section__resp-container">
+                        <iframe class="section__resp-iframe" src="https://www.youtube.com/embed/FNmv5uh3ni4"
+                            allow="encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties"
+                        class="section__link">https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties</a>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation"
+                        class="section__link">https://developer.mozilla.org/en-US/docs/Web/CSS/animation</a>
+                    <a href="https://www.youtube.com/watch?v=ZtRvBgVWogo" class="section__link">Zaawansowane animacje
+                        CSS 😱 opowieści, skrypty #25</a>
                 </section>
             </div>
         </article>

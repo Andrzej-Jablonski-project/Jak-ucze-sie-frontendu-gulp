@@ -791,11 +791,19 @@ body {
   margin: 8px auto;
   padding: 8px;
 
+  &--size {
+    width: 20%;
+  }
+
   @media (min-width: 1366px) {
     width: auto;
     max-width: 1100px;
     margin: 10px auto;
     padding: 10px;
+
+    &--size {
+      width: 20%;
+    }
   }
 }
 

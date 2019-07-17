@@ -182,28 +182,37 @@
                 </section>
                 <section class="section" id="head">
                     <h3 class="section__header">Head & OpenGraph</h3>
+                    <p class="section__paragraph">Open Graph jest protokołem, który pozwala dodać rozszerzony opis
+                        strony poprzez znaczniki meta, wykorzystywany przez media społecznościowe.</p>
+                    <p class="section__paragraph wrong">Przy OG korzystamy z pełnych adresów do zasobów.
+                    </p>
                     <pre class="data-pre data-pre--white-space">
                         <code class="language-html section__code">
-                        &lt;meta charset=&quot;UTF-8&quot; /&gt; - informacja o kodowaniu strony.
-                        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt; - informacja o wielkości viewportu na urządzeniach mobilnych. 
-                        &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot; /&gt; - dotyczy kompatybilności z przeglądarkami Microsoftu.
-                        &lt;title&gt;Site title&lt;/title&gt; - tytuł strony.
-                        &lt;meta name=&quot;description&quot; content=&quot;Description&quot; /&gt; - opis strony.
-                       
-                        &lt;!-- Title --&gt;
+                        &lt;!-- Informacja o kodowaniu strony. --&gt;
+                        &lt;meta charset=&quot;UTF-8&quot; /&gt;
+                        &lt;!-- Informacja o wielkości viewportu na urządzeniach mobilnych.  --&gt;
+                        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+                        &lt;!-- Dotyczy kompatybilności z przeglądarkami Microsoftu. --&gt;
+                        &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot; /&gt;                        
+                        &lt;!--  Tytuł strony. --&gt;
+                        &lt;title&gt;Site title&lt;/title&gt;
+                        &lt;!-- Opis strony. --&gt;
+                        &lt;meta name=&quot;description&quot; content=&quot;Description&quot; /&gt;
+                        &lt;!-- Tytuł, Title --&gt;
                         &lt;meta property=&quot;og:title&quot; content=&quot;&quot; /&gt;
-                        &lt;!-- OPTIONAL description. 2-4 sentences. --&gt;
+                        &lt;!-- Opis, OPTIONAL description. 2-4 sentences. --&gt;
                         &lt;meta property=&quot;og:description&quot; content=&quot;&quot; /&gt;
-                        &lt;!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ --&gt;
+                        &lt;!-- Pełny adres strony, full url with http(s) ie. https://andrzej-jablonski-project.github.io/Notatnik-frontendu --&gt;
                         &lt;meta property=&quot;og:url&quot; content=&quot;&quot; /&gt;
-                        &lt;!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. --&gt;
-                        &lt;meta property=&quot;og:image&quot; content=&quot;https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png&quot; /&gt;
-                        &lt;link rel=&quot;manifest&quot; href=&quot;manifest.json&quot;&gt;
-                        &lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot;&gt;
-                        &lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;192x192&quot; href=&quot;assets/pwa/icons/icon-192x192.png&quot;&gt;
-                        &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;assets/pwa/icons/icon-192x192.png&quot;&gt; - ikona strony.
-                    </code>
-                </pre>
+                        &lt;!-- Obrazek strony, full url to the image with http(s) ie. https://andrzej-jablonski-project.github.io/Notatnik-frontendu/img/fb.png. Facebook suggests at least 1200 x 630. --&gt;
+                        &lt;meta property=&quot;og:image&quot; content=&quot;https://andrzej-jablonski-project.github.io/Notatnik-frontendu/img/cover.png&quot; /&gt;
+                        &lt;!-- Ikona strony. --&gt;
+                        &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;assets/pwa/icons/icon-192x192.png&quot;&gt;
+                        </code>
+                    </pre>
+                    <a href="http://ogp.me/" class="section__link">http://ogp.me/</a>
+                    <a href="https://developers.facebook.com/tools/debug/"
+                        class="section__link">https://developers.facebook.com/tools/debug/</a>
                 </section>
             </div>
         </article>

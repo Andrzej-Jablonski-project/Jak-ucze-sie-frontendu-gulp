@@ -98,7 +98,16 @@
                     </ul>
                 </a></li>
             <li class="menu__item"><a class="menu__link" href="eight.html"><strong class="strong__header">ósmy
-                        tydzień</strong></a></li>
+                        tydzień</strong>
+                    <ul class="menu__description">
+                        <li class="menu__item">Przejścia</li>
+                        <li class="menu__item">Animacje</li>
+                        <li class="menu__item">SVG</li>
+                        <li class="menu__item">Head</li>
+                        <li class="menu__item">WCAG</li>
+                        <li class="menu__item">PWA</li>
+                    </ul>
+                </a></li>
             <li class="menu__item"><a class="menu__link" href="ninth.html"><strong class="strong__header">dziewiąty
                         tydzień</strong></a></li>
             <li class="menu__item"><a class="menu__link" href="tenth.html"><strong class="strong__header">dziesiąty
@@ -117,18 +126,19 @@
             <header class="article__nav">
                 <nav class="article__menu">
                     <ul class="article__list">
+                        <li class="article__item"><a class="article__link" href="#transition">Przejścia</a></li>
                         <li class="article__item"><a class="article__link" href="#animation">Animacje</a></li>
                         <li class="article__item"><a class="article__link" href="#svg">SVG</a></li>
-                        <li class="article__item"><a class="article__link" href="#head">head</a></li>
+                        <li class="article__item"><a class="article__link" href="#head">Head</a></li>
                         <li class="article__item"><a class="article__link" href="#wcag">WCAG</a></li>
+                        <li class="article__item"><a class="article__link" href="#pwa">PWA</a></li>
                     </ul>
                 </nav>
             </header>
             <h2 class="article__header">Ósmy tydzień nauki</h2>
             <div class="wrapper">
-                <section class="section" id="animation">
-                    <h3 class="section__header">Animacje i przejścia</h3>
-                    <p class="section__paragraph"><strong>Przejścia:</strong></p>
+                <section class="section" id="transition">
+                    <h3 class="section__header">Przejścia</h3>
                     <code class="section__code">transition: name duration timing-function delay
                     </code>
                     <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition"
@@ -151,7 +161,9 @@
                     </code>
                     <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform"
                         class="section__link">https://developer.mozilla.org/en-US/docs/Web/CSS/transform</a>
-                    <p class="section__paragraph"><strong>Animacje:</strong></p>
+                </section>
+                <section class="section" id="animation">
+                    <h3 class="section__header">Animacje</h3>
                     <p class="section__paragraph"><strong>animation: @keyframes duration | timing-function | delay |
                             iteration-count | direction | fill-mode | play-state | name</strong> - wykorzystanie
                         animacji</p>
@@ -240,6 +252,18 @@
                     <a href="http://colorsafe.co/" class="section__link">http://colorsafe.co/</a>
                     <a href="https://www.w3.org/WAI/standards-guidelines/aria/"
                         class="section__link">https://www.w3.org/WAI/standards-guidelines/aria/</a>
+                </section>
+                <section class="section" id="pwa">
+                    <h3 class="section__header">PWA</h3>
+                    <p class="section__paragraph"><strong>PWA (Progressive Web Apps)</strong> - Technologia pozwalająca
+                        naśladować stronie www tradycyjną aplikację. Potrafi działać w trybie offline.</p>
+                    <p class="section__paragraph"><strong>manifest.json</strong> - plik konfiguracyjny PWA</p>
+                    <p class="section__paragraph">Service Worker - mechanizm pozwalający na korzystanie z aplikacji
+                        webowej w trybie offline.</p>
+                    <a href="https://app-manifest.firebaseapp.com/"
+                        class="section__link">https://app-manifest.firebaseapp.com/</a>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API"
+                        class="section__link">https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API</a>
                 </section>
             </div>
         </article>

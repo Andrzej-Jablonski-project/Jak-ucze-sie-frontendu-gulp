@@ -785,6 +785,12 @@ body {
 }
 
 // others
+code[class*=language-],
+pre[class*=language-] {
+  margin: 16px;
+  white-space: pre-line;
+}
+
 .image {
   display: block;
   width: 100%;

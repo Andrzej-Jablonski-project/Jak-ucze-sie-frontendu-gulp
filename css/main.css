@@ -507,7 +507,7 @@ body {
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
-  z-index: 3; }
+  z-index: 4; }
 
 .menuButton:hover {
   cursor: pointer; }
@@ -595,7 +595,7 @@ body {
       -ms-transform: translateX(-100%);
           transform: translateX(-100%);
   padding: 2rem;
-  z-index: 2; }
+  z-index: 3; }
   @media (min-width: 1366px) {
     .menu__header {
       text-align: center;

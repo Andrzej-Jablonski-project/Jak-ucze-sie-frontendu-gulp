@@ -71,8 +71,7 @@ gulp.task("sass", () => {
     .pipe(
       postcss([
         autoprefixer({
-          grid: true,
-          browsers: ["> 5%", "last 4 versions"]
+          grid: true
         })
       ])
     )

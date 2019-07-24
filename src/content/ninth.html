@@ -127,7 +127,8 @@
                     <ul class="article__list">
                         <li class="article__item"><a class="article__link" href="#api">API</a></li>
                         <li class="article__item"><a class="article__link" href="#css">CSS</a></li>
-
+                        <li class="article__item"><a class="article__link" href="#js">JS</a></li>
+                        <li class="article__item"><a class="article__link" href="#typography">Typografia</a></li>
                     </ul>
                 </nav>
             </header>
@@ -199,6 +200,55 @@
                                                  }                             
                             </code>
                         </pre>
+                </section>
+                <section class="section" id="js">
+                    <h3 class="section__header">JS</h3>
+                    <p class="section__paragraph"><strong>Hoisting</strong> - to przenoszenie deklaracji funkcji i
+                        zmiennych na początek naszego kodu, a właściwie na początek zakresu.</p>
+                    <div class="section__resp-container">
+                        <iframe class="section__resp-iframe" src="https://www.youtube.com/embed/9E5a6j8IIn4"
+                            allow="encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <p class="section__paragraph"><strong>Use strict</strong> - zakres reguł, które muszą zostać
+                        przestrzegane w kodzie. Pomaga w unikaniu wielu błędów. Zalecane używanie.</p>
+                    <p class="section__paragraph"><strong>Destrukturyzacja</strong> - wyciąganie "zmiennych" z obiektów
+                        i tablic do zewnętrznych zmiennych.</p>
+                    <div class="section__resp-container">
+                        <iframe class="section__resp-iframe" src="https://www.youtube.com/embed/eA2YRceiDwk?start=354"
+                            allow="encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <p class="section__paragraph"><strong>...spread operator</strong> przykład:</p>
+                    <pre class="data-pre data-pre--white-space">
+                        <code class="language-js section__code">
+                            const person = {
+                                name: "andrzej",
+                                age: 22
+                            }
+                            const home = {
+                                size: "big",
+                                color: "gray"
+                            }
+                            
+                            const personHome = {
+                                ...person,
+                                ...home
+                            }       
+                        </code>
+                    </pre>
+                    <pre class="data-pre data-pre--white-space">
+                        <code class="language-js section__code">
+                            const sum = (a, b, c) => {
+                                return a+b+c
+                            }
+                             const numbers = [2,8,5];
+                             console.log(sum(...numbers));
+                        </code>
+                    </pre>
+                </section>
+                <section class="section" id="typography">
+                    <h3 class="section__header">Typografia, jednostki</h3>
+                    <p class="section__paragraph"><strong>Hoisting</strong> - to przenoszenie deklaracji funkcji i
+
                 </section>
             </div>
         </article>

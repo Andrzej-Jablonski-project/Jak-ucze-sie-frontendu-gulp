@@ -288,7 +288,7 @@ body {
     @media (min-width: 1366px) {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      grid-gap: 8px;
+      // grid-gap: 8px;
     }
   }
 
@@ -333,11 +333,12 @@ body {
       flex-direction: column;
       width: 250px;
       height: 200px;
+      margin: 4px;
+      padding: 10px;
       border: 1px solid black;
       text-decoration: none;
       text-transform: none;
       color: black;
-      padding: 10px;
       transition: background-color .2s linear;
     }
   }

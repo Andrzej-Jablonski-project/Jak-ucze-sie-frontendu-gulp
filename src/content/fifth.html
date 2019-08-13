@@ -179,8 +179,10 @@
                             <li><strong>number</strong> - do wprowadzania liczb</li>
                             <li><strong>tel</strong> - do numeru telefonu</li>
                             <li><strong>email</strong> - adres email</li>
-                            <li><strong>range</strong> - wprowadzenie wartości liczbowej z danego przedziału<br><code
-                                    class="card__code">&lt;input type="range" min="0" max="100" step="5"&gt;</code>
+                            <li><strong>range</strong> - wprowadzenie wartości liczbowej z danego przedziału<br>
+                                <pre
+                                    class="data-pre data-pre--white-space"><code
+                                    class="language-html card__code">&lt;input type="range" min="0" max="100" step="5"&gt;</code></pre>
                             </li>
                             <li><strong>password</strong> - do wprowadzania haseł</li>
                             <li><strong>file</strong> - wybór pliku</li>
@@ -227,10 +229,12 @@
                             <li><strong>grid-column-gap</strong> - odstęp między elementami w kontekście kolumny</li>
                             <li><strong>grid-row-gap</strong> - odstęp między elementami w kontekście wierszy</li>
                             <li><strong>grid-template-areas</strong> - umieszczanie elementów za pomocą nazwanych
-                                obszarów <code class="card__code">grid-template-areas:"header header header" <br>
-                                    "content . menu" <br>
+                                obszarów
+                                <pre class="data-pre data-pre--white-space"><code class="language-css card__code">grid-template-areas:"header header header"
+                                    "content . menu"
                                     "footer footer footer";
-                                </code></li>
+                                </code></pre>
+                            </li>
                         </ul>
                         <p class="card__paragraph">Grid item</p>
                         <ul class="card__list">
@@ -266,12 +270,12 @@
                     </p>
                     <p class="section__paragarph"><strong>and / not / ,</strong> - operatory
                     </p>
-                    <code class="section__code">@media screen and (min-width: 812px) and (orientation: landscape){ <br>
-                        .header { <br>
-                        font-size: 1rem; <br>
-                        padding: 8px; <br>
-                        } <br>
-                        <br>}</code>
+                    <pre class="data-pre data-pre--white-space">
+                    <code class="language-css section__code">@media screen and (min-width: 812px) and (orientation: landscape){
+                        .header {
+                        font-size: 1rem;
+                        padding: 8px; 
+                        } </code></pre>
                 </section>
                 <section class="section" id="event">
                     <h3 class="section__header">Event</h3>
@@ -289,14 +293,17 @@
                             href="https://developer.mozilla.org/en-US/docs/Web/Events#Mouse_events">https://developer.mozilla.org/en-US/docs/Web/Events#Mouse_events</a>
                     </section>
                     <p class="section__paragraph">Przykłady:</p>
-                    <code class="section__code">function nameFunction() { <br>
-                        console.log('dajesz klika'); <br>
-                        } <br><br>
+                    <pre class="data-pre data-pre--white-space">
+                    <code class="language-js section__code">function nameFunction() {
+                        console.log('dajesz klika');
+                        }
+
                         element.addEventListener('click', nameFunction);
-                    </code>
-                    <code class="section__code">element.addEventListener('click', (<strong>e</strong>) => { <br>
-                        console.log('dajesz klika'); <br>
-                        })</code>
+                    </code></pre>
+                    <pre class="data-pre data-pre--white-space">
+                    <code class="language-js section__code">element.addEventListener('click', (<strong>e</strong>) => {
+                        console.log('dajesz klika');
+                        })</code></pre>
                     <p class="section__paragraph"><strong>e</strong> = Event</p>
                     <a class="section__link"
                         href="https://developer.mozilla.org/en-US/docs/Web/API/Event">https://developer.mozilla.org/en-US/docs/Web/API/Event</a>

@@ -151,8 +151,9 @@
             <div class="wrapper">
                 <section class="section" id="transition">
                     <h3 class="section__header">Przejścia</h3>
-                    <code class="section__code">transition: name duration timing-function delay
-                    </code>
+                    <pre class="data-pre data-pre--white-space">
+                    <code class="language-css section__code">transition: name duration timing-function delay
+                    </code></pre>
                     <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition"
                         class="section__link">https://developer.mozilla.org/en-US/docs/Web/CSS/transition</a>
                     <div class="section__resp-container">
@@ -167,10 +168,11 @@
                     <p class="section__paragraph">Nie animujemy właściwości position <strong>top, right, bottom,
                             left</strong>.
                         Do zmian stanu, pozycji elementu używamy <strong>transform</strong>.</p>
-                    <code class="section__code">transform:rotate() <br>
-                        transform:scale() <br>
-                        transform:translate() <br>
-                    </code>
+                    <pre class="data-pre data-pre--white-space">
+                    <code class="language-css section__code">transform:rotate()
+                        transform:scale()
+                        transform:translate()
+                    </code></pre>
                     <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform"
                         class="section__link">https://developer.mozilla.org/en-US/docs/Web/CSS/transform</a>
                 </section>
@@ -179,13 +181,31 @@
                     <p class="section__paragraph"><strong>animation: @keyframes duration | timing-function | delay |
                             iteration-count | direction | fill-mode | play-state | name</strong> - wykorzystanie
                         animacji</p>
-                    <code class="section__code">animation: backgroundChange 3s ease-in 1s infinite reverse both
-                        running;</code>
+                    <pre class="data-pre data-pre--white-space">
+                    <code class="language-css section__code">animation: backgroundChange 3s ease-in 1s infinite reverse both
+                        running;</code></pre>
                     <p class="section__paragraph">Definiowanie animacji:</p>
-                    <code class="section__code">@keyframes backgroundChange { <br> from { <br> background: red; <br> }
-                        <br> to { <br> background: green; <br> } <br>}</code>
-                    <code class="section__code">@keyframes backgroundChange { <br> 0% { <br> background: red; <br> }
-                        <br> 50% { <br> background: green; <br> } <br>100% { <br> background: blue; <br> } <br>}</code>
+                    <pre class="data-pre data-pre--white-space">
+                    <code class="language-css section__code">@keyframes backgroundChange { 
+                        from { 
+                            background: red; 
+                            }
+                        to { 
+                            background: green; 
+                            }
+                        }</code></pre>
+                    <pre class="data-pre data-pre--white-space">
+                    <code class="language-css section__code">@keyframes backgroundChange { 
+                        0% { 
+                            background: red; 
+                            }
+                        50% { 
+                            background: green; 
+                            } 
+                        100% { 
+                             background: blue; 
+                             }
+                        }</code></pre>
                     <div class="section__resp-container">
                         <iframe class="section__resp-iframe" src="https://www.youtube.com/embed/FNmv5uh3ni4"
                             allow="encrypted-media" allowfullscreen></iframe>

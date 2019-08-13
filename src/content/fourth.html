@@ -212,42 +212,63 @@
                     </table>
 
                     <p class="section__paragraph">Instrukcja warunkowa</p>
-                    <code class="section__code">if (warunek){<br>blok kodu <br>gdy warunek jest prawdziwy (true), to kod
-                        się wykona <br> }</code>
+                    <pre class="data-pre data-pre--white-space">
+                    <code class="language-js section__code">if (warunek){
+                        blok kodu, gdy warunek jest prawdziwy (true), to kod się wykona
+                    }</code></pre>
                     <p class="section__paragraph">AND - wszystkie warunki muszą być true</p>
-                    <code class="section__code">if (warunek && warunek){<br>blok kodu <br>gdy wszystkie warunki są
-                        prawdziwe (true), to kod się wykona <br> }</code>
+                    <pre class="data-pre data-pre--white-space">
+                    <code class="language-js section__code">if (warunek && warunek){
+                        gdy wszystkie warunki są prawdziwe (true), to kod się wykona
+                    }</code></pre>
                     <p class="section__paragraph">OR - przynajmniej jeden warunek ma być true</p>
-                    <code class="section__code">if (warunek || warunek){<br>blok kodu <br>gdy przynajmniej jeden warunek
-                        jest prawdziwy (true), to kod się wykona <br> }</code>
+                    <pre class="data-pre data-pre--white-space">
+                    <code class="language-js section__code">if (warunek || warunek){
+                        gdy przynajmniej jeden warunek jest prawdziwy (true), to kod się wykona
+                    }</code></pre>
                     <p class="section__paragraph">NOT - odwraca wartość wyrażenia logicznego</p>
-                    <code class="section__code">if (!(warunek)){<br>!false => true <br>
-                        !true => false <br>
-                        blok kodu <br>gdy warunek jest prawdziwy (true),
-                        to kod się wykona <br> }</code>
+                    <pre class="data-pre data-pre--white-space">
+                    <code class="language-js section__code">if (!(warunek)){
+                        !false => true
+                        !true => false
+                        blok kodu, gdy warunek jest prawdziwy (true), to kod się wykona
+                    }</code></pre>
                     <p class="section__paragraph">else</p>
-                    <code class="section__code">if (warunek) { <br>
-                        // wykonaj kod jeśli true <br>
-                        } else { <br>
-                        // wykonaj kod jeśli false <br>
+                    <pre class="data-pre data-pre--white-space">
+                    <code class="language-js section__code">if (warunek) {
+                        wykonaj kod jeśli true
+                        } else {
+                        wykonaj kod jeśli false
                         }
-                    </code>
+                    </code></pre>
                     <p class="section__paragraph">else if</p>
-                    <code class="section__code">if (warunek) { <br>
-                        // wykonaj kod jeśli true, jeśli false przejdź do następnego if <br>
-                        } else if (warunek) { <br>
-                        // wykonaj kod jeśli true <br>
+                    <pre class="data-pre data-pre--white-space">
+                    <code class="language-js section__code">if (warunek) {
+                        wykonaj kod jeśli true, jeśli false przejdź do następnego if
+                        } else if (warunek) { 
+                        wykonaj kod jeśli true <br>
                         }
-                    </code>
+                    </code></pre>
                     <p class="section__paragraph">Zapis skrócony</p>
-                    <code class="section__code">(zmienna1 > zmienna2) ? console.log('true') : console.log('false')
-                        <br> <br>(warunek) ? kod wykonuje gdy warunek jest true : kod wykonuje gdy warunek jest false
-                    </code>
+                    <pre class="data-pre data-pre--white-space">
+                    <code class="language-js section__code">(zmienna1 > zmienna2) ? console.log('true') : console.log('false')
+                        
+                        (warunek) ? kod wykonuje gdy warunek jest true : kod wykonuje gdy warunek jest false
+                    </code></pre>
                     <p class="section__paragraph">Switch - przełącznik</p>
-                    <code class="section__code">const fruit = 'banana'; <br>
-                        switch (fruit) { <br> case apple: <br>console.log(kod się nie wykona); <br>break; <br> case
-                        banana: <br>console.log(kod się wykona); <br>break; <br>default: <br> console.log(kod się wykona
-                        tylko wtedy, gdy żadne z powyższych warunków nie zostaną spełnione); <br>}</code>
+                    <pre class="data-pre data-pre--white-space">
+                    <code class="language-js section__code">const fruit = 'banana';
+
+                        switch (fruit) {
+                        case apple: 
+                        console.log(kod się nie wykona);
+                        break; 
+                        case banana: 
+                        console.log(kod się wykona); 
+                        break; 
+                        default: 
+                        console.log(kod się wykona tylko wtedy, gdy żadne z powyższych warunków nie zostaną spełnione);
+                        }</code></pre>
                     <section class="card">
                         <h4 class="card__header">Troszkę logicznego śmiechu :)</h4>
                         <a class="card__link"
@@ -266,14 +287,16 @@
                             </ul>
                         </section>
                         <p class="section__paragrapf">Stworzenie funkcji</p>
-                        <code class="section__code">function calculate(x) { <br>
-                            x = x + 5; <br>
-                            console.log(x); <br>
-                            return x*8; <br>
+                        <pre class="data-pre data-pre--white-space">
+                        <code class="language-js section__code">function calculate(x) {
+                            x = x + 5;
+                            console.log(x);
+                            return x*8;
                             }
-                        </code>
+                        </code></pre>
                         <p class="section__paragrapf">Wywołanie funkcji</p>
-                        <code class="section__code">calculate(5);</code>
+                        <pre class="data-pre data-pre--white-space">
+                        <code class="language-js section__code">calculate(5);</code></pre>
                         <section class="card">
                             <h4 class="card__header">Po co funkcje?</h4>
                             <ul class="card__list">
@@ -284,13 +307,15 @@
                             </ul>
                         </section>
                         <p class="section__paragrph">(Fat) arrow functions - funkcja strzałkowa</p>
-                        <code class="section__code">const calculate = (x) => { <br>
-                            x = x + 5; <br>
-                            return x*8; <br>
+                        <pre class="data-pre data-pre--white-space">
+                        <code class="language-js section__code">const calculate = (x) => {
+                            x = x + 5;
+                            return x*8;
                             }
-                        </code>
+                        </code></pre>
                         <p class="section__paragrph">Skrócony zapis</p>
-                        <code class="section__code">const calculate = x => (x+5)*8 <br></code>
+                        <pre class="data-pre data-pre--white-space">
+                        <code class="language-js section__code">const calculate = x => (x+5)*8</code></pre>
                         <section class="card">
                             <h4 class="card__header">Funkcja strzałkowa</h4>
                             <ul class="card__list">
@@ -360,12 +385,13 @@
                     <p class="section__paragraph">Każda przeglądarka posiada swoje style domyślne. Normalizację i
                         reset stosujemy, żeby te style były wszędzie takie same.</p>
                     <p class="section__paragrph">Przykładowy reset:</p>
-                    <code class="section__code">* { <br>
-                        margin:0; <br>
-                        padding: 0; <br>
-                        box-sizing: border box; <br>
+                    <pre class="data-pre data-pre--white-space">
+                    <code class="language-css section__code">* {
+                        margin:0;
+                        padding: 0;
+                        box-sizing: border box;
                         }
-                    </code>
+                    </code></pre>
                     <p class="section__paragraph">Plik normalizacji: <a class="section__link"
                             href="https://necolas.github.io/normalize.css/">https://necolas.github.io/normalize.css/</a>
                     </p>

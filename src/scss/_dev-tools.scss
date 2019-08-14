@@ -1,0 +1,224 @@
+@mixin section {
+    padding-top: 86px;
+    margin: 0 16px 40px 16px;
+}
+
+@mixin list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 50px 50px;
+    list-style-type: none;
+    padding: 0;
+
+}
+
+@mixin item {
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+
+}
+
+@mixin item-before {
+    content: " </>";
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    transform: rotate(15deg);
+    background: -webkit-linear-gradient(#eee, #333);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 80px;
+    font-weight: 600;
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    transform: translateY(90px);
+    transition: transform .3s ease;
+}
+
+@mixin link {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 250px;
+    padding: 16px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    color: black;
+    background: #FFFFEA;
+}
+
+@mixin title {
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+@mixin title-before {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    margin-bottom: 8px;
+    background: #06C847;
+    border-radius: 8px
+}
+
+.section-read {
+    @include section;
+
+    &__list {
+        @include list;
+
+    }
+
+    &__item {
+        @include item;
+
+        &:hover {
+            &::before {
+                transform: translateY(0) rotate(15deg);
+            }
+        }
+
+        &::before {
+            @include item-before;
+        }
+    }
+
+    &__link {
+        @include link;
+    }
+
+    &__title {
+        @include title;
+        min-height: 40px;
+
+        &::before {
+            @include title-before;
+        }
+    }
+}
+
+.section-doc {
+    @include section;
+
+    &__list {
+        @include list;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-gap: 50px 30px;
+
+    }
+
+    &__item {
+        @include item;
+
+        &:hover {
+            &::before {
+                transform: translateY(0) rotate(15deg);
+            }
+        }
+
+        &::before {
+            @include item-before;
+        }
+    }
+
+    &__link {
+        @include link;
+    }
+
+    &__title {
+        @include title;
+        min-height: 40px;
+
+        &::before {
+            @include title-before;
+            background: #653CAD;
+        }
+    }
+}
+
+.section-tools {
+    @include section;
+
+    &__list {
+        @include list;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-gap: 50px 30px;
+
+    }
+
+    &__item {
+        @include item;
+
+        &:hover {
+            &::before {
+                transform: translateY(0) rotate(15deg);
+            }
+        }
+
+        &::before {
+            @include item-before;
+        }
+    }
+
+    &__link {
+        @include link;
+    }
+
+    &__title {
+        @include title;
+        min-height: 40px;
+
+        &::before {
+            @include title-before;
+            background: #2251CC;
+        }
+    }
+}
+
+.section-watch {
+    @include section;
+
+    &__list {
+        @include list;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-gap: 50px 30px;
+
+    }
+
+    &__item {
+        @include item;
+
+        &:hover {
+            &::before {
+                transform: translateY(0) rotate(15deg);
+            }
+        }
+
+        &::before {
+            @include item-before;
+        }
+    }
+
+    &__link {
+        @include link;
+    }
+
+    &__title {
+        @include title;
+        min-height: 40px;
+
+        &::before {
+            @include title-before;
+            background: #ffa07a;
+        }
+    }
+}

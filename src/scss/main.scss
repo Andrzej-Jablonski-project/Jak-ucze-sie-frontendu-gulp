@@ -3,6 +3,7 @@
 @import "_prism";
 @import "_dev-tools";
 @import "_check-list";
+@import "_game";
 @import url('https://fonts.googleapis.com/css?family=Rubik:400,700&display=swap&subset=latin-ext');
 
 // keyframes
@@ -125,6 +126,10 @@ html {
 
 // body
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
   font-family: 'Rubik', sans-serif;
   background: #FFFFEA;
   background-size: 20px 20px;

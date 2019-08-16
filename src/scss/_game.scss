@@ -63,8 +63,8 @@
 
 @mixin title {
     margin-bottom: 30px;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 22px;
+    font-weight: 500;
 }
 
 @mixin title-before {
@@ -87,6 +87,11 @@
 
     &__header {
         @include header;
+
+        @media (min-width:1184px) {
+            font-size: 32px;
+            line-height: 44px;
+        }
     }
 
     &__list {
@@ -100,6 +105,10 @@
 
     &__link {
         @include link;
+
+        @media(min-width:1184px) {
+            min-height: 264px;
+        }
 
         &:hover {
             &::before {
@@ -147,5 +156,10 @@
 
     &__description {
         @include description;
+
+        @media(min-width: 1184px) {
+            font-size: 18px;
+            line-height: 32px;
+        }
     }
 }

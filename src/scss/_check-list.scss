@@ -27,10 +27,6 @@
     list-style-type: none;
 }
 
-@mixin list-tablet {
-    column-count: 2;
-}
-
 @mixin item {
     position: relative;
     top: 0;
@@ -61,6 +57,11 @@
 .section-checkList {
     &__header {
         @include header;
+
+        @media (min-width:1184px) {
+            font-size: 32px;
+            line-height: 44px;
+        }
     }
 }
 
@@ -73,6 +74,10 @@
 
     &__list {
         @include list;
+
+        @media (min-width: 1024px) {
+            column-count: 2;
+        }
     }
 
     &__item {
@@ -86,6 +91,11 @@
 
     &__link {
         @include link;
+
+        @media(min-width: 1184px) {
+            font-size: 18px;
+            line-height: 40px;
+        }
     }
 }
 
@@ -98,6 +108,10 @@
 
     &__list {
         @include list;
+
+        @media (min-width: 1024px) {
+            column-count: 2;
+        }
     }
 
 
@@ -113,6 +127,11 @@
 
     &__link {
         @include link;
+
+        @media(min-width: 1184px) {
+            font-size: 18px;
+            line-height: 40px;
+        }
     }
 }
 
@@ -125,6 +144,10 @@
 
     &__list {
         @include list;
+
+        @media (min-width: 1024px) {
+            column-count: 2;
+        }
     }
 
 
@@ -140,6 +163,11 @@
 
     &__link {
         @include link;
+
+        @media(min-width: 1184px) {
+            font-size: 18px;
+            line-height: 40px;
+        }
     }
 }
 
@@ -152,6 +180,10 @@
 
     &__list {
         @include list;
+
+        @media (min-width: 1024px) {
+            column-count: 2;
+        }
     }
 
 
@@ -167,6 +199,11 @@
 
     &__link {
         @include link;
+
+        @media(min-width: 1184px) {
+            font-size: 18px;
+            line-height: 40px;
+        }
     }
 }
 
@@ -179,6 +216,10 @@
 
     &__list {
         @include list;
+
+        @media (min-width: 1024px) {
+            column-count: 2;
+        }
     }
 
 
@@ -194,6 +235,11 @@
 
     &__link {
         @include link;
+
+        @media(min-width: 1184px) {
+            font-size: 18px;
+            line-height: 40px;
+        }
     }
 }
 
@@ -206,6 +252,10 @@
 
     &__list {
         @include list;
+
+        @media (min-width: 1024px) {
+            column-count: 2;
+        }
     }
 
 
@@ -221,5 +271,10 @@
 
     &__link {
         @include link;
+
+        @media(min-width: 1184px) {
+            font-size: 18px;
+            line-height: 40px;
+        }
     }
 }

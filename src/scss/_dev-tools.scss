@@ -13,7 +13,7 @@
 
 @mixin list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     grid-gap: 50px 50px;
     list-style-type: none;
     padding: 0;
@@ -87,6 +87,11 @@
 
     &__header {
         @include header;
+
+        @media (min-width:1184px) {
+            font-size: 32px;
+            line-height: 44px;
+        }
     }
 
     &__list {
@@ -110,6 +115,10 @@
 
     &__link {
         @include link;
+
+        @media(min-width:1184px) {
+            min-height: 300px;
+        }
     }
 
     &__title {
@@ -123,6 +132,11 @@
 
     &__description {
         @include description;
+
+        @media(min-width: 1184px) {
+            font-size: 18px;
+            line-height: 32px;
+        }
     }
 }
 
@@ -131,11 +145,16 @@
 
     &__header {
         @include header;
+
+        @media (min-width:1184px) {
+            font-size: 32px;
+            line-height: 44px;
+        }
     }
 
     &__list {
         @include list;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
         grid-gap: 50px 30px;
 
     }
@@ -156,6 +175,10 @@
 
     &__link {
         @include link;
+
+        @media(min-width:1184px) {
+            min-height: 300px;
+        }
     }
 
     &__title {
@@ -170,6 +193,11 @@
 
     &__description {
         @include description;
+
+        @media(min-width: 1184px) {
+            font-size: 18px;
+            line-height: 32px;
+        }
     }
 }
 
@@ -178,11 +206,16 @@
 
     &__header {
         @include header;
+
+        @media (min-width:1184px) {
+            font-size: 32px;
+            line-height: 44px;
+        }
     }
 
     &__list {
         @include list;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
         grid-gap: 50px 30px;
 
     }
@@ -217,6 +250,11 @@
 
     &__description {
         @include description;
+
+        @media(min-width: 1184px) {
+            font-size: 18px;
+            line-height: 32px;
+        }
     }
 }
 
@@ -225,11 +263,16 @@
 
     &__header {
         @include header;
+
+        @media (min-width:1184px) {
+            font-size: 32px;
+            line-height: 44px;
+        }
     }
 
     &__list {
         @include list;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
         grid-gap: 50px 30px;
 
     }
@@ -264,5 +307,10 @@
 
     &__description {
         @include description;
+
+        @media(min-width: 1184px) {
+            font-size: 18px;
+            line-height: 32px;
+        }
     }
 }

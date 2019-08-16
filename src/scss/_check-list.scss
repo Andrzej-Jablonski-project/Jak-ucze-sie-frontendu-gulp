@@ -1,12 +1,34 @@
 @mixin card {
+    display: block;
+}
+
+@mixin header {
+    margin: 0 0 68px;
+    padding: 80px 0 12px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    border-bottom: 2px solid #CBD2D9;
+}
+
+@mixin subheader {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+@mixin card-tablet {
     display: grid;
     grid-template-columns: 400px 1fr;
 }
 
 @mixin list {
-    column-count: 2;
     padding: 0;
     list-style-type: none;
+}
+
+@mixin list-tablet {
+    column-count: 2;
 }
 
 @mixin item {
@@ -36,8 +58,18 @@
     line-height: 2.25rem;
 }
 
+.section-checkList {
+    &__header {
+        @include header;
+    }
+}
+
 .html-css {
     @include card;
+
+    &__header {
+        @include subheader;
+    }
 
     &__list {
         @include list;
@@ -59,6 +91,10 @@
 
 .accessibility {
     @include card;
+
+    &__header {
+        @include subheader;
+    }
 
     &__list {
         @include list;
@@ -83,6 +119,10 @@
 .security {
     @include card;
 
+    &__header {
+        @include subheader;
+    }
+
     &__list {
         @include list;
     }
@@ -105,6 +145,10 @@
 
 .opt-image {
     @include card;
+
+    &__header {
+        @include subheader;
+    }
 
     &__list {
         @include list;
@@ -129,6 +173,10 @@
 .performance {
     @include card;
 
+    &__header {
+        @include subheader;
+    }
+
     &__list {
         @include list;
     }
@@ -151,6 +199,10 @@
 
 .other {
     @include card;
+
+    &__header {
+        @include subheader;
+    }
 
     &__list {
         @include list;

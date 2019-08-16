@@ -4,7 +4,8 @@
 @import "_dev-tools";
 @import "_check-list";
 @import "_game";
-@import url('https://fonts.googleapis.com/css?family=Rubik:400,700&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,500,700&display=swap&subset=latin-ext');
 
 // keyframes
 
@@ -131,6 +132,7 @@ body {
   justify-content: space-between;
   min-height: 100vh;
   font-family: 'Rubik', sans-serif;
+  color: #171F3F;
   background: #FFFFEA;
   background-size: 20px 20px;
   background-image: linear-gradient(to right, #e9f0f0 1px, transparent 1px), linear-gradient(to bottom, #e9f0f0 1px, transparent 1px);
@@ -393,14 +395,20 @@ body {
   }
 }
 
+//main
+.main {
+  margin: 4rem 1rem 0 1rem;
+}
+
 // hero
 .hero {
-  padding: 8px;
   text-align: center;
 
   &__header {
-    font-size: 2rem;
-    padding: 40px;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 36px;
+    padding: 0 2rem;
     text-align: center;
     animation: 200ms 500ms linear both heroHeader;
     margin: 0;
@@ -445,7 +453,8 @@ body {
 // article
 .article {
   &__header {
-    padding: 8px;
+    margin: 44px 0 60px 0;
+    font-weight: 500;
     text-align: center;
 
     @media (min-width: 1366px) {
@@ -544,7 +553,8 @@ body {
   }
 
   &__paragraph {
-    padding: 16px;
+    margin: 0;
+    line-height: 26px;
     text-align: center;
 
     @media (min-width: 1366px) {
@@ -565,12 +575,22 @@ body {
   }
 }
 
+//wrapper
+.wrapper {
+  margin: 40px 0 80px 0;
+}
+
 // section
 .section {
-  margin: 8px;
+  padding-top: 80px;
 
   &__header {
-    margin: 8px;
+    margin: 0 0 8px;
+    padding-bottom: 12px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 32px;
+    border-bottom: 2px solid #CBD2D9;
 
     @media (min-width: 1366px) {
       margin: 8px 0;
@@ -578,6 +598,8 @@ body {
   }
 
   &__paragraph {
+    line-height: 26px;
+
     @media (min-width: 1366px) {
       margin: 8px 0;
 
@@ -590,6 +612,13 @@ body {
   }
 
   &__list {
+    line-height: 26px;
+
+    &--no-style {
+      padding: 0;
+      list-style-type: none;
+    }
+
     @media (min-width: 1366px) {
       margin: 10px 10px 10px 30px;
     }
@@ -611,19 +640,27 @@ body {
 
   &__link {
     display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-left: 24px;
     width: fit-content;
-    margin: 8px;
     word-break: break-all;
     color: #0b862a;
-    background: url('../assets/external-link.png') no-repeat 100% 0;
-    background-size: 16px 16px;
-    text-decoration: none;
+    font-weight: 500;
+    text-decoration-line: underline;
+    line-height: 26px;
     outline: none;
-    padding-right: 19px;
 
-    &:hover {
-      color: #807F75;
-      text-decoration: underline;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: 0;
+      width: 16px;
+      height: 16px;
+      background: url('../assets/img/link.svg') no-repeat 100% 0;
+      background-size: cover;
     }
   }
 
@@ -644,7 +681,7 @@ body {
   }
 
   @media (min-width: 1366px) {
-    padding-top: 86px;
+    padding-top: 80px;
     margin-bottom: 40px;
   }
 }
@@ -652,35 +689,50 @@ body {
 // card
 
 .card {
+  margin: 48px 0;
   padding: 8px;
-  margin: 8px;
-  border: 1px solid black;
+  border: 2px solid #CBD2D9;
   border-radius: 4px;
 
   &__header {
-    color: #4ECC6F;
+    font-size: 22px;
+    font-weight: 500;
+    color: #52606D;
   }
 
   &__link {
     display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-left: 24px;
     width: fit-content;
-    margin: 8px;
     word-break: break-all;
     color: #0b862a;
-    background: url('../assets/external-link.png') no-repeat 100% 0;
-    background-size: 16px 16px;
-    text-decoration: none;
+    font-weight: 500;
+    text-decoration-line: underline;
+    line-height: 26px;
     outline: none;
-    padding-right: 19px;
 
-    &:hover {
-      color: #807F75;
-      text-decoration: underline;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: 0;
+      width: 16px;
+      height: 16px;
+      background: url('../assets/img/link.svg') no-repeat 100% 0;
+      background-size: cover;
     }
   }
 
   &__list {
     word-break: break-word;
+
+    &--no-style {
+      padding: 0;
+      list-style-type: none;
+    }
   }
 
   &__code {
@@ -797,15 +849,14 @@ body {
 // others
 code[class*=language-],
 pre[class*=language-] {
-  margin: 16px;
+  margin: 16px 0;
   white-space: pre-line;
 }
 
 .image {
   display: block;
   width: 100%;
-  margin: 8px auto;
-  padding: 8px;
+  margin: 16px auto;
 
   &--size {
     width: 20%;

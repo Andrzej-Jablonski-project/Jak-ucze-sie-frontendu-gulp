@@ -1,7 +1,16 @@
 @mixin section {
-    padding-top: 86px;
-    margin: 0 16px 40px 16px;
+    padding-top: 80px;
 }
+
+@mixin header {
+    margin: 0 0 68px;
+    padding-bottom: 12px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    border-bottom: 2px solid #CBD2D9;
+}
+
 
 @mixin list {
     display: grid;
@@ -68,8 +77,17 @@
     border-radius: 8px
 }
 
+@mixin description {
+    color: #52606D;
+    line-height: 26px;
+}
+
 .game {
     @include section;
+
+    &__header {
+        @include header;
+    }
 
     &__list {
         @include list;
@@ -125,5 +143,9 @@
         &::before {
             @include title-before;
         }
+    }
+
+    &__description {
+        @include description;
     }
 }

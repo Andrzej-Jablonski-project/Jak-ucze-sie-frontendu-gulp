@@ -1,6 +1,14 @@
 @mixin section {
-    padding-top: 86px;
-    margin: 0 16px 40px 16px;
+    padding-top: 80px;
+}
+
+@mixin header {
+    margin: 0 0 68px;
+    padding-bottom: 12px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    border-bottom: 2px solid #CBD2D9;
 }
 
 @mixin list {
@@ -17,11 +25,10 @@
     top: 0;
     left: 0;
     overflow: hidden;
-
 }
 
 @mixin item-before {
-    content: " </>";
+    content: "</>";
     display: flex;
     justify-content: center;
     position: absolute;
@@ -56,8 +63,8 @@
 
 @mixin title {
     margin-bottom: 30px;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 22px;
+    font-weight: 500;
 }
 
 @mixin title-before {
@@ -70,8 +77,17 @@
     border-radius: 8px
 }
 
+@mixin description {
+    color: #52606D;
+    line-height: 26px;
+}
+
 .section-read {
     @include section;
+
+    &__header {
+        @include header;
+    }
 
     &__list {
         @include list;
@@ -104,10 +120,18 @@
             @include title-before;
         }
     }
+
+    &__description {
+        @include description;
+    }
 }
 
 .section-doc {
     @include section;
+
+    &__header {
+        @include header;
+    }
 
     &__list {
         @include list;
@@ -143,10 +167,18 @@
             background: #653CAD;
         }
     }
+
+    &__description {
+        @include description;
+    }
 }
 
 .section-tools {
     @include section;
+
+    &__header {
+        @include header;
+    }
 
     &__list {
         @include list;
@@ -182,10 +214,18 @@
             background: #2251CC;
         }
     }
+
+    &__description {
+        @include description;
+    }
 }
 
 .section-watch {
     @include section;
+
+    &__header {
+        @include header;
+    }
 
     &__list {
         @include list;
@@ -220,5 +260,9 @@
             @include title-before;
             background: #ffa07a;
         }
+    }
+
+    &__description {
+        @include description;
     }
 }

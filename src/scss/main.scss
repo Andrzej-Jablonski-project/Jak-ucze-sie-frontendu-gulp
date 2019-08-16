@@ -4,9 +4,7 @@
 @import "_dev-tools";
 @import "_check-list";
 @import "_game";
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap&subset=latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Rubik:400,500,700&display=swap&subset=latin-ext');
-
 // keyframes
 
 @keyframes line-off {
@@ -90,24 +88,24 @@
 @keyframes articleList-on {
   from {
     height: 0;
-    opacity: 0;
+    transform: scaleY(0)
   }
 
   to {
     height: auto;
-    opacity: 1;
+    transform: scaleY(1)
   }
 }
 
 @keyframes articleList-off {
   from {
     height: auto;
-    opacity: 1;
+    transform: scaleY(1)
   }
 
   to {
     height: 0;
-    opacity: 0;
+    transform: scaleY(0)
   }
 }
 
@@ -136,6 +134,15 @@ body {
   background: #FFFFEA;
   background-size: 20px 20px;
   background-image: linear-gradient(to right, #e9f0f0 1px, transparent 1px), linear-gradient(to bottom, #e9f0f0 1px, transparent 1px);
+  scrollbar-width: none;
+  /* For Firefox */
+  -ms-overflow-style: none;
+
+  /* For Internet Explorer and Edge */
+  &::-webkit-scrollbar {
+    width: 0;
+    /* For Chrome, Safari, and Opera */
+  }
 }
 
 /*button menu */
@@ -154,7 +161,7 @@ body {
   border: 3px solid #1a1a1a;
   background: #fefefe;
   transform: rotate(90deg);
-  z-index: 4;
+  z-index: 5;
 }
 
 .menuButton {
@@ -226,7 +233,19 @@ body {
   background: #8B7871;
   transform: translateX(-100%);
   padding: 2rem;
-  z-index: 3;
+  z-index: 4;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 100%;
+    background-image: linear-gradient(45deg, black 25%, #FFC16E 25%, #FFC16E 50%, black 50%, black 75%, #FFC16E 75%, #FFC16E 100%);
+    background-image: linear-gradient(45deg, black 25%, #FFC16E 25%, #FFC16E 50%, black 50%, black 75%, #FFC16E 75%, #FFC16E 100%);
+    background-size: 56.57px 56.57px;
+  }
 
   &__header {
     @media (min-width: 1366px) {
@@ -237,8 +256,9 @@ body {
 
   &__section {
     display: none;
+    color: black;
 
-    @media (min-width: 904px) {
+    @media (min-width: 1024px) and (orientation: portrait) {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -252,46 +272,45 @@ body {
     }
 
     @media (min-width: 1366px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: 900px;
       font-size: 1.1rem;
     }
   }
 
   &__list {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 8px;
+    padding: 0;
 
-    @media (min-width: 568px) and (orientation: landscape) {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-
-    @media (min-width: 640px) and (orientation: landscape) {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
+    @media (min-width: 320px) and (orientation: landscape) {
+      column-count: 2;
     }
 
     @media (min-width: 850px) and (orientation: landscape) {
       margin: 0;
     }
 
-    @media (min-width: 1366px) {
+    @media (min-width: 768px) and (orientation: portrait) {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
       // grid-gap: 8px;
+    }
+
+    @media (min-width: 860px) {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      width: 100%
+    }
+
+    @media (min-width: 860px) {
+      max-width: 1000px;
     }
   }
 
   &__item {
-    margin-top: 1rem;
     list-style: none;
-
-    @media (min-width: 640px) and (orientation: landscape) {
-      margin: 1rem;
-    }
 
     @media (min-width: 1366px) {
       margin: 0;
@@ -307,25 +326,46 @@ body {
     &:hover {
       color: rgba(255, 255, 234, 0.7);
 
-      @media (min-width: 1366px) {
+      @media (min-width: 768px) and (orientation: portrait) {
+        color: #1a1a1a;
+        background-color: rgba(0, 0, 0, 0.15);
+      }
+
+      @media (min-width: 860px) {
         color: #1a1a1a;
         background-color: rgba(0, 0, 0, 0.15);
       }
     }
 
+    @media (min-width: 320px) and (orientation: portrait) {
+      line-height: 36px;
+    }
+
+    @media (min-width: 568px) and (orientation: landscape) {
+      line-height: 36px;
+    }
+
     @media (min-width: 360px) and (orientation: portrait) {
-      font-size: 1.2rem;
+      line-height: 42px;
     }
 
-    @media (min-width: 640px) and (orientation: landscape) {
-      font-size: 1rem;
-    }
-
-    @media (min-width: 1366px) {
+    @media (min-width: 768px) and (orientation: portrait) {
       display: flex;
       flex-direction: column;
-      width: 250px;
-      height: 200px;
+      height: 210px;
+      margin: 4px;
+      padding: 10px;
+      border: 1px solid black;
+      text-decoration: none;
+      text-transform: none;
+      color: black;
+      transition: background-color .2s linear;
+    }
+
+    @media (min-width: 1024px) and (orientation: landscape) {
+      display: flex;
+      flex-direction: column;
+      height: 210px;
       margin: 4px;
       padding: 10px;
       border: 1px solid black;
@@ -339,13 +379,25 @@ body {
   &__description {
     display: none;
 
-    @media (min-width: 1366px) {
+    @media (min-width: 768px) and (orientation: portrait) {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
-      height: auto;
-      line-height: 1.4rem;
+      font-size: 14px;
+      line-height: 1.2rem;
+      padding: 0;
+      margin: 10px;
+      transform: none;
+    }
+
+    @media (min-width: 1024px) and (orientation: landscape) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      font-size: 14px;
+      line-height: 1.2rem;
       padding: 0;
       margin: 10px;
       transform: none;
@@ -353,13 +405,6 @@ body {
   }
 
   &__text {
-    @media (min-width: 904px) {
-      max-width: 800px;
-      width: 100%;
-      margin: 20px auto;
-      text-align: center;
-    }
-
     @media (min-width: 1024px) {
       max-width: 800px;
       width: 100%;
@@ -376,6 +421,10 @@ body {
   @media (min-width: 904px) {
     align-items: center;
   }
+}
+
+.strong__header {
+  font-weight: 500;
 }
 
 //main
@@ -472,7 +521,7 @@ body {
     align-items: center;
     height: 0;
     margin-top: 0;
-    padding: 8px;
+    padding: 16px 8px 32px;
     list-style: none;
     background: #ffa07a;
     overflow: hidden;
@@ -486,19 +535,41 @@ body {
       width: 100%;
       height: auto;
       padding: 0;
-      margin: 10px;
+      margin: 10px 0;
       transform: none;
+
+      &::before {
+        content: "";
+        display: none;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 20px;
+      background-image: linear-gradient(45deg, black 25%, #FFC16E 25%, #FFC16E 50%, black 50%, black 75%, #FFC16E 75%, #FFC16E 100%);
+      background-image: linear-gradient(45deg, black 25%, #FFC16E 25%, #FFC16E 50%, black 50%, black 75%, #FFC16E 75%, #FFC16E 100%);
+      background-size: 56.57px 56.57px;
     }
 
     &--on {
       height: auto;
       transform: scaleY(1);
+      // animation-name: articleList-on;
+      // animation-duration: .6s;
+      // animation-fill-mode: both;
     }
 
     &--off {
-      animation-name: articleList-off;
-      animation-duration: .6s;
-      animation-fill-mode: both;
+      height: 0;
+      transform: scaleY(0);
+      // animation-name: articleList-off;
+      // animation-duration: .6s;
+      // animation-fill-mode: both;
     }
 
     &::after {
@@ -529,7 +600,8 @@ body {
     padding: 8px;
     text-align: center;
     transition: background-color .2s linear;
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 500;
     line-height: 36px;
 
     &:hover {
@@ -558,7 +630,7 @@ body {
   &__button {
     left: 0;
     transform: rotate(0deg);
-    z-index: 2;
+    z-index: 3;
 
     @media (min-width: 1184px) {
       display: none;
@@ -877,6 +949,7 @@ code[class*=language-],
 pre[class*=language-] {
   margin: 16px 0;
   white-space: pre-line;
+  word-break: break-word;
 
   @media(min-width: 1184px) {
     margin: 16px 0 16px 24px;

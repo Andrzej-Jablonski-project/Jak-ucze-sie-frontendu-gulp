@@ -18,14 +18,16 @@ if ('serviceWorker' in navigator) {
 
 // main menu
 const menuButton = document.querySelector('.menuButton');
+const mainMenu = document.querySelector('.menu');
+const line = document.querySelector('.menuButton__line--js');
 
 menuButton.addEventListener('click', (e) => {
-	const line = document.querySelector('.menuButton__line--js');
-	const mainMenu = document.querySelector('.menu');
+
 	if (!menuButton.classList.contains('menuButton__switch--off') & !menuButton.classList.contains('menuButton__switch--on')) {
 		menuButton.classList.add('menuButton__switch--on');
 		line.classList.add('menuButton__line--on');
 		mainMenu.classList.add('menu-on');
+
 	} else {
 		line.classList.toggle('menuButton__line--off');
 		line.classList.toggle('menuButton__line--on');
@@ -36,22 +38,29 @@ menuButton.addEventListener('click', (e) => {
 	}
 });
 const articleButton = document.querySelector('.article__button');
+const articleMenu = document.querySelector('.article__list');
+const articleButtonLine = document.querySelector('.article__button__line--js');
 
-articleButton.addEventListener('click', (e) => {
-	const articleButtonLine = document.querySelector('.article__button__line--js');
-	const articleMenu = document.querySelector('.article__list');
-	if (!articleButton.classList.contains('menuButton__switch--off') & !articleButton.classList.contains('menuButton__switch--on')) {
-		articleButton.classList.add('menuButton__switch--on');
-		articleButtonLine.classList.add('menuButton__line--on');
-		articleMenu.classList.add('article__list--on');
-	} else {
-		articleButtonLine.classList.toggle('menuButton__line--off');
-		articleButtonLine.classList.toggle('menuButton__line--on');
-		articleButton.classList.toggle('menuButton__switch--on');
-		articleButton.classList.toggle('menuButton__switch--off');
-		articleMenu.classList.toggle('article__list--on');
-	}
-});
+if (articleMenu) {
+	articleButton.addEventListener('click', (e) => {
+
+		if (!articleButton.classList.contains('menuButton__switch--off') & !articleButton.classList.contains('menuButton__switch--on')) {
+			articleButton.classList.add('menuButton__switch--on');
+			articleButtonLine.classList.add('menuButton__line--on');
+			articleMenu.classList.add('article__list--on');
+		} else {
+			articleButtonLine.classList.toggle('menuButton__line--off');
+			articleButtonLine.classList.toggle('menuButton__line--on');
+			articleButton.classList.toggle('menuButton__switch--on');
+			articleButton.classList.toggle('menuButton__switch--off');
+			articleMenu.classList.toggle('article__list--on');
+			articleMenu.classList.toggle('article__list--off');
+		}
+	});
+} else {
+
+	articleButton.style.display = "none";
+}
 // main menu
 /* PrismJS 1.16.0
 https://prismjs.com/download.html#themes=prism-funky&languages=markup+css+clike+javascript */

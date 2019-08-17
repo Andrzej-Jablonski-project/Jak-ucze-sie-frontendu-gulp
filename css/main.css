@@ -1151,6 +1151,10 @@ pre[class*="language-"] {
       background-image: url(../assets/img/garden.webp); }
     .game__link--cover4::before {
       background-image: url(../assets/img/codewars.webp); }
+    .game__link--cover5::before {
+      background-image: url(../assets/img/coding-games.webp); }
+    .game__link--cover6::before {
+      background-image: url(../assets/img/spoj.webp); }
   .game__title {
     margin-bottom: 30px;
     font-size: 22px;

@@ -22,7 +22,7 @@ menuButton.addEventListener('click', (e) => {
 	}
 });
 const articleButton = document.querySelector('.article__button');
-const articleMenu = document.querySelector('.article__list');
+const articleMenu = document.querySelector('.article__nav');
 const articleButtonLine = document.querySelector('.article__button__line--js');
 
 if (articleMenu) {
@@ -31,14 +31,14 @@ if (articleMenu) {
 		if (!articleButton.classList.contains('menuButton__switch--off') & !articleButton.classList.contains('menuButton__switch--on')) {
 			articleButton.classList.add('menuButton__switch--on');
 			articleButtonLine.classList.add('menuButton__line--on');
-			articleMenu.classList.add('article__list--on');
+			articleMenu.classList.add('article__nav--on');
 		} else {
 			articleButtonLine.classList.toggle('menuButton__line--off');
 			articleButtonLine.classList.toggle('menuButton__line--on');
 			articleButton.classList.toggle('menuButton__switch--on');
 			articleButton.classList.toggle('menuButton__switch--off');
-			articleMenu.classList.toggle('article__list--on');
-			articleMenu.classList.toggle('article__list--off');
+			articleMenu.classList.toggle('article__nav--on');
+			articleMenu.classList.toggle('article__nav--off');
 		}
 	});
 } else {

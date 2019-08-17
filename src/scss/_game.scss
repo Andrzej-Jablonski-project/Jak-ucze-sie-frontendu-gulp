@@ -147,6 +147,18 @@
                 background-image: url(../assets/img/codewars.webp);
             }
         }
+
+        &--cover5 {
+            &::before {
+                background-image: url(../assets/img/coding-games.webp);
+            }
+        }
+
+        &--cover6 {
+            &::before {
+                background-image: url(../assets/img/spoj.webp);
+            }
+        }
     }
 
     &__title {

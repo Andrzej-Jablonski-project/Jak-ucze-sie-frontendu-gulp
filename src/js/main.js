@@ -45,6 +45,16 @@ if (articleMenu) {
 
 	articleButton.style.display = "none";
 }
+//defer video iframe
+function loadVideo() {
+	const vidDefer = document.getElementsByTagName('iframe');
+	for (let i = 0; i < vidDefer.length; i++) {
+		if (vidDefer[i].getAttribute('data-src')) {
+			vidDefer[i].setAttribute('src', vidDefer[i].getAttribute('data-src'));
+		}
+	}
+}
+window.onload = loadVideo;
 // main menu
 /* PrismJS 1.16.0
 https://prismjs.com/download.html#themes=prism-funky&languages=markup+css+clike+javascript */

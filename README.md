@@ -10,6 +10,11 @@ Podczas jakiejkolwiek nauki każdy z nas robi notatki. Jako że obecnie uczę si
 - BEM
 - SASS (składnia SCSS)
 ## Automatyzacja
+[WTF gulp starter kit](https://github.com/maciejkorsan/wtf-gulp-starter)
+
+`git clone https://github.com/maciejkorsan/wtf-gulp-starter`
+## Kolorowanie składni
+[Prism](https://prismjs.com/)
 ### WTF gulp starter kit
 - live server
 - kompilacja SASS do CSS

@@ -1766,7 +1766,8 @@ body {
   transition: -webkit-transform 0.3s ease;
   -o-transition: transform 0.3s ease;
   transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease; }
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  z-index: 1; }
   @media (min-width: 1184px) {
     .article__nav {
       position: -webkit-sticky;
@@ -1775,8 +1776,7 @@ body {
       left: 0;
       -webkit-transform: none;
           -ms-transform: none;
-              transform: none;
-      z-index: 2; } }
+              transform: none; } }
   .article__nav--on {
     -webkit-transform: translateY(0);
         -ms-transform: translateY(0);

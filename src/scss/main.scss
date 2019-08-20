@@ -506,13 +506,13 @@ body {
     width: 100%;
     transform: translateY(-100%);
     transition: transform 0.3s ease;
+    z-index: 1;
 
     @media (min-width: 1184px) {
       position: sticky;
       top: 0;
       left: 0;
       transform: none;
-      z-index: 2;
     }
 
     &--on {

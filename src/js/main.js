@@ -4,13 +4,15 @@
 const menuButton = document.querySelector('.menuButton');
 const mainMenu = document.querySelector('.menu');
 const line = document.querySelector('.menuButton__line--js');
+const body = document.querySelector('body');
+
 
 menuButton.addEventListener('click', (e) => {
-
 	if (!menuButton.classList.contains('menuButton__switch--off') & !menuButton.classList.contains('menuButton__switch--on')) {
 		menuButton.classList.add('menuButton__switch--on');
 		line.classList.add('menuButton__line--on');
 		mainMenu.classList.add('menu-on');
+		body.classList.add('no-scroll-bar');
 
 	} else {
 		line.classList.toggle('menuButton__line--off');
@@ -19,6 +21,7 @@ menuButton.addEventListener('click', (e) => {
 		menuButton.classList.toggle('menuButton__switch--off');
 		mainMenu.classList.toggle('menu-on');
 		mainMenu.classList.toggle('menu-off');
+		body.classList.toggle('no-scroll-bar');
 	}
 });
 const articleButton = document.querySelector('.article__button');

@@ -200,6 +200,20 @@
                 <section class="section" id="js">
                     <h3 class="section__header">logika w JS</h3>
                     <section class="card">
+                        <h4 class="card__header">Operatory</h4>
+                        <p class="section__paragraph"><strong>delete</strong> - operator delete służy do usuwania właściwości z obiektu lub pustego miejsca w tablicy. Jeżeli żądana operacja jest poprawna (dopuszczalna), zwraca wartość <strong>true</strong>, w przeciwnym wypadku <strong>false</strong>.</p>
+                        <pre class="data-pre data-pre--white-space">
+                            <code class="language-js section__code">const obj = {
+                                a: 555
+                            }
+                            delete obj.a; //true
+                            </code></pre>
+                        <a class="card__link"
+                        href="http://webmaster.helion.pl/starocie/jsplanet/7.html">http://webmaster.helion.pl/starocie/jsplanet/7.html</a>
+                        <a class="card__link"
+                            href="https://kursjs.pl/kurs/super-podstawy/operatory.php">https://kursjs.pl/kurs/super-podstawy/operatory.php</a>
+                    </section>
+                    <section class="card">
                         <h4 class="card__header">Operatory porównania</h4>
                         <ul class="card__list">
                             <li><strong>></strong> - lewa strona większa od prawej</li>
@@ -257,8 +271,32 @@
                             </tr>
                         </tfoot>
                     </table>
-
-                    <p class="section__paragraph">Instrukcja warunkowa</p>
+                  <p class="section__paragraph"><strong>Konwersja typów (niejawna), operator porównania</strong></p>
+                    <section class="card">
+                        <h4 class="card__header">Lista zaskakujących przypadków</h4>
+                        <ul class="card__list">
+                            <li><strong>"0" == false;</strong> //true -- OJEJ!</li>
+                            <li><strong>false == 0;</strong> &nbsp;&nbsp;&nbsp;&nbsp;//true -- OJEJ!</li>
+                            <li><strong>false == "";</strong> &nbsp;&nbsp;&nbsp;//true -- OJEJ!</li>
+                            <li><strong>false == [];</strong> &nbsp;&nbsp;&nbsp;//true -- OJEJ!</li>
+                            <li><strong>"" == 0;</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//true -- OJEJ!</li>
+                            <li><strong>"" == [];</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//true -- OJEJ!</li>
+                            <li><strong>0 == [];</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//true -- OJEJ!</li>
+                        </ul>
+                        <a class="card__link"
+                        href="https://dorey.github.io/JavaScript-Equality-Table/">Tabele przedstawiające różne porównania</a>
+                    </section>
+                    <p class="section__paragraph">Aby w przyszłości uniknąć problemów, stosując operator porównania, trzymaj się poniższych dwóch zasad.</p>
+                    <ul class="card__list">
+                        <li>Jeżeli po dowolnej stronie operatora porównania może wystąpić wartość boolowska (true lub false), w żadnym wypadku <strong>NIGDY</strong> nie używaj operatora ==.</li>
+                        <li>Jeżeli po dowolnej stronie operatora porównania może wystąpić wartość [], "" lub 0, na poważnie rozważ zrezygnowanie ze stosowania operatora ==.</li>
+                    </ul>
+                    <section class="card">
+                        <h4 class="card__header">Pierwszeństwo operatorów</h4>
+                        <a class="card__link"
+                        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence</a>
+                    </section>
+                    <p class="section__paragraph"><strong>Instrukcja warunkowa</strong></p>
                     <pre class="data-pre data-pre--white-space">
                     <code class="language-js section__code">if (warunek){
                         blok kodu, gdy warunek jest prawdziwy (true), to kod się wykona

@@ -297,6 +297,7 @@
                         href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence</a>
                     </section>
                     <p class="section__paragraph"><strong>Instrukcja warunkowa</strong></p>
+                    <p class="section__paragraph">W konstrukcjach warunkowych warunek przyjmuję wartości boloowskie true lub false. W przypadku gdy w wyniku działania wyrażenia otrzyma inny typ danych, to zajdzie niejawna konwersja danych. Zobacz powyższą tabelę Truthy and Falsy.</p>
                     <pre class="data-pre data-pre--white-space">
                     <code class="language-js section__code">if (warunek){
                         blok kodu, gdy warunek jest prawdziwy (true), to kod się wykona
@@ -329,10 +330,22 @@
                     <p class="section__paragraph">else if</p>
                     <pre class="data-pre data-pre--white-space">
                     <code class="language-js section__code">if (warunek) {
-                        wykonaj kod jeśli true, jeśli false przejdź do następnego if
-                        } else if (warunek) { 
-                        wykonaj kod jeśli true <br>
-                        }
+                            wykonaj kod jeśli true, jeśli false przejdź do następnego if
+                            } 
+                        else {
+                                //brak kodu
+                            }
+                        if (warunek) { 
+                            wykonaj kod jeśli true <br>
+                            }
+    
+                            // Jest to skrócona forma zapisu
+                            
+                            if (warunek) {
+                                wykonaj kod jeśli true, jeśli false przejdź do następnego if
+                                } else if (warunek) { 
+                                wykonaj kod jeśli true <br>
+                                }
                     </code></pre>
                     <p class="section__paragraph">Zapis skrócony</p>
                     <pre class="data-pre data-pre--white-space">

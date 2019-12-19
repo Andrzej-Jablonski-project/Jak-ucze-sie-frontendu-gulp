@@ -1,320 +1,315 @@
 @mixin section {
-    padding-top: 80px;
+  padding-top: 80px;
 }
 
 @mixin header {
-    margin: 0 0 68px;
-    padding-bottom: 12px;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 32px;
-    border-bottom: 2px solid #CBD2D9;
+  margin: 0 0 68px;
+  padding-bottom: 12px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  border-bottom: 2px solid #cbd2d9;
 }
 
 @mixin list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    grid-gap: 50px 50px;
-    list-style-type: none;
-    padding: 0;
-
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-gap: 50px 50px;
+  list-style-type: none;
+  padding: 0;
 }
 
 @mixin item {
-    position: relative;
-    top: 0;
-    left: 0;
-    overflow: hidden;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: hidden;
 }
 
 @mixin item-before {
-    content: "</>";
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    right: 10px;
-    bottom: 0;
-    transform: translateY(90px) rotate(15deg);
-    margin-top: 8px;
-    background: -webkit-linear-gradient(#eee, #333);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 80px;
-    font-weight: 600;
-    transition: transform .3s ease;
-    opacity: 0.3;
+  content: "</>";
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  transform: translateY(90px) rotate(15deg);
+  margin-top: 8px;
+  background: -webkit-linear-gradient(#eee, #333);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 80px;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+  opacity: 0.3;
 }
 
 @mixin link {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    min-height: 250px;
-    padding: 16px;
-    border: 1px solid grey;
-    border-radius: 4px;
-    font-size: 16px;
-    line-height: 20px;
-    text-decoration: none;
-    color: black;
-    background: #FFFFEA;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 250px;
+  padding: 16px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: black;
+  background: #ffffea;
 }
 
 @mixin title {
-    margin-bottom: 30px;
-    font-size: 22px;
-    font-weight: 500;
+  margin-bottom: 30px;
+  font-size: 22px;
+  font-weight: 500;
 }
 
 @mixin title-before {
-    content: "";
-    display: block;
-    width: 80px;
-    height: 4px;
-    margin-bottom: 8px;
-    background: #06C847;
-    border-radius: 8px
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  margin-bottom: 8px;
+  background: #06c847;
+  border-radius: 8px;
 }
 
 @mixin description {
-    color: #52606D;
-    line-height: 26px;
+  color: #52606d;
+  line-height: 26px;
 }
 
 .section-read {
-    @include section;
+  @include section;
 
-    &__header {
-        @include header;
+  &__header {
+    @include header;
 
-        @media (min-width:1184px) {
-            font-size: 32px;
-            line-height: 44px;
-        }
+    @media (min-width: 1184px) {
+      font-size: 32px;
+      line-height: 44px;
+    }
+  }
+
+  &__list {
+    @include list;
+
+    @media (min-width: 360px) {
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    }
+  }
+
+  &__item {
+    @include item;
+
+    &:hover {
+      &::before {
+        transform: translateY(0) rotate(15deg);
+      }
     }
 
-    &__list {
-        @include list;
-
-        @media(min-width: 360px) {
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-        }
-
+    &::before {
+      @include item-before;
     }
+  }
 
-    &__item {
-        @include item;
+  &__link {
+    @include link;
 
-        &:hover {
-            &::before {
-                transform: translateY(0) rotate(15deg);
-            }
-        }
-
-        &::before {
-            @include item-before;
-        }
+    @media (min-width: 1184px) {
+      min-height: 300px;
     }
+  }
 
-    &__link {
-        @include link;
+  &__title {
+    @include title;
+    min-height: 40px;
 
-        @media(min-width:1184px) {
-            min-height: 300px;
-        }
+    &::before {
+      @include title-before;
     }
+  }
 
-    &__title {
-        @include title;
-        min-height: 40px;
+  &__description {
+    @include description;
 
-        &::before {
-            @include title-before;
-        }
+    @media (min-width: 1184px) {
+      font-size: 18px;
+      line-height: 32px;
     }
-
-    &__description {
-        @include description;
-
-        @media(min-width: 1184px) {
-            font-size: 18px;
-            line-height: 32px;
-        }
-    }
+  }
 }
 
 .section-doc {
-    @include section;
+  @include section;
 
-    &__header {
-        @include header;
+  &__header {
+    @include header;
 
-        @media (min-width:1184px) {
-            font-size: 32px;
-            line-height: 44px;
-        }
+    @media (min-width: 1184px) {
+      font-size: 32px;
+      line-height: 44px;
+    }
+  }
+
+  &__list {
+    @include list;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 50px 28px;
+  }
+
+  &__item {
+    @include item;
+
+    &:hover {
+      &::before {
+        transform: translateY(0) rotate(15deg);
+      }
     }
 
-    &__list {
-        @include list;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        grid-gap: 50px 30px;
-
+    &::before {
+      @include item-before;
     }
+  }
 
-    &__item {
-        @include item;
+  &__link {
+    @include link;
 
-        &:hover {
-            &::before {
-                transform: translateY(0) rotate(15deg);
-            }
-        }
-
-        &::before {
-            @include item-before;
-        }
+    @media (min-width: 1184px) {
+      min-height: 300px;
     }
+  }
 
-    &__link {
-        @include link;
+  &__title {
+    @include title;
+    min-height: 40px;
 
-        @media(min-width:1184px) {
-            min-height: 300px;
-        }
+    &::before {
+      @include title-before;
+      background: #653cad;
     }
+  }
 
-    &__title {
-        @include title;
-        min-height: 40px;
+  &__description {
+    @include description;
 
-        &::before {
-            @include title-before;
-            background: #653CAD;
-        }
+    @media (min-width: 1184px) {
+      font-size: 18px;
+      line-height: 32px;
     }
-
-    &__description {
-        @include description;
-
-        @media(min-width: 1184px) {
-            font-size: 18px;
-            line-height: 32px;
-        }
-    }
+  }
 }
 
 .section-tools {
-    @include section;
+  @include section;
 
-    &__header {
-        @include header;
+  &__header {
+    @include header;
 
-        @media (min-width:1184px) {
-            font-size: 32px;
-            line-height: 44px;
-        }
+    @media (min-width: 1184px) {
+      font-size: 32px;
+      line-height: 44px;
+    }
+  }
+
+  &__list {
+    @include list;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-gap: 50px 30px;
+  }
+
+  &__item {
+    @include item;
+
+    &:hover {
+      &::before {
+        transform: translateY(0) rotate(15deg);
+      }
     }
 
-    &__list {
-        @include list;
-        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-        grid-gap: 50px 30px;
-
+    &::before {
+      @include item-before;
     }
+  }
 
-    &__item {
-        @include item;
+  &__link {
+    @include link;
+  }
 
-        &:hover {
-            &::before {
-                transform: translateY(0) rotate(15deg);
-            }
-        }
+  &__title {
+    @include title;
+    min-height: 40px;
 
-        &::before {
-            @include item-before;
-        }
+    &::before {
+      @include title-before;
+      background: #2251cc;
     }
+  }
 
-    &__link {
-        @include link;
+  &__description {
+    @include description;
+
+    @media (min-width: 1184px) {
+      font-size: 18px;
+      line-height: 32px;
     }
-
-    &__title {
-        @include title;
-        min-height: 40px;
-
-        &::before {
-            @include title-before;
-            background: #2251CC;
-        }
-    }
-
-    &__description {
-        @include description;
-
-        @media(min-width: 1184px) {
-            font-size: 18px;
-            line-height: 32px;
-        }
-    }
+  }
 }
 
 .section-watch {
-    @include section;
+  @include section;
 
-    &__header {
-        @include header;
+  &__header {
+    @include header;
 
-        @media (min-width:1184px) {
-            font-size: 32px;
-            line-height: 44px;
-        }
+    @media (min-width: 1184px) {
+      font-size: 32px;
+      line-height: 44px;
+    }
+  }
+
+  &__list {
+    @include list;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-gap: 50px 30px;
+  }
+
+  &__item {
+    @include item;
+
+    &:hover {
+      &::before {
+        transform: translateY(0) rotate(15deg);
+      }
     }
 
-    &__list {
-        @include list;
-        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-        grid-gap: 50px 30px;
-
+    &::before {
+      @include item-before;
     }
+  }
 
-    &__item {
-        @include item;
+  &__link {
+    @include link;
+  }
 
-        &:hover {
-            &::before {
-                transform: translateY(0) rotate(15deg);
-            }
-        }
+  &__title {
+    @include title;
+    min-height: 40px;
 
-        &::before {
-            @include item-before;
-        }
+    &::before {
+      @include title-before;
+      background: #ffa07a;
     }
+  }
 
-    &__link {
-        @include link;
+  &__description {
+    @include description;
+
+    @media (min-width: 1184px) {
+      font-size: 18px;
+      line-height: 32px;
     }
-
-    &__title {
-        @include title;
-        min-height: 40px;
-
-        &::before {
-            @include title-before;
-            background: #ffa07a;
-        }
-    }
-
-    &__description {
-        @include description;
-
-        @media(min-width: 1184px) {
-            font-size: 18px;
-            line-height: 32px;
-        }
-    }
+  }
 }

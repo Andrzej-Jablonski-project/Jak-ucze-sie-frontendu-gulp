@@ -1,209 +1,326 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Notatnik frontendowca</title>
-    <meta name="description" content="Notatnik - projekt, który powstał podczas uczenia się podstaw frontendu." />
+    <meta
+      name="description"
+      content="Notatnik - projekt, który powstał podczas uczenia się podstaw frontendu."
+    />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Notatnik frontendowca" />
-    <meta property="og:description"
-        content="Notatnik - projekt, który powstał podczas uczenia się podstaw frontendu." />
-    <meta property="og:url" content="https://andrzej-jablonski-project.github.io/Notatnik-frontendu/index.html" />
-    <meta property="og:image"
-        content="https://andrzej-jablonski-project.github.io/Notatnik-frontendu/assets/img/cover.png" />
+    <meta
+      property="og:description"
+      content="Notatnik - projekt, który powstał podczas uczenia się podstaw frontendu."
+    />
+    <meta
+      property="og:url"
+      content="https://andrzej-jablonski-project.github.io/Notatnik-frontendu/index.html"
+    />
+    <meta
+      property="og:image"
+      content="https://andrzej-jablonski-project.github.io/Notatnik-frontendu/assets/img/cover.png"
+    />
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/pwa/icons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/pwa/icons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/pwa/icons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/pwa/icons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/pwa/icons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/pwa/icons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/pwa/icons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/pwa/icons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/pwa/icons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/pwa/icons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/pwa/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/pwa/icons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/pwa/icons/favicon-16x16.png">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="assets/pwa/icons/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <link href="css/main.css" rel="stylesheet" type="text/css">
-</head>
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="assets/pwa/icons/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="assets/pwa/icons/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="assets/pwa/icons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="assets/pwa/icons/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="assets/pwa/icons/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="assets/pwa/icons/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="assets/pwa/icons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="assets/pwa/icons/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/pwa/icons/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/pwa/icons/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/pwa/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="assets/pwa/icons/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/pwa/icons/favicon-16x16.png"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="assets/pwa/icons/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<body>
-    <button class="menuButton" aria-label="otwórz menu strony"><span
-            class="menuButton__line menuButton__line--js">|</span></button>
+  <body>
+    <button class="menuButton" aria-label="otwórz menu strony">
+      <span class="menuButton__line menuButton__line--js">|</span>
+    </button>
     <nav class="menu">
-        <section class="menu__section">
-            <h2 class="menu__header">Co to za miejsce?</h2>
-            <p class="menu__text">Podczas jakiejkolwiek nauki każdy z nas
-                robi notatki. Jako że obecnie uczę się programowania webowego, również postanowiłem notować, jednak w
-                formie cyfrowej. Takim sposobem szybciej zapamiętuję oraz utrwalam nową wiedzę. Dodatkowym atutem
-                takiego rozwiązania może być dostępność z każdego miejsca. Więc w razie potrzeby skorzystania z notatek
-                będzie to możliwe w sposób szybki i wygodny. Może też okazać się bardzo pomocny na początku w pracy. To
-                miejsce jest moim cyfrowym notatnikiem. </p>
-        </section>
-        <ul class="menu__list">
-            <li class="menu__item"><a class="menu__link" href="index.html"><strong class="strong__header">rozdział
-                        pierwszy</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">Warstwy</li>
-                        <li class="menu__item">HTML</li>
-                        <li class="menu__item">CSS</li>
-                        <li class="menu__item">Programowanie</li>
-                    </ul>
-                </a></li>
-            <li class="menu__item"><a class="menu__link" href="second.html"><strong class="strong__header">rozdział
-                        drugi</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">Organizacja nauki/pracy</li>
-                        <li class="menu__item">HTML - znaczniki i atrybuty</li>
-                        <li class="menu__item">CSS - Sposoby stylowania</li>
-                        <li class="menu__item">Działanie przeglądarki</li>
-                        <li class="menu__item">JavaScript</li>
-                        <li class="menu__item">Terminal</li>
-                    </ul>
-                </a></li>
-            <li class="menu__item"><a class="menu__link" href="third.html"><strong class="strong__header">rozdział
-                        trzeci</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">Git</li>
-                        <li class="menu__item">Box model</li>
-                        <li class="menu__item">BEM</li>
-                        <li class="menu__item">DOM</li>
-                    </ul>
-                </a></li>
-            <li class="menu__item"><a class="menu__link" href="fourth.html"><strong class="strong__header">rozdział
-                        czwarty</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">JavaScript</li>
-                        <li class="menu__item">Funkcja w JS</li>
-                        <li class="menu__item">Debugging</li>
-                        <li class="menu__item">Markup</li>
-                        <li class="menu__item">Normalizacja</li>
-                        <li class="menu__item">Flexbox</li>
-                        <li class="menu__item">Tło</li>
-                    </ul>
-                </a></li>
-            <li class="menu__item"><a class="menu__link" href="fifth.html"><strong class="strong__header">rozdział
-                        piąty</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">Formularze</li>
-                        <li class="menu__item">Grid</li>
-                        <li class="menu__item">Media queries</li>
-                        <li class="menu__item">Event</li>
-                        <li class="menu__item">Hamburger</li>
-                    </ul>
-                </a></li>
-            <li class="menu__item"><a class="menu__link" href="sixth.html"><strong class="strong__header">rozdział
-                        szósty</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">Obiekty</li>
-                        <li class="menu__item">Pseudo*</li>
-                        <li class="menu__item">SASS</li>
-                        <li class="menu__item">Node.js</li>
-                        <li class="menu__item">Starter kit</li>
-                    </ul>
-                </a></li>
-            <li class="menu__item"><a class="menu__link" href="seventh.html"><strong class="strong__header">rozdział
-                        siódmy</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">Prefiksy</li>
-                        <li class="menu__item">Google fonts</li>
-                        <li class="menu__item">Branche</li>
-                        <li class="menu__item">Markdown</li>
-                        <li class="menu__item">Tablice</li>
-                        <li class="menu__item">Pętle</li>
-                        <li class="menu__item">Dane</li>
-                    </ul>
-                </a></li>
-            <li class="menu__item"><a class="menu__link" href="eight.html"><strong class="strong__header">rozdział
-                        ósmy</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">Przejścia</li>
-                        <li class="menu__item">Animacje</li>
-                        <li class="menu__item">SVG</li>
-                        <li class="menu__item">Head</li>
-                        <li class="menu__item">WCAG</li>
-                        <li class="menu__item">PWA</li>
-                    </ul>
-                </a></li>
-            <li class="menu__item"><a class="menu__link" href="ninth.html"><strong class="strong__header">rozdział
-                        dziewiąty</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">API</li>
-                        <li class="menu__item">CSS</li>
-                        <li class="menu__item">JS</li>
-                        <li class="menu__item">Typografia</li>
-                    </ul>
-                </a></li>
-            <li class="menu__item"><a class="menu__link" href="tenth.html"><strong class="strong__header">rozdział
-                        dziesiąty</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">Multimedia</li>
-                        <li class="menu__item">Bootstrap</li>
-                        <li class="menu__item">Kombinatory</li>
-                    </ul>
-                </a></li>
-            <li class="menu__item"><a class="menu__link" href="dev-tools.html"><strong class="strong__header">Dev
-                        tools</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">Do poczytania</li>
-                        <li class="menu__item">Dokumentacja</li>
-                        <li class="menu__item">Narzędzia</li>
-                        <li class="menu__item">Do obejrzenia</li>
-                        <li class="menu__item">Lista frontendu</li>
-                    </ul>
-                </a></li>
-            <li class="menu__item"><a class="menu__link" href="game.html"><strong class="strong__header">Dev
-                        game</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">CODE COMBAT</li>
-                        <li class="menu__item">CSS Diner</li>
-                        <li class="menu__item">Flexbox Froggy</li>
-                        <li class="menu__item">Grid Garden</li>
-                        <li class="menu__item">Codewars</li>
-                        <li class="menu__item">...</li>
-                    </ul>
-                </a></li>
-        </ul>
+      <section class="menu__section">
+        <h2 class="menu__header">Co to za miejsce?</h2>
+        <p class="menu__text">
+          Podczas jakiejkolwiek nauki każdy z nas robi notatki. Jako że obecnie
+          uczę się programowania webowego, również postanowiłem notować, jednak
+          w formie cyfrowej. Takim sposobem szybciej zapamiętuję oraz utrwalam
+          nową wiedzę. Dodatkowym atutem takiego rozwiązania może być dostępność
+          z każdego miejsca. Więc w razie potrzeby skorzystania z notatek będzie
+          to możliwe w sposób szybki i wygodny. Może też okazać się bardzo
+          pomocny na początku w pracy. To miejsce jest moim cyfrowym
+          notatnikiem.
+        </p>
+      </section>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="menu__link" href="index.html"
+            ><strong class="strong__header">rozdział pierwszy</strong>
+            <ul class="menu__description">
+              <li class="menu__item">Warstwy</li>
+              <li class="menu__item">HTML</li>
+              <li class="menu__item">CSS</li>
+              <li class="menu__item">Programowanie</li>
+            </ul>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="second.html"
+            ><strong class="strong__header">rozdział drugi</strong>
+            <ul class="menu__description">
+              <li class="menu__item">Organizacja nauki/pracy</li>
+              <li class="menu__item">HTML - znaczniki i atrybuty</li>
+              <li class="menu__item">CSS - Sposoby stylowania</li>
+              <li class="menu__item">Działanie przeglądarki</li>
+              <li class="menu__item">JavaScript</li>
+              <li class="menu__item">Terminal</li>
+            </ul>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="third.html"
+            ><strong class="strong__header">rozdział trzeci</strong>
+            <ul class="menu__description">
+              <li class="menu__item">Git</li>
+              <li class="menu__item">Box model</li>
+              <li class="menu__item">BEM</li>
+              <li class="menu__item">DOM</li>
+            </ul>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="fourth.html"
+            ><strong class="strong__header">rozdział czwarty</strong>
+            <ul class="menu__description">
+              <li class="menu__item">JavaScript</li>
+              <li class="menu__item">Funkcja w JS</li>
+              <li class="menu__item">Debugging</li>
+              <li class="menu__item">Markup</li>
+              <li class="menu__item">Normalizacja</li>
+              <li class="menu__item">Flexbox</li>
+              <li class="menu__item">Tło</li>
+            </ul>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="fifth.html"
+            ><strong class="strong__header">rozdział piąty</strong>
+            <ul class="menu__description">
+              <li class="menu__item">Formularze</li>
+              <li class="menu__item">Grid</li>
+              <li class="menu__item">Media queries</li>
+              <li class="menu__item">Event</li>
+              <li class="menu__item">Hamburger</li>
+            </ul>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="sixth.html"
+            ><strong class="strong__header">rozdział szósty</strong>
+            <ul class="menu__description">
+              <li class="menu__item">Obiekty</li>
+              <li class="menu__item">Pseudo*</li>
+              <li class="menu__item">SASS</li>
+              <li class="menu__item">Node.js</li>
+              <li class="menu__item">Starter kit</li>
+            </ul>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="seventh.html"
+            ><strong class="strong__header">rozdział siódmy</strong>
+            <ul class="menu__description">
+              <li class="menu__item">Prefiksy</li>
+              <li class="menu__item">Google fonts</li>
+              <li class="menu__item">Branche</li>
+              <li class="menu__item">Markdown</li>
+              <li class="menu__item">Tablice</li>
+              <li class="menu__item">Pętle</li>
+              <li class="menu__item">Dane</li>
+            </ul>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="eight.html"
+            ><strong class="strong__header">rozdział ósmy</strong>
+            <ul class="menu__description">
+              <li class="menu__item">Przejścia</li>
+              <li class="menu__item">Animacje</li>
+              <li class="menu__item">SVG</li>
+              <li class="menu__item">Head</li>
+              <li class="menu__item">WCAG</li>
+              <li class="menu__item">PWA</li>
+            </ul>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="ninth.html"
+            ><strong class="strong__header">rozdział dziewiąty</strong>
+            <ul class="menu__description">
+              <li class="menu__item">API</li>
+              <li class="menu__item">CSS</li>
+              <li class="menu__item">JS</li>
+              <li class="menu__item">Typografia</li>
+            </ul>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="tenth.html"
+            ><strong class="strong__header">rozdział dziesiąty</strong>
+            <ul class="menu__description">
+              <li class="menu__item">Multimedia</li>
+              <li class="menu__item">Bootstrap</li>
+              <li class="menu__item">Kombinatory</li>
+            </ul>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="dev-tools.html"
+            ><strong class="strong__header">Dev tools</strong>
+            <ul class="menu__description">
+              <li class="menu__item">Do poczytania</li>
+              <li class="menu__item">Dokumentacja</li>
+              <li class="menu__item">Narzędzia</li>
+              <li class="menu__item">Do obejrzenia</li>
+              <li class="menu__item">Lista frontendu</li>
+            </ul>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="game.html"
+            ><strong class="strong__header">Dev game</strong>
+            <ul class="menu__description">
+              <li class="menu__item">CODE COMBAT</li>
+              <li class="menu__item">CSS Diner</li>
+              <li class="menu__item">Flexbox Froggy</li>
+              <li class="menu__item">Grid Garden</li>
+              <li class="menu__item">Codewars</li>
+              <li class="menu__item">...</li>
+            </ul>
+          </a>
+        </li>
+      </ul>
     </nav>
     <main class="main">
-        <header class="hero">
-            <h1 class="hero__header">Notatnik frontendowca</h1>
+      <header class="hero">
+        <h1 class="hero__header">Notatnik frontendowca</h1>
+      </header>
+      <article class="article">
+        <button
+          class="article__button article__button--position"
+          aria-label="otwórz menu sekcji"
+        >
+          <span class="menuButton__line article__button__line--js">|</span>
+        </button>
+        <header class="article__nav">
+          <nav class="article__menu">
+            <ul class="article__list">
+              <li class="article__item">
+                <a class="article__link" href="#prefixes">Prefiksy</a>
+              </li>
+              <li class="article__item">
+                <a class="article__link" href="#gfonts">Google fonts</a>
+              </li>
+              <li class="article__item">
+                <a class="article__link" href="#branche">Branche</a>
+              </li>
+              <li class="article__item">
+                <a class="article__link" href="#markdown">Markdown</a>
+              </li>
+              <li class="article__item">
+                <a class="article__link" href="#arrays">Tablice</a>
+              </li>
+              <li class="article__item">
+                <a class="article__link" href="#loops">Pętle</a>
+              </li>
+              <li class="article__item">
+                <a class="article__link" href="#data">Dane</a>
+              </li>
+            </ul>
+          </nav>
         </header>
-        <article class="article">
-            <button class="article__button article__button--position" aria-label="otwórz menu sekcji"><span
-                    class="menuButton__line article__button__line--js">|</span></button>
-            <header class="article__nav">
-                <nav class="article__menu">
-                    <ul class="article__list">
-                        <li class="article__item"><a class="article__link" href="#prefixes">Prefiksy</a></li>
-                        <li class="article__item"><a class="article__link" href="#gfonts">Google fonts</a></li>
-                        <li class="article__item"><a class="article__link" href="#branche">Branche</a></li>
-                        <li class="article__item"><a class="article__link" href="#markdown">Markdown</a></li>
-                        <li class="article__item"><a class="article__link" href="#arrays">Tablice</a></li>
-                        <li class="article__item"><a class="article__link" href="#loops">Pętle</a></li>
-                        <li class="article__item"><a class="article__link" href="#data">Dane</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <h2 class="article__header">Rozdział siódmy</h2>
-            <div class="wrapper">
-                <section class="section" id="prefixes">
-                    <h3 class="section__header">Prefiksy</h3>
-                    <p class="section__paragraph">Prefiksy, czyli przedrostki pozwalające na używanie nowych
-                        właściwości, funkcji CSS, które zostały dodane do przeglądarki w fazie eksperymentalnej.</p>
-                    <section class="card">
-                        <h4 class="card__header">Przykład dodania właściwości flexbox</h4>
-                        <pre class="data-pre data-pre--white-space">
+        <h2 class="article__header">Rozdział siódmy</h2>
+        <div class="wrapper">
+          <section class="section" id="prefixes">
+            <h3 class="section__header">Prefiksy</h3>
+            <p class="section__paragraph">
+              Prefiksy, czyli przedrostki pozwalające na używanie nowych
+              właściwości, funkcji CSS, które zostały dodane do przeglądarki w
+              fazie eksperymentalnej.
+            </p>
+            <section class="card">
+              <h4 class="card__header">Przykład dodania właściwości flexbox</h4>
+              <pre class="data-pre data-pre--white-space">
                         <code class="language-css card__code">
                             display: flex;
                             display: -webkit-box;
@@ -211,93 +328,117 @@
                             display: -moz-box;
                             display: -ms-flexbox;
                         </code></pre>
-                    </section>
-                    <a href="https://caniuse.com/" class="section__link">https://caniuse.com/</a>
-                    <a href="https://autoprefixer.github.io" class="section__link">https://autoprefixer.github.io</a>
-                </section>
-                <section class="section" id="gfonts">
-                    <h3 class="section__header">Google fonts</h3>
-                    <p class="section__paragraph">Google fonts - fonty od Google.</p>
-                    <p class="section__paragraph"> latin-extended - obsługa polskich znaków</p>
-                    <a href="https://fonts.google.com/" class="section__link">https://fonts.google.com/</a>
-                    <section class="card">
-                        <h4 class="card__header">Przykład zastosowania</h4>
-                        <p class="card__paragraph">Kod dodany do HTML</p>
-                        <pre class="data-pre data-pre--white-space">
+            </section>
+            <a href="https://caniuse.com/" class="section__link"
+              >https://caniuse.com/</a
+            >
+            <a href="https://autoprefixer.github.io" class="section__link"
+              >https://autoprefixer.github.io</a
+            >
+          </section>
+          <section class="section" id="gfonts">
+            <h3 class="section__header">Google fonts</h3>
+            <p class="section__paragraph">Google fonts - fonty od Google.</p>
+            <p class="section__paragraph">
+              latin-extended - obsługa polskich znaków
+            </p>
+            <a href="https://fonts.google.com/" class="section__link"
+              >https://fonts.google.com/</a
+            >
+            <section class="card">
+              <h4 class="card__header">Przykład zastosowania</h4>
+              <p class="card__paragraph">Kod dodany do HTML</p>
+              <pre class="data-pre data-pre--white-space">
                         <code class=" language-html card__code">
                             &lt;link href="https://fonts.googleapis.com/css?family=Rubik:400,700&display=swap&subset=latin-ext" rel="stylesheet"&gt;
                         </code></pre>
-                        <p class="card__paragraph">Kod dodany do CSS</p>
-                        <pre class="data-pre data-pre--white-space">
+              <p class="card__paragraph">Kod dodany do CSS</p>
+              <pre class="data-pre data-pre--white-space">
                         <code class="language-html card__code">
                             &lt;style&gt;
                             @import url('https://fonts.googleapis.com/css?family=Rubik:400,700&display=swap&subset=latin-ext');p
                             &lt;/style&gt;
                         </code></pre>
-                        <pre class="data-pre data-pre--white-space">
+              <pre class="data-pre data-pre--white-space">
                         <code class="language-css card__code">
                             .body {
                             font-family: 'Rubik', sans-serif;
                         }
                         </code></pre>
-                    </section>
-                </section>
-                <section class="section" id="branche">
-                    <h3 class="section__header">GIT: branche</h3>
-                    <p class="section__paragraph">Branche:</p>
-                    <ul class="section__list">
-                        <li>pozwalają na bezkarne testowanie</li>
-                        <li>służą do bardziej efektywnego rozwijania oprogramowania</li>
-                        <li>pozwalają na równoległą pracę</li>
-                        <li>zwiększają czytelność postępu prac nad projektem</li>
-                        <li>ułatwiają wypuszczanie rzeczy na świat</li>
-                    </ul>
-                    <p class="section__paragraph"><strong>git branch</strong> - wypisuje nazwy gałęzi</p>
-                    <p class="section__paragraph"><strong>git branch nazwabrancha</strong> - tworzy nową gałąź</p>
-                    <p class="section__paragraph"><strong>git checkout nazwabrancha</strong> - przełączanie między
-                        gałęziami</p>
-                    <p class="section__paragraph"><strong>git push --set-upstream origin nazwabrancha</strong> -
-                        stworzenie gałęzi na serwerze (github) </p>
-                    <p class="section__paragraph"><strong>git merge nazwabrancha</strong> - scalanie gałęzi </p>
-                </section>
-                <section class="section" id="markdown">
-                    <h3 class="section__header">Markdown</h3>
-                    <p class="section__paragraph">Markdown - język znaczników do formatowania tekstu.</p>
-                    <p class="section__paragraph"> <strong>Nagłówki:</strong></p>
-                    <pre class="data-pre data-pre--white-space">
+            </section>
+          </section>
+          <section class="section" id="branche">
+            <h3 class="section__header">GIT: branche</h3>
+            <p class="section__paragraph">Branche:</p>
+            <ul class="section__list">
+              <li>pozwalają na bezkarne testowanie</li>
+              <li>służą do bardziej efektywnego rozwijania oprogramowania</li>
+              <li>pozwalają na równoległą pracę</li>
+              <li>zwiększają czytelność postępu prac nad projektem</li>
+              <li>ułatwiają wypuszczanie rzeczy na świat</li>
+            </ul>
+            <p class="section__paragraph">
+              <strong>git branch</strong> - wypisuje nazwy gałęzi
+            </p>
+            <p class="section__paragraph">
+              <strong>git branch nazwabrancha</strong> - tworzy nową gałąź
+            </p>
+            <p class="section__paragraph">
+              <strong>git checkout nazwabrancha</strong> - przełączanie między
+              gałęziami
+            </p>
+            <p class="section__paragraph">
+              <strong>git push --set-upstream origin nazwabrancha</strong> -
+              stworzenie gałęzi na serwerze (github)
+            </p>
+            <p class="section__paragraph">
+              <strong>git merge nazwabrancha</strong> - scalanie gałęzi
+            </p>
+          </section>
+          <section class="section" id="markdown">
+            <h3 class="section__header">Markdown</h3>
+            <p class="section__paragraph">
+              Markdown - język znaczników do formatowania tekstu.
+            </p>
+            <p class="section__paragraph"><strong>Nagłówki:</strong></p>
+            <pre class="data-pre data-pre--white-space">
                     <code class="language-md section__code">
                         # Nagłówek (H1)
                         ## Nagłówek II (H2)
                         ### Nagłówek III (H3)
                         #### Nagłówek IV (H4)
                     </code></pre>
-                    <p class="section__paragraph"> <strong>Link:</strong></p>
-                    <pre class="data-pre data-pre--white-space">
+            <p class="section__paragraph"><strong>Link:</strong></p>
+            <pre class="data-pre data-pre--white-space">
                     <code class="language-md section__code">[DIGI-CHIP](https://digi-chip.pl)</code></pre>
-                    <p class="section__paragraph"> <strong>Obrazek:</strong></p>
-                    <pre class="data-pre data-pre--white-space">
+            <p class="section__paragraph"><strong>Obrazek:</strong></p>
+            <pre class="data-pre data-pre--white-space">
                     <code class="language-md section__code">![Alt obrazka](https://url.do/obrazka.jpg)</code></pre>
-                    <p class="section__paragraph"> <strong>Polecenie/jednolinijkowy kod:</strong></p>
-                    <pre class="data-pre data-pre--white-space">
+            <p class="section__paragraph">
+              <strong>Polecenie/jednolinijkowy kod:</strong>
+            </p>
+            <pre class="data-pre data-pre--white-space">
                     <code class="language-md section__code">`node main.js`</code></pre>
-                    <p class="section__paragraph"> <strong>Blok kodu:</strong></p>
-                    <pre class="data-pre data-pre--white-space">
+            <p class="section__paragraph"><strong>Blok kodu:</strong></p>
+            <pre class="data-pre data-pre--white-space">
                     <code class="language-md section__code">```javascript
                         consol.log('hello world');
                         alert('hello world');
                         ```
                     </code></pre>
-                    <p class="section__paragraph"> <strong>Formatowanie tekstu:</strong></p>
-                    <pre class="data-pre data-pre--white-space">
+            <p class="section__paragraph">
+              <strong>Formatowanie tekstu:</strong>
+            </p>
+            <pre class="data-pre data-pre--white-space">
                     <code class="language-md section__code">*tekst* - kursywa
                         **tekst** - pogrubienie
                         ***tekst*** - pogrubienie + kursywa
                     </code></pre>
-                    <p class="section__paragraph"> <strong>Cytat:</strong></p>
-                    <pre class="data-pre data-pre--white-space">
+            <p class="section__paragraph"><strong>Cytat:</strong></p>
+            <pre class="data-pre data-pre--white-space">
                     <code class="language-md section__code"> > Lepiej zaliczać się do niektórych, niż do wszystkich.</code></pre>
-                    <p class="section__paragraph"> <strong>Elementy listy:</strong></p>
-                    <pre class="data-pre data-pre--white-space">
+            <p class="section__paragraph"><strong>Elementy listy:</strong></p>
+            <pre class="data-pre data-pre--white-space">
                     <code class="language-md section__code">
                         - tekst
                         - tekst
@@ -313,14 +454,16 @@
                         ____3. sublista
 
                         Cztery spacje tworzą sublistę.</code></pre>
-                </section>
-                <section class="section" id="arrays">
-                    <h3 class="section__header">JS: tablice</h3>
-                    <p class="section__paragraph">Tablica jest strukturą danych.</p>
-                    <p class="section__paragraph">Index - liczymy od zera.</p>
-                    <p class="section__paragraph">Tablice mogą zawierać różnego typu dane jak stringi, obiekty, liczby
-                        itd.</p>
-                    <pre class="data-pre data-pre--white-space">
+          </section>
+          <section class="section" id="arrays">
+            <h3 class="section__header">JS: tablice</h3>
+            <p class="section__paragraph">Tablica jest strukturą danych.</p>
+            <p class="section__paragraph">Index - liczymy od zera.</p>
+            <p class="section__paragraph">
+              Tablice mogą zawierać różnego typu dane jak stringi, obiekty,
+              liczby itd.
+            </p>
+            <pre class="data-pre data-pre--white-space">
                     <code class="language-js section__code">const hardware = ['keyboard', 'mouse', 'screen']
 
                         const news = [
@@ -334,50 +477,76 @@
                         8, true
                         ]
                     </code></pre>
-                    <p class="section__paragraph">Pobieranie elementu na danym miejscu.</p>
-                    <pre class="data-pre data-pre--white-space">
+            <p class="section__paragraph">
+              Pobieranie elementu na danym miejscu.
+            </p>
+            <pre class="data-pre data-pre--white-space">
                     <code class="language-js section__code">tablica[index]</code></pre>
-                    <p class="section__paragraph"><strong>tablica.length</strong> - długość tablicy</p>
-                    <p class="section__paragraph"><strong>tablica.push(element)</strong> - dodanie elementu na koniec
-                        tablicy</p>
-                    <p class="section__paragraph"><strong>tablica.unshift(element)</strong> - dodanie elementu na
-                        początku tablicy</p>
-                    <p class="section__paragraph"><strong>tablica.shift()</strong> - usuwa element na początku tablicy
-                    </p>
-                    <p class="section__paragraph"><strong>tablica.pop()</strong> - usuwa element na końcu tablicy</p>
-                    <p class="section__paragraph"><strong>tablica.indexOf(element)</strong> - sprawdzanie czy jest
-                        element w tablicy, zwraca numer indeksu</p>
-                    <p class="section__paragraph"><strong>tablica.splice(index, liczbaElementów)</strong> - usuwanie n
-                        elementów od danej poycji</p>
-                    <p class="section__paragraph"><strong>tablica.slice(index, stop)</strong> - pobieranie n elementów
-                        od danej pozycji</p>
-                </section>
-                <section class="section" id="loops">
-                    <h3 class="section__header">JS: pętle</h3>
-                    <p class="section__paragraph"><strong>pętla for:</strong></p>
-                    <pre class="data-pre data-pre--white-space">
+            <p class="section__paragraph">
+              <strong>tablica.length</strong> - długość tablicy
+            </p>
+            <p class="section__paragraph">
+              <strong>tablica.push(element)</strong> - dodanie elementu na
+              koniec tablicy
+            </p>
+            <p class="section__paragraph">
+              <strong>tablica.unshift(element)</strong> - dodanie elementu na
+              początku tablicy
+            </p>
+            <p class="section__paragraph">
+              <strong>tablica.shift()</strong> - usuwa element na początku
+              tablicy
+            </p>
+            <p class="section__paragraph">
+              <strong>tablica.pop()</strong> - usuwa element na końcu tablicy
+            </p>
+            <p class="section__paragraph">
+              <strong>tablica.indexOf(element)</strong> - sprawdzanie czy jest
+              element w tablicy, zwraca numer indeksu
+            </p>
+            <p class="section__paragraph">
+              <strong>tablica.splice(index, liczbaElementów)</strong> - usuwanie
+              n elementów od danej poycji
+            </p>
+            <p class="section__paragraph">
+              <strong>tablica.slice(index, stop)</strong> - pobieranie n
+              elementów od danej pozycji
+            </p>
+          </section>
+          <section class="section" id="loops">
+            <h3 class="section__header">JS: pętle</h3>
+            <p class="section__paragraph"><strong>pętla for:</strong></p>
+            <pre class="data-pre data-pre--white-space">
                     <code class="language-js section__code">for (inicjalizacja; warunek stopu; wyrażenie inkrementacji) {
                         kod
                         }
                     </code></pre>
-                    <p class="section__paragraph"><strong>i</strong> - licznik pętli</p>
-                    <pre class="data-pre data-pre--white-space">
+            <p class="section__paragraph"><strong>i</strong> - licznik pętli</p>
+            <pre class="data-pre data-pre--white-space">
                     <code class="language-js section__code">for (let i = 0; i &lt; 3; i++) {
                         console.log(`${i} wykonanie pętli`); 
                         }
                     </code></pre>
-                    <p class="section__paragraph"><strong>i++</strong> - postinkrementacja</p>
-                    <p class="section__paragraph"><strong>i--</strong> - postdekrementacja</p>
-                    <p class="section__paragraph"><strong>++i</strong> - preinkrementacja</p>
-                    <p class="section__paragraph"><strong>--i</strong> - predekrementacja</p>
-                    <p class="section__paragraph"><strong>pętla while:</strong></p>
-                    <pre class="data-pre data-pre--white-space">
+            <p class="section__paragraph">
+              <strong>i++</strong> - postinkrementacja
+            </p>
+            <p class="section__paragraph">
+              <strong>i--</strong> - postdekrementacja
+            </p>
+            <p class="section__paragraph">
+              <strong>++i</strong> - preinkrementacja
+            </p>
+            <p class="section__paragraph">
+              <strong>--i</strong> - predekrementacja
+            </p>
+            <p class="section__paragraph"><strong>pętla while:</strong></p>
+            <pre class="data-pre data-pre--white-space">
                     <code class="language-js section__code">while (warunek logiczny) { 
                         kod
                         }
                     </code></pre>
-                    <p class="section__paragraph"> przykład:</p>
-                    <pre class="data-pre data-pre--white-space">
+            <p class="section__paragraph">przykład:</p>
+            <pre class="data-pre data-pre--white-space">
                     <code class="language-js section__code">let n = 3;
 
                         while (n &lt; 9) {
@@ -387,14 +556,14 @@
 
                         console.log(n);
                     </code></pre>
-                    <p class="section__paragraph"><strong>pętla do while:</strong></p>
-                    <pre class="data-pre data-pre--white-space">
+            <p class="section__paragraph"><strong>pętla do while:</strong></p>
+            <pre class="data-pre data-pre--white-space">
                     <code class="language-js section__code">do { 
                         kod 
                         } while (warunek logiczny) 
                     </code></pre>
-                    <p class="section__paragraph">przykład:</p>
-                    <pre class="data-pre data-pre--white-space">
+            <p class="section__paragraph">przykład:</p>
+            <pre class="data-pre data-pre--white-space">
                     <code class="language-js section__code">let n = 9;
 
                         do {
@@ -406,13 +575,15 @@
 
                         blok kodu pierwszy raz zawsze się wykona
                     </code></pre>
-                    <p class="section__paragraph"><strong>pętla for in:</strong></p>
-                    <p class="section__paragraph">Pętla <strong>for in</strong> wykorzystujemy głównie do wypisywania
-                        obiektów.</p>
-                    <pre class="data-pre data-pre--white-space">
+            <p class="section__paragraph"><strong>pętla for in:</strong></p>
+            <p class="section__paragraph">
+              Pętla <strong>for in</strong> wykorzystujemy głównie do
+              wypisywania obiektów.
+            </p>
+            <pre class="data-pre data-pre--white-space">
                     <code class="language-js section__code">for (wlasnosc in obiekt)</code></pre>
-                    <p class="section__paragraph">przyklad:</p>
-                    <pre class="data-pre data-pre--white-space">
+            <p class="section__paragraph">przyklad:</p>
+            <pre class="data-pre data-pre--white-space">
                     <code class="language-js section__code">const person = { 
                         name: 'maciek', 
                         age: 31 
@@ -422,41 +593,57 @@
                         console.log(`${property}: ${person[property]}`);
                         }
                     </code></pre>
-                    <p class="section__paragraph"><strong>pętla for of:</strong></p>
-                    <pre class="data-pre data-pre--white-space">
+            <p class="section__paragraph"><strong>pętla for of:</strong></p>
+            <pre class="data-pre data-pre--white-space">
                     <code class="language-js section__code">for (element of tablica)</code></pre>
-                    <p class="section__paragraph">przykład:</p>
-                    <pre class="data-pre data-pre--white-space">
+            <p class="section__paragraph">przykład:</p>
+            <pre class="data-pre data-pre--white-space">
                     <code class="language-js section__code">const faces = ['😎', '🤯', '😱'];
 
                         for (let face of faces) {
                         console.log(face);
                         }
                     </code></pre>
-                </section>
-                <section class="section" id="data">
-                    <h3 class="section__header">JS: Przechowywanie danych</h3>
-                    <p class="section__paragraph"><strong>document.cookie</strong> - pobranie ciastka</p>
-                    <p class="section__paragraph"><strong>document.cookie = "nazwa = wartość"</strong> - dodanie ciastka
-                    </p>
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie
-                    " class="section__link">https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie</a>
-                    <p class="section__paragraph"><strong>Local / session storage:</strong></p>
-                    <p class="section__paragraph">Localstorage - trwa do ręcznego wyczyszczenia (trwalsze).</p>
-                    <p class="section__paragraph">Sessionstorage - trwa do zamknięcia sesji (zakładki przeglądarki).</p>
-                    <section class="card">
-                        <h4 class="card__header">Zastosowanie</h4>
-                        <p class="card__paragraph">Dodaje klucz i wartość, ustawia wartości w localstorage.</p>
-                        <pre class="data-pre data-pre--white-space">
+          </section>
+          <section class="section" id="data">
+            <h3 class="section__header">JS: Przechowywanie danych</h3>
+            <p class="section__paragraph">
+              <strong>document.cookie</strong> - pobranie ciastka
+            </p>
+            <p class="section__paragraph">
+              <strong>document.cookie = "nazwa = wartość"</strong> - dodanie
+              ciastka
+            </p>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie
+                    "
+              class="section__link"
+              >https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie</a
+            >
+            <p class="section__paragraph">
+              <strong>Local / session storage:</strong>
+            </p>
+            <p class="section__paragraph">
+              Localstorage - trwa do ręcznego wyczyszczenia (trwalsze).
+            </p>
+            <p class="section__paragraph">
+              Sessionstorage - trwa do zamknięcia sesji (zakładki przeglądarki).
+            </p>
+            <section class="card">
+              <h4 class="card__header">Zastosowanie</h4>
+              <p class="card__paragraph">
+                Dodaje klucz i wartość, ustawia wartości w localstorage.
+              </p>
+              <pre class="data-pre data-pre--white-space">
                         <code class="language-js card__code">localStorage.setItem('nazwa', wartosc)</code></pre>
-                        <p class="card__paragraph">Pobieranie danych.</p>
-                        <pre class="data-pre data-pre--white-space">
+              <p class="card__paragraph">Pobieranie danych.</p>
+              <pre class="data-pre data-pre--white-space">
                         <code class="language-js card__code">localStorage.getItem('nazwa')</code></pre>
-                        <p class="card__paragraph">Usuwanie danych.</p>
-                        <pre class="data-pre data-pre--white-space">
+              <p class="card__paragraph">Usuwanie danych.</p>
+              <pre class="data-pre data-pre--white-space">
                         <code class="language-js card__code">localStorage.removeItem('nazwa')</code></pre>
-                        <p class="card__paragraph">Dodawanie obiektów.</p>
-                        <pre class="data-pre data-pre--white-space">
+              <p class="card__paragraph">Dodawanie obiektów.</p>
+              <pre class="data-pre data-pre--white-space">
                         <code class="language-js card__code">const person = {
                             name: 'Andrzej',
                             age = 35 
@@ -465,26 +652,25 @@
                             const jsonPerson = JSON.stingify(person);
                             
                             localStorage.setItem('person', jsonPerson);</code></pre>
-                        <p class="card__paragraph">Pobieranie obiektów.</p>
-                        <pre class="data-pre data-pre--white-space">
+              <p class="card__paragraph">Pobieranie obiektów.</p>
+              <pre class="data-pre data-pre--white-space">
                         <code class="language-js card__code">const personStringify = localStorage.getItem('person');
                             const newPerson = JSON.parse(personStringify);
                         </code></pre>
-                        <p class="card__paragraph">Konwersja obiektu na string.</p>
-                        <pre class="data-pre data-pre--white-space">
+              <p class="card__paragraph">Konwersja obiektu na string.</p>
+              <pre class="data-pre data-pre--white-space">
                         <code class="language-js card__code">JSON.stringify(obiekt)</code></pre>
-                        <p class="card__paragraph">Konwersja string na obiekt.</p>
-                        <pre class="data-pre data-pre--white-space">
+              <p class="card__paragraph">Konwersja string na obiekt.</p>
+              <pre class="data-pre data-pre--white-space">
                         <code class="language-js card__code">JSON.parse(JSONString)</code></pre>
-                    </section>
-                </section>
-            </div>
-        </article>
+            </section>
+          </section>
+        </div>
+      </article>
     </main>
     <footer class="footer">
-        <p class="footer__paragraph">Projekt stworzony przez Andrzeja</p>
+      <p class="footer__paragraph">Projekt edukacyjny Andrzeja</p>
     </footer>
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>

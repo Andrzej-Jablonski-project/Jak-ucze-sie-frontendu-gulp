@@ -1,228 +1,345 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Notatnik frontendowca</title>
-    <meta name="description" content="Notatnik - projekt, który powstał podczas uczenia się podstaw frontendu." />
+    <meta
+      name="description"
+      content="Notatnik - projekt, który powstał podczas uczenia się podstaw frontendu."
+    />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Notatnik frontendowca" />
-    <meta property="og:description"
-        content="Notatnik - projekt, który powstał podczas uczenia się podstaw frontendu." />
-    <meta property="og:url" content="https://andrzej-jablonski-project.github.io/Notatnik-frontendu/index.html" />
-    <meta property="og:image"
-        content="https://andrzej-jablonski-project.github.io/Notatnik-frontendu/assets/img/cover.png" />
+    <meta
+      property="og:description"
+      content="Notatnik - projekt, który powstał podczas uczenia się podstaw frontendu."
+    />
+    <meta
+      property="og:url"
+      content="https://andrzej-jablonski-project.github.io/Notatnik-frontendu/index.html"
+    />
+    <meta
+      property="og:image"
+      content="https://andrzej-jablonski-project.github.io/Notatnik-frontendu/assets/img/cover.png"
+    />
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/pwa/icons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/pwa/icons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/pwa/icons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/pwa/icons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/pwa/icons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/pwa/icons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/pwa/icons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/pwa/icons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/pwa/icons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/pwa/icons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/pwa/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/pwa/icons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/pwa/icons/favicon-16x16.png">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="assets/pwa/icons/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <link href="css/main.css" rel="stylesheet" type="text/css">
-</head>
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="assets/pwa/icons/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="assets/pwa/icons/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="assets/pwa/icons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="assets/pwa/icons/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="assets/pwa/icons/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="assets/pwa/icons/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="assets/pwa/icons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="assets/pwa/icons/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/pwa/icons/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/pwa/icons/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/pwa/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="assets/pwa/icons/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/pwa/icons/favicon-16x16.png"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="assets/pwa/icons/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<body>
-    <button class="menuButton" aria-label="otwórz menu strony"><span
-            class="menuButton__line menuButton__line--js">|</span></button>
+  <body>
+    <button class="menuButton" aria-label="otwórz menu strony">
+      <span class="menuButton__line menuButton__line--js">|</span>
+    </button>
     <nav class="menu">
-        <section class="menu__section">
-            <h2 class="menu__header">Co to za miejsce?</h2>
-            <p class="menu__text">Podczas jakiejkolwiek nauki każdy z nas
-                robi notatki. Jako że obecnie uczę się programowania webowego, również postanowiłem notować, jednak w
-                formie cyfrowej. Takim sposobem szybciej zapamiętuję oraz utrwalam nową wiedzę. Dodatkowym atutem
-                takiego rozwiązania może być dostępność z każdego miejsca. Więc w razie potrzeby skorzystania z notatek
-                będzie to możliwe w sposób szybki i wygodny. Może też okazać się bardzo pomocny na początku w pracy. To
-                miejsce jest moim cyfrowym notatnikiem. </p>
-        </section>
-        <ul class="menu__list">
-            <li class="menu__item"><a class="menu__link" href="index.html"><strong class="strong__header">rozdział
-                        pierwszy</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">Warstwy</li>
-                        <li class="menu__item">HTML</li>
-                        <li class="menu__item">CSS</li>
-                        <li class="menu__item">Programowanie</li>
-                    </ul>
-                </a></li>
-            <li class="menu__item"><a class="menu__link" href="second.html"><strong class="strong__header">rozdział
-                        drugi</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">Organizacja nauki/pracy</li>
-                        <li class="menu__item">HTML - znaczniki i atrybuty</li>
-                        <li class="menu__item">CSS - Sposoby stylowania</li>
-                        <li class="menu__item">Działanie przeglądarki</li>
-                        <li class="menu__item">JavaScript</li>
-                        <li class="menu__item">Terminal</li>
-                    </ul>
-                </a></li>
-            <li class="menu__item"><a class="menu__link" href="third.html"><strong class="strong__header">rozdział
-                        trzeci</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">Git</li>
-                        <li class="menu__item">Box model</li>
-                        <li class="menu__item">BEM</li>
-                        <li class="menu__item">DOM</li>
-                    </ul>
-                </a></li>
-            <li class="menu__item"><a class="menu__link" href="fourth.html"><strong class="strong__header">rozdział
-                        czwarty</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">JavaScript</li>
-                        <li class="menu__item">Funkcja w JS</li>
-                        <li class="menu__item">Debugging</li>
-                        <li class="menu__item">Markup</li>
-                        <li class="menu__item">Normalizacja</li>
-                        <li class="menu__item">Flexbox</li>
-                        <li class="menu__item">Tło</li>
-                    </ul>
-                </a></li>
-            <li class="menu__item"><a class="menu__link" href="fifth.html"><strong class="strong__header">rozdział
-                        piąty</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">Formularze</li>
-                        <li class="menu__item">Grid</li>
-                        <li class="menu__item">Media queries</li>
-                        <li class="menu__item">Event</li>
-                        <li class="menu__item">Hamburger</li>
-                    </ul>
-                </a></li>
-            <li class="menu__item"><a class="menu__link" href="sixth.html"><strong class="strong__header">rozdział
-                        szósty</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">Obiekty</li>
-                        <li class="menu__item">Pseudo*</li>
-                        <li class="menu__item">SASS</li>
-                        <li class="menu__item">Node.js</li>
-                        <li class="menu__item">Starter kit</li>
-                    </ul>
-                </a></li>
-            <li class="menu__item"><a class="menu__link" href="seventh.html"><strong class="strong__header">rozdział
-                        siódmy</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">Prefiksy</li>
-                        <li class="menu__item">Google fonts</li>
-                        <li class="menu__item">Branche</li>
-                        <li class="menu__item">Markdown</li>
-                        <li class="menu__item">Tablice</li>
-                        <li class="menu__item">Pętle</li>
-                        <li class="menu__item">Dane</li>
-                    </ul>
-                </a></li>
-            <li class="menu__item"><a class="menu__link" href="eight.html"><strong class="strong__header">rozdział
-                        ósmy</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">Przejścia</li>
-                        <li class="menu__item">Animacje</li>
-                        <li class="menu__item">SVG</li>
-                        <li class="menu__item">Head</li>
-                        <li class="menu__item">WCAG</li>
-                        <li class="menu__item">PWA</li>
-                    </ul>
-                </a></li>
-            <li class="menu__item"><a class="menu__link" href="ninth.html"><strong class="strong__header">rozdział
-                        dziewiąty</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">API</li>
-                        <li class="menu__item">CSS</li>
-                        <li class="menu__item">JS</li>
-                        <li class="menu__item">Typografia</li>
-                    </ul>
-                </a></li>
-            <li class="menu__item"><a class="menu__link" href="tenth.html"><strong class="strong__header">rozdział
-                        dziesiąty</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">Multimedia</li>
-                        <li class="menu__item">Bootstrap</li>
-                        <li class="menu__item">Kombinatory</li>
-                    </ul>
-                </a></li>
-            <li class="menu__item"><a class="menu__link" href="dev-tools.html"><strong class="strong__header">Dev
-                        tools</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">Do poczytania</li>
-                        <li class="menu__item">Dokumentacja</li>
-                        <li class="menu__item">Narzędzia</li>
-                        <li class="menu__item">Do obejrzenia</li>
-                        <li class="menu__item">Lista frontendu</li>
-                    </ul>
-                </a></li>
-            <li class="menu__item"><a class="menu__link" href="game.html"><strong class="strong__header">Dev
-                        game</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">CODE COMBAT</li>
-                        <li class="menu__item">CSS Diner</li>
-                        <li class="menu__item">Flexbox Froggy</li>
-                        <li class="menu__item">Grid Garden</li>
-                        <li class="menu__item">Codewars</li>
-                        <li class="menu__item">...</li>
-                    </ul>
-                </a></li>
-        </ul>
+      <section class="menu__section">
+        <h2 class="menu__header">Co to za miejsce?</h2>
+        <p class="menu__text">
+          Podczas jakiejkolwiek nauki każdy z nas robi notatki. Jako że obecnie
+          uczę się programowania webowego, również postanowiłem notować, jednak
+          w formie cyfrowej. Takim sposobem szybciej zapamiętuję oraz utrwalam
+          nową wiedzę. Dodatkowym atutem takiego rozwiązania może być dostępność
+          z każdego miejsca. Więc w razie potrzeby skorzystania z notatek będzie
+          to możliwe w sposób szybki i wygodny. Może też okazać się bardzo
+          pomocny na początku w pracy. To miejsce jest moim cyfrowym
+          notatnikiem.
+        </p>
+      </section>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="menu__link" href="index.html"
+            ><strong class="strong__header">rozdział pierwszy</strong>
+            <ul class="menu__description">
+              <li class="menu__item">Warstwy</li>
+              <li class="menu__item">HTML</li>
+              <li class="menu__item">CSS</li>
+              <li class="menu__item">Programowanie</li>
+            </ul>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="second.html"
+            ><strong class="strong__header">rozdział drugi</strong>
+            <ul class="menu__description">
+              <li class="menu__item">Organizacja nauki/pracy</li>
+              <li class="menu__item">HTML - znaczniki i atrybuty</li>
+              <li class="menu__item">CSS - Sposoby stylowania</li>
+              <li class="menu__item">Działanie przeglądarki</li>
+              <li class="menu__item">JavaScript</li>
+              <li class="menu__item">Terminal</li>
+            </ul>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="third.html"
+            ><strong class="strong__header">rozdział trzeci</strong>
+            <ul class="menu__description">
+              <li class="menu__item">Git</li>
+              <li class="menu__item">Box model</li>
+              <li class="menu__item">BEM</li>
+              <li class="menu__item">DOM</li>
+            </ul>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="fourth.html"
+            ><strong class="strong__header">rozdział czwarty</strong>
+            <ul class="menu__description">
+              <li class="menu__item">JavaScript</li>
+              <li class="menu__item">Funkcja w JS</li>
+              <li class="menu__item">Debugging</li>
+              <li class="menu__item">Markup</li>
+              <li class="menu__item">Normalizacja</li>
+              <li class="menu__item">Flexbox</li>
+              <li class="menu__item">Tło</li>
+            </ul>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="fifth.html"
+            ><strong class="strong__header">rozdział piąty</strong>
+            <ul class="menu__description">
+              <li class="menu__item">Formularze</li>
+              <li class="menu__item">Grid</li>
+              <li class="menu__item">Media queries</li>
+              <li class="menu__item">Event</li>
+              <li class="menu__item">Hamburger</li>
+            </ul>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="sixth.html"
+            ><strong class="strong__header">rozdział szósty</strong>
+            <ul class="menu__description">
+              <li class="menu__item">Obiekty</li>
+              <li class="menu__item">Pseudo*</li>
+              <li class="menu__item">SASS</li>
+              <li class="menu__item">Node.js</li>
+              <li class="menu__item">Starter kit</li>
+            </ul>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="seventh.html"
+            ><strong class="strong__header">rozdział siódmy</strong>
+            <ul class="menu__description">
+              <li class="menu__item">Prefiksy</li>
+              <li class="menu__item">Google fonts</li>
+              <li class="menu__item">Branche</li>
+              <li class="menu__item">Markdown</li>
+              <li class="menu__item">Tablice</li>
+              <li class="menu__item">Pętle</li>
+              <li class="menu__item">Dane</li>
+            </ul>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="eight.html"
+            ><strong class="strong__header">rozdział ósmy</strong>
+            <ul class="menu__description">
+              <li class="menu__item">Przejścia</li>
+              <li class="menu__item">Animacje</li>
+              <li class="menu__item">SVG</li>
+              <li class="menu__item">Head</li>
+              <li class="menu__item">WCAG</li>
+              <li class="menu__item">PWA</li>
+            </ul>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="ninth.html"
+            ><strong class="strong__header">rozdział dziewiąty</strong>
+            <ul class="menu__description">
+              <li class="menu__item">API</li>
+              <li class="menu__item">CSS</li>
+              <li class="menu__item">JS</li>
+              <li class="menu__item">Typografia</li>
+            </ul>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="tenth.html"
+            ><strong class="strong__header">rozdział dziesiąty</strong>
+            <ul class="menu__description">
+              <li class="menu__item">Multimedia</li>
+              <li class="menu__item">Bootstrap</li>
+              <li class="menu__item">Kombinatory</li>
+            </ul>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="dev-tools.html"
+            ><strong class="strong__header">Dev tools</strong>
+            <ul class="menu__description">
+              <li class="menu__item">Do poczytania</li>
+              <li class="menu__item">Dokumentacja</li>
+              <li class="menu__item">Narzędzia</li>
+              <li class="menu__item">Do obejrzenia</li>
+              <li class="menu__item">Lista frontendu</li>
+            </ul>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="game.html"
+            ><strong class="strong__header">Dev game</strong>
+            <ul class="menu__description">
+              <li class="menu__item">CODE COMBAT</li>
+              <li class="menu__item">CSS Diner</li>
+              <li class="menu__item">Flexbox Froggy</li>
+              <li class="menu__item">Grid Garden</li>
+              <li class="menu__item">Codewars</li>
+              <li class="menu__item">...</li>
+            </ul>
+          </a>
+        </li>
+      </ul>
     </nav>
     <main class="main">
-        <header class="hero">
-            <h1 class="hero__header">Notatnik frontendowca</h1>
+      <header class="hero">
+        <h1 class="hero__header">Notatnik frontendowca</h1>
+      </header>
+      <article class="article">
+        <button
+          class="article__button article__button--position"
+          aria-label="otwórz menu sekcji"
+        >
+          <span class="menuButton__line article__button__line--js">|</span>
+        </button>
+        <header class="article__nav">
+          <nav class="article__menu">
+            <ul class="article__list">
+              <li class="article__item">
+                <a class="article__link" href="#multimedia">Multimedia</a>
+              </li>
+              <li class="article__item">
+                <a class="article__link" href="#bootstrap">Bootstrap</a>
+              </li>
+              <li class="article__item">
+                <a class="article__link" href="#combinator">Kombinatory</a>
+              </li>
+            </ul>
+          </nav>
         </header>
-        <article class="article">
-            <button class="article__button article__button--position" aria-label="otwórz menu sekcji"><span
-                    class="menuButton__line article__button__line--js">|</span></button>
-            <header class="article__nav">
-                <nav class="article__menu">
-                    <ul class="article__list">
-                        <li class="article__item"><a class="article__link" href="#multimedia">Multimedia</a></li>
-                        <li class="article__item"><a class="article__link" href="#bootstrap">Bootstrap</a></li>
-                        <li class="article__item"><a class="article__link" href="#combinator">Kombinatory</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <h2 class="article__header">Rozdział dziesiąty</h2>
-            <div class="wrapper">
-                <section class="section" id="multimedia">
-                    <h3 class="section__header">Multimedia</h3>
-                    <p class="section__paragraph"><strong>&lt;audio&gt;</strong> - służy do osadzania treści audio.</p>
-                    <pre class="data-pre data-pre--white-space">
+        <h2 class="article__header">Rozdział dziesiąty</h2>
+        <div class="wrapper">
+          <section class="section" id="multimedia">
+            <h3 class="section__header">Multimedia</h3>
+            <p class="section__paragraph">
+              <strong>&lt;audio&gt;</strong> - służy do osadzania treści audio.
+            </p>
+            <pre class="data-pre data-pre--white-space">
                         <code class="language-html section__code">
                              &lt;audio src="path to file audio" controls&gt;                                  
                         </code>
                     </pre>
-                    <p class="section__paragraph"><strong>&lt;video&gt;</strong> - służy do osadzania treści video.</p>
-                    <pre class="data-pre data-pre--white-space">
+            <p class="section__paragraph">
+              <strong>&lt;video&gt;</strong> - służy do osadzania treści video.
+            </p>
+            <pre class="data-pre data-pre--white-space">
                         <code class="language-html section__code">
                                 &lt;video src="path to file video" controls&gt;                                    
                         </code>
                     </pre>
-                    <p class="section__paragraph"><strong>&lt;iframe&gt;</strong> - osadza inną stronę, fragment HTML w
-                        bieżącej.
-                    </p>
-                    <pre class="data-pre data-pre--white-space">
+            <p class="section__paragraph">
+              <strong>&lt;iframe&gt;</strong> - osadza inną stronę, fragment
+              HTML w bieżącej.
+            </p>
+            <pre class="data-pre data-pre--white-space">
                             <code class="language-html section__code">
                                     &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/dXnk4ltoKgc"
                                     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
                                     picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;                                 
                             </code>
                         </pre>
-                    <p class="section__paragraph"><strong>element.play()</strong> - odtwarzanie w JS.</p>
-                    <p class="section__paragraph"><strong>element.pause()</strong> - wstrzymanie odtwarzania.</p>
-                    <p class="section__paragraph"><strong>element.currentTime</strong> - ustawia aktualny czas
-                        odtwarzania.</p>
+            <p class="section__paragraph">
+              <strong>element.play()</strong> - odtwarzanie w JS.
+            </p>
+            <p class="section__paragraph">
+              <strong>element.pause()</strong> - wstrzymanie odtwarzania.
+            </p>
+            <p class="section__paragraph">
+              <strong>element.currentTime</strong> - ustawia aktualny czas
+              odtwarzania.
+            </p>
 
-                    <pre class="data-pre data-pre--white-space">
+            <pre class="data-pre data-pre--white-space">
                             <code class="language-js section__code">
                                 const video = document.querySelector('.video--js');
                                 const playButton = document.querySelector('.play--js');
@@ -243,26 +360,34 @@
                                 })
                             </code>
                         </pre>
-                    <p class="section__paragraph"><strong></strong></p>
-                    <p class="section__paragraph"><strong></strong></p>
-                    <p class="section__paragraph"><strong></strong></p>
-                    <p class="section__paragraph"><strong></strong></p>
-                </section>
-                <section class="section" id="bootstrap">
-                    <h3 class="section__header">Bootstrap</h3>
-                    <p class="section__paragraph"><strong>Bootstrap</strong> - framework CSS i JS pozwalający na szybkie
-                        budowanie aplikacji. Jest bardzo popularny i wykorzystywany w wielu projektach i gotowych
-                        szablonach. Zawiera większość potrzebnych rzeczy i jeszcze więcej, o których kompletnie nie masz
-                        pojęcia i raczej ich nie wykorzystasz. Praca z nim głównie polega na "kopiuj - wklej gotowych
-                        elementów,
-                        plus swoje modyfikacje".</p>
-                    <a href="https://getbootstrap.com/" class="section__link">https://getbootstrap.com/</a>
-                </section>
-                <section class="section" id="combinator">
-                    <h3 class="section__header">Kombinatory</h3>
-                    <p class="section__paragraph"><strong>elementA + elementB</strong> - Selektor bezpośredniego
-                        rodzeństwa, elementB dostanie style, jeżeli znajduje się zaraz pod elementA.</p>
-                    <pre class="data-pre data-pre--white-space">
+            <p class="section__paragraph"><strong></strong></p>
+            <p class="section__paragraph"><strong></strong></p>
+            <p class="section__paragraph"><strong></strong></p>
+            <p class="section__paragraph"><strong></strong></p>
+          </section>
+          <section class="section" id="bootstrap">
+            <h3 class="section__header">Bootstrap</h3>
+            <p class="section__paragraph">
+              <strong>Bootstrap</strong> - framework CSS i JS pozwalający na
+              szybkie budowanie aplikacji. Jest bardzo popularny i
+              wykorzystywany w wielu projektach i gotowych szablonach. Zawiera
+              większość potrzebnych rzeczy i jeszcze więcej, o których
+              kompletnie nie masz pojęcia i raczej ich nie wykorzystasz. Praca z
+              nim głównie polega na "kopiuj - wklej gotowych elementów, plus
+              swoje modyfikacje".
+            </p>
+            <a href="https://getbootstrap.com/" class="section__link"
+              >https://getbootstrap.com/</a
+            >
+          </section>
+          <section class="section" id="combinator">
+            <h3 class="section__header">Kombinatory</h3>
+            <p class="section__paragraph">
+              <strong>elementA + elementB</strong> - Selektor bezpośredniego
+              rodzeństwa, elementB dostanie style, jeżeli znajduje się zaraz pod
+              elementA.
+            </p>
+            <pre class="data-pre data-pre--white-space">
                                 <code class="language-html section__code">
                                         &lt;ul&gt;
                                         &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
@@ -277,9 +402,11 @@
                                      }                             
                                 </code>
                             </pre>
-                    <p class="section__paragraph"><strong>elementA ~ elementB</strong> - ogólne rodzeństwo, wszystkie
-                        element(y)B znajdujące się pod elementA dostaną style.</p>
-                    <pre class="data-pre data-pre--white-space">
+            <p class="section__paragraph">
+              <strong>elementA ~ elementB</strong> - ogólne rodzeństwo,
+              wszystkie element(y)B znajdujące się pod elementA dostaną style.
+            </p>
+            <pre class="data-pre data-pre--white-space">
                                 <code class="language-html section__code">
                                         &lt;ul&gt;
                                         &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
@@ -294,9 +421,11 @@
                                      }                             
                                 </code>
                             </pre>
-                    <p class="section__paragraph"><strong>elementA > elementB</strong> - bezpośrednie dziecko, wszystkie
-                        dzieci elementA dostaną style.</p>
-                    <pre class="data-pre data-pre--white-space">
+            <p class="section__paragraph">
+              <strong>elementA > elementB</strong> - bezpośrednie dziecko,
+              wszystkie dzieci elementA dostaną style.
+            </p>
+            <pre class="data-pre data-pre--white-space">
                             <code class="language-html section__code">
                                     &lt;ul class="list"&gt;
                                     &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt; //Element dostanie style
@@ -311,9 +440,11 @@
                                  }                             
                             </code>
                         </pre>
-                    <p class="section__paragraph"><strong>[attr=value]</strong> - selektor atrybutu, wybieranie
-                        elementów po atrybutach.</p>
-                    <pre class="data-pre data-pre--white-space">
+            <p class="section__paragraph">
+              <strong>[attr=value]</strong> - selektor atrybutu, wybieranie
+              elementów po atrybutach.
+            </p>
+            <pre class="data-pre data-pre--white-space">
                                 <code class="language-html section__code">
                                         &lt;ul class="list"&gt;
                                         &lt;li&gt;&lt;a href="site.html"&gt;&lt;/a&gt;&lt;/li&gt; //Element dostanie kolor niebieski
@@ -338,15 +469,16 @@
                                     }                                                          
                                 </code>
                             </pre>
-                    <a href="https://flukeout.github.io" class="section__link">https://flukeout.github.io</a>
-                </section>
-            </div>
-        </article>
+            <a href="https://flukeout.github.io" class="section__link"
+              >https://flukeout.github.io</a
+            >
+          </section>
+        </div>
+      </article>
     </main>
     <footer class="footer">
-        <p class="footer__paragraph">Projekt stworzony przez Andrzeja</p>
+      <p class="footer__paragraph">Projekt edukacyjny Andrzeja</p>
     </footer>
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>

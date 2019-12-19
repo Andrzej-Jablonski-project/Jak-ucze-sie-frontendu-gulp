@@ -422,7 +422,7 @@ pre[class*="language-"] {
     font-size: 24px;
     font-weight: 500;
     line-height: 32px;
-    border-bottom: 2px solid #CBD2D9; }
+    border-bottom: 2px solid #cbd2d9; }
     @media (min-width: 1184px) {
       .section-read__header {
         font-size: 32px;
@@ -467,11 +467,11 @@ pre[class*="language-"] {
       -webkit-text-fill-color: transparent;
       font-size: 80px;
       font-weight: 600;
-      -webkit-transition: -webkit-transform .3s ease;
-      transition: -webkit-transform .3s ease;
-      -o-transition: transform .3s ease;
-      transition: transform .3s ease;
-      transition: transform .3s ease, -webkit-transform .3s ease;
+      -webkit-transition: -webkit-transform 0.3s ease;
+      transition: -webkit-transform 0.3s ease;
+      -o-transition: transform 0.3s ease;
+      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, -webkit-transform 0.3s ease;
       opacity: 0.3; }
   .section-read__link {
     display: -webkit-box;
@@ -490,7 +490,7 @@ pre[class*="language-"] {
     line-height: 20px;
     text-decoration: none;
     color: black;
-    background: #FFFFEA; }
+    background: #ffffea; }
     @media (min-width: 1184px) {
       .section-read__link {
         min-height: 300px; } }
@@ -505,10 +505,10 @@ pre[class*="language-"] {
       width: 80px;
       height: 4px;
       margin-bottom: 8px;
-      background: #06C847;
+      background: #06c847;
       border-radius: 8px; }
   .section-read__description {
-    color: #52606D;
+    color: #52606d;
     line-height: 26px; }
     @media (min-width: 1184px) {
       .section-read__description {
@@ -523,7 +523,7 @@ pre[class*="language-"] {
     font-size: 24px;
     font-weight: 500;
     line-height: 32px;
-    border-bottom: 2px solid #CBD2D9; }
+    border-bottom: 2px solid #cbd2d9; }
     @media (min-width: 1184px) {
       .section-doc__header {
         font-size: 32px;
@@ -536,7 +536,7 @@ pre[class*="language-"] {
     list-style-type: none;
     padding: 0;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-gap: 50px 30px; }
+    grid-gap: 50px 28px; }
   .section-doc__item {
     position: relative;
     top: 0;
@@ -567,11 +567,11 @@ pre[class*="language-"] {
       -webkit-text-fill-color: transparent;
       font-size: 80px;
       font-weight: 600;
-      -webkit-transition: -webkit-transform .3s ease;
-      transition: -webkit-transform .3s ease;
-      -o-transition: transform .3s ease;
-      transition: transform .3s ease;
-      transition: transform .3s ease, -webkit-transform .3s ease;
+      -webkit-transition: -webkit-transform 0.3s ease;
+      transition: -webkit-transform 0.3s ease;
+      -o-transition: transform 0.3s ease;
+      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, -webkit-transform 0.3s ease;
       opacity: 0.3; }
   .section-doc__link {
     display: -webkit-box;
@@ -590,7 +590,7 @@ pre[class*="language-"] {
     line-height: 20px;
     text-decoration: none;
     color: black;
-    background: #FFFFEA; }
+    background: #ffffea; }
     @media (min-width: 1184px) {
       .section-doc__link {
         min-height: 300px; } }
@@ -605,11 +605,11 @@ pre[class*="language-"] {
       width: 80px;
       height: 4px;
       margin-bottom: 8px;
-      background: #06C847;
+      background: #06c847;
       border-radius: 8px;
-      background: #653CAD; }
+      background: #653cad; }
   .section-doc__description {
-    color: #52606D;
+    color: #52606d;
     line-height: 26px; }
     @media (min-width: 1184px) {
       .section-doc__description {
@@ -624,7 +624,7 @@ pre[class*="language-"] {
     font-size: 24px;
     font-weight: 500;
     line-height: 32px;
-    border-bottom: 2px solid #CBD2D9; }
+    border-bottom: 2px solid #cbd2d9; }
     @media (min-width: 1184px) {
       .section-tools__header {
         font-size: 32px;
@@ -668,11 +668,11 @@ pre[class*="language-"] {
       -webkit-text-fill-color: transparent;
       font-size: 80px;
       font-weight: 600;
-      -webkit-transition: -webkit-transform .3s ease;
-      transition: -webkit-transform .3s ease;
-      -o-transition: transform .3s ease;
-      transition: transform .3s ease;
-      transition: transform .3s ease, -webkit-transform .3s ease;
+      -webkit-transition: -webkit-transform 0.3s ease;
+      transition: -webkit-transform 0.3s ease;
+      -o-transition: transform 0.3s ease;
+      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, -webkit-transform 0.3s ease;
       opacity: 0.3; }
   .section-tools__link {
     display: -webkit-box;
@@ -691,7 +691,7 @@ pre[class*="language-"] {
     line-height: 20px;
     text-decoration: none;
     color: black;
-    background: #FFFFEA; }
+    background: #ffffea; }
   .section-tools__title {
     margin-bottom: 30px;
     font-size: 22px;
@@ -703,11 +703,11 @@ pre[class*="language-"] {
       width: 80px;
       height: 4px;
       margin-bottom: 8px;
-      background: #06C847;
+      background: #06c847;
       border-radius: 8px;
-      background: #2251CC; }
+      background: #2251cc; }
   .section-tools__description {
-    color: #52606D;
+    color: #52606d;
     line-height: 26px; }
     @media (min-width: 1184px) {
       .section-tools__description {
@@ -722,7 +722,7 @@ pre[class*="language-"] {
     font-size: 24px;
     font-weight: 500;
     line-height: 32px;
-    border-bottom: 2px solid #CBD2D9; }
+    border-bottom: 2px solid #cbd2d9; }
     @media (min-width: 1184px) {
       .section-watch__header {
         font-size: 32px;
@@ -766,11 +766,11 @@ pre[class*="language-"] {
       -webkit-text-fill-color: transparent;
       font-size: 80px;
       font-weight: 600;
-      -webkit-transition: -webkit-transform .3s ease;
-      transition: -webkit-transform .3s ease;
-      -o-transition: transform .3s ease;
-      transition: transform .3s ease;
-      transition: transform .3s ease, -webkit-transform .3s ease;
+      -webkit-transition: -webkit-transform 0.3s ease;
+      transition: -webkit-transform 0.3s ease;
+      -o-transition: transform 0.3s ease;
+      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, -webkit-transform 0.3s ease;
       opacity: 0.3; }
   .section-watch__link {
     display: -webkit-box;
@@ -789,7 +789,7 @@ pre[class*="language-"] {
     line-height: 20px;
     text-decoration: none;
     color: black;
-    background: #FFFFEA; }
+    background: #ffffea; }
   .section-watch__title {
     margin-bottom: 30px;
     font-size: 22px;
@@ -801,11 +801,11 @@ pre[class*="language-"] {
       width: 80px;
       height: 4px;
       margin-bottom: 8px;
-      background: #06C847;
+      background: #06c847;
       border-radius: 8px;
       background: #ffa07a; }
   .section-watch__description {
-    color: #52606D;
+    color: #52606d;
     line-height: 26px; }
     @media (min-width: 1184px) {
       .section-watch__description {

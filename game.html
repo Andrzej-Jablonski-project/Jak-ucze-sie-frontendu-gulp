@@ -1,250 +1,394 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Notatnik frontendowca</title>
-    <meta name="description" content="Notatnik - projekt, który powstał podczas uczenia się podstaw frontendu." />
+    <meta
+      name="description"
+      content="Notatnik - projekt, który powstał podczas uczenia się podstaw frontendu."
+    />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Notatnik frontendowca" />
-    <meta property="og:description"
-        content="Notatnik - projekt, który powstał podczas uczenia się podstaw frontendu." />
-    <meta property="og:url" content="https://andrzej-jablonski-project.github.io/Notatnik-frontendu/index.html" />
-    <meta property="og:image"
-        content="https://andrzej-jablonski-project.github.io/Notatnik-frontendu/assets/img/cover.png" />
+    <meta
+      property="og:description"
+      content="Notatnik - projekt, który powstał podczas uczenia się podstaw frontendu."
+    />
+    <meta
+      property="og:url"
+      content="https://andrzej-jablonski-project.github.io/Notatnik-frontendu/index.html"
+    />
+    <meta
+      property="og:image"
+      content="https://andrzej-jablonski-project.github.io/Notatnik-frontendu/assets/img/cover.png"
+    />
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/pwa/icons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/pwa/icons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/pwa/icons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/pwa/icons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/pwa/icons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/pwa/icons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/pwa/icons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/pwa/icons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/pwa/icons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/pwa/icons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/pwa/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/pwa/icons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/pwa/icons/favicon-16x16.png">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="assets/pwa/icons/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <link href="css/main.css" rel="stylesheet" type="text/css">
-</head>
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="assets/pwa/icons/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="assets/pwa/icons/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="assets/pwa/icons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="assets/pwa/icons/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="assets/pwa/icons/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="assets/pwa/icons/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="assets/pwa/icons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="assets/pwa/icons/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/pwa/icons/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/pwa/icons/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/pwa/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="assets/pwa/icons/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/pwa/icons/favicon-16x16.png"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="assets/pwa/icons/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<body>
-    <button class="menuButton" aria-label="otwórz menu strony"><span
-            class="menuButton__line menuButton__line--js">|</span></button>
+  <body>
+    <button class="menuButton" aria-label="otwórz menu strony">
+      <span class="menuButton__line menuButton__line--js">|</span>
+    </button>
     <nav class="menu">
-        <section class="menu__section">
-            <h2 class="menu__header">Co to za miejsce?</h2>
-            <p class="menu__text">Podczas jakiejkolwiek nauki każdy z nas
-                robi notatki. Jako że obecnie uczę się programowania webowego, również postanowiłem notować, jednak w
-                formie cyfrowej. Takim sposobem szybciej zapamiętuję oraz utrwalam nową wiedzę. Dodatkowym atutem
-                takiego rozwiązania może być dostępność z każdego miejsca. Więc w razie potrzeby skorzystania z notatek
-                będzie to możliwe w sposób szybki i wygodny. Może też okazać się bardzo pomocny na początku w pracy. To
-                miejsce jest moim cyfrowym notatnikiem. </p>
-        </section>
-        <ul class="menu__list">
-            <li class="menu__item"><a class="menu__link" href="index.html"><strong class="strong__header">rozdział
-                        pierwszy</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">Warstwy</li>
-                        <li class="menu__item">HTML</li>
-                        <li class="menu__item">CSS</li>
-                        <li class="menu__item">Programowanie</li>
-                    </ul>
-                </a></li>
-            <li class="menu__item"><a class="menu__link" href="second.html"><strong class="strong__header">rozdział
-                        drugi</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">Organizacja nauki/pracy</li>
-                        <li class="menu__item">HTML - znaczniki i atrybuty</li>
-                        <li class="menu__item">CSS - Sposoby stylowania</li>
-                        <li class="menu__item">Działanie przeglądarki</li>
-                        <li class="menu__item">JavaScript</li>
-                        <li class="menu__item">Terminal</li>
-                    </ul>
-                </a></li>
-            <li class="menu__item"><a class="menu__link" href="third.html"><strong class="strong__header">rozdział
-                        trzeci</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">Git</li>
-                        <li class="menu__item">Box model</li>
-                        <li class="menu__item">BEM</li>
-                        <li class="menu__item">DOM</li>
-                    </ul>
-                </a></li>
-            <li class="menu__item"><a class="menu__link" href="fourth.html"><strong class="strong__header">rozdział
-                        czwarty</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">JavaScript</li>
-                        <li class="menu__item">Funkcja w JS</li>
-                        <li class="menu__item">Debugging</li>
-                        <li class="menu__item">Markup</li>
-                        <li class="menu__item">Normalizacja</li>
-                        <li class="menu__item">Flexbox</li>
-                        <li class="menu__item">Tło</li>
-                    </ul>
-                </a></li>
-            <li class="menu__item"><a class="menu__link" href="fifth.html"><strong class="strong__header">rozdział
-                        piąty</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">Formularze</li>
-                        <li class="menu__item">Grid</li>
-                        <li class="menu__item">Media queries</li>
-                        <li class="menu__item">Event</li>
-                        <li class="menu__item">Hamburger</li>
-                    </ul>
-                </a></li>
-            <li class="menu__item"><a class="menu__link" href="sixth.html"><strong class="strong__header">rozdział
-                        szósty</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">Obiekty</li>
-                        <li class="menu__item">Pseudo*</li>
-                        <li class="menu__item">SASS</li>
-                        <li class="menu__item">Node.js</li>
-                        <li class="menu__item">Starter kit</li>
-                    </ul>
-                </a></li>
-            <li class="menu__item"><a class="menu__link" href="seventh.html"><strong class="strong__header">rozdział
-                        siódmy</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">Prefiksy</li>
-                        <li class="menu__item">Google fonts</li>
-                        <li class="menu__item">Branche</li>
-                        <li class="menu__item">Markdown</li>
-                        <li class="menu__item">Tablice</li>
-                        <li class="menu__item">Pętle</li>
-                        <li class="menu__item">Dane</li>
-                    </ul>
-                </a></li>
-            <li class="menu__item"><a class="menu__link" href="eight.html"><strong class="strong__header">rozdział
-                        ósmy</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">Przejścia</li>
-                        <li class="menu__item">Animacje</li>
-                        <li class="menu__item">SVG</li>
-                        <li class="menu__item">Head</li>
-                        <li class="menu__item">WCAG</li>
-                        <li class="menu__item">PWA</li>
-                    </ul>
-                </a></li>
-            <li class="menu__item"><a class="menu__link" href="ninth.html"><strong class="strong__header">rozdział
-                        dziewiąty</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">API</li>
-                        <li class="menu__item">CSS</li>
-                        <li class="menu__item">JS</li>
-                        <li class="menu__item">Typografia</li>
-                    </ul>
-                </a></li>
-            <li class="menu__item"><a class="menu__link" href="tenth.html"><strong class="strong__header">rozdział
-                        dziesiąty</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">Multimedia</li>
-                        <li class="menu__item">Bootstrap</li>
-                        <li class="menu__item">Kombinatory</li>
-                    </ul>
-                </a></li>
-            <li class="menu__item"><a class="menu__link" href="dev-tools.html"><strong class="strong__header">Dev
-                        tools</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">Do poczytania</li>
-                        <li class="menu__item">Dokumentacja</li>
-                        <li class="menu__item">Narzędzia</li>
-                        <li class="menu__item">Do obejrzenia</li>
-                        <li class="menu__item">Lista frontendu</li>
-                    </ul>
-                </a></li>
-            <li class="menu__item"><a class="menu__link" href="game.html"><strong class="strong__header">Dev
-                        game</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">CODE COMBAT</li>
-                        <li class="menu__item">CSS Diner</li>
-                        <li class="menu__item">Flexbox Froggy</li>
-                        <li class="menu__item">Grid Garden</li>
-                        <li class="menu__item">Codewars</li>
-                        <li class="menu__item">...</li>
-
-                    </ul>
-                </a></li>
-        </ul>
+      <section class="menu__section">
+        <h2 class="menu__header">Co to za miejsce?</h2>
+        <p class="menu__text">
+          Podczas jakiejkolwiek nauki każdy z nas robi notatki. Jako że obecnie
+          uczę się programowania webowego, również postanowiłem notować, jednak
+          w formie cyfrowej. Takim sposobem szybciej zapamiętuję oraz utrwalam
+          nową wiedzę. Dodatkowym atutem takiego rozwiązania może być dostępność
+          z każdego miejsca. Więc w razie potrzeby skorzystania z notatek będzie
+          to możliwe w sposób szybki i wygodny. Może też okazać się bardzo
+          pomocny na początku w pracy. To miejsce jest moim cyfrowym
+          notatnikiem.
+        </p>
+      </section>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="menu__link" href="index.html"
+            ><strong class="strong__header">rozdział pierwszy</strong>
+            <ul class="menu__description">
+              <li class="menu__item">Warstwy</li>
+              <li class="menu__item">HTML</li>
+              <li class="menu__item">CSS</li>
+              <li class="menu__item">Programowanie</li>
+            </ul>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="second.html"
+            ><strong class="strong__header">rozdział drugi</strong>
+            <ul class="menu__description">
+              <li class="menu__item">Organizacja nauki/pracy</li>
+              <li class="menu__item">HTML - znaczniki i atrybuty</li>
+              <li class="menu__item">CSS - Sposoby stylowania</li>
+              <li class="menu__item">Działanie przeglądarki</li>
+              <li class="menu__item">JavaScript</li>
+              <li class="menu__item">Terminal</li>
+            </ul>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="third.html"
+            ><strong class="strong__header">rozdział trzeci</strong>
+            <ul class="menu__description">
+              <li class="menu__item">Git</li>
+              <li class="menu__item">Box model</li>
+              <li class="menu__item">BEM</li>
+              <li class="menu__item">DOM</li>
+            </ul>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="fourth.html"
+            ><strong class="strong__header">rozdział czwarty</strong>
+            <ul class="menu__description">
+              <li class="menu__item">JavaScript</li>
+              <li class="menu__item">Funkcja w JS</li>
+              <li class="menu__item">Debugging</li>
+              <li class="menu__item">Markup</li>
+              <li class="menu__item">Normalizacja</li>
+              <li class="menu__item">Flexbox</li>
+              <li class="menu__item">Tło</li>
+            </ul>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="fifth.html"
+            ><strong class="strong__header">rozdział piąty</strong>
+            <ul class="menu__description">
+              <li class="menu__item">Formularze</li>
+              <li class="menu__item">Grid</li>
+              <li class="menu__item">Media queries</li>
+              <li class="menu__item">Event</li>
+              <li class="menu__item">Hamburger</li>
+            </ul>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="sixth.html"
+            ><strong class="strong__header">rozdział szósty</strong>
+            <ul class="menu__description">
+              <li class="menu__item">Obiekty</li>
+              <li class="menu__item">Pseudo*</li>
+              <li class="menu__item">SASS</li>
+              <li class="menu__item">Node.js</li>
+              <li class="menu__item">Starter kit</li>
+            </ul>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="seventh.html"
+            ><strong class="strong__header">rozdział siódmy</strong>
+            <ul class="menu__description">
+              <li class="menu__item">Prefiksy</li>
+              <li class="menu__item">Google fonts</li>
+              <li class="menu__item">Branche</li>
+              <li class="menu__item">Markdown</li>
+              <li class="menu__item">Tablice</li>
+              <li class="menu__item">Pętle</li>
+              <li class="menu__item">Dane</li>
+            </ul>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="eight.html"
+            ><strong class="strong__header">rozdział ósmy</strong>
+            <ul class="menu__description">
+              <li class="menu__item">Przejścia</li>
+              <li class="menu__item">Animacje</li>
+              <li class="menu__item">SVG</li>
+              <li class="menu__item">Head</li>
+              <li class="menu__item">WCAG</li>
+              <li class="menu__item">PWA</li>
+            </ul>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="ninth.html"
+            ><strong class="strong__header">rozdział dziewiąty</strong>
+            <ul class="menu__description">
+              <li class="menu__item">API</li>
+              <li class="menu__item">CSS</li>
+              <li class="menu__item">JS</li>
+              <li class="menu__item">Typografia</li>
+            </ul>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="tenth.html"
+            ><strong class="strong__header">rozdział dziesiąty</strong>
+            <ul class="menu__description">
+              <li class="menu__item">Multimedia</li>
+              <li class="menu__item">Bootstrap</li>
+              <li class="menu__item">Kombinatory</li>
+            </ul>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="dev-tools.html"
+            ><strong class="strong__header">Dev tools</strong>
+            <ul class="menu__description">
+              <li class="menu__item">Do poczytania</li>
+              <li class="menu__item">Dokumentacja</li>
+              <li class="menu__item">Narzędzia</li>
+              <li class="menu__item">Do obejrzenia</li>
+              <li class="menu__item">Lista frontendu</li>
+            </ul>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="game.html"
+            ><strong class="strong__header">Dev game</strong>
+            <ul class="menu__description">
+              <li class="menu__item">CODE COMBAT</li>
+              <li class="menu__item">CSS Diner</li>
+              <li class="menu__item">Flexbox Froggy</li>
+              <li class="menu__item">Grid Garden</li>
+              <li class="menu__item">Codewars</li>
+              <li class="menu__item">...</li>
+            </ul>
+          </a>
+        </li>
+      </ul>
     </nav>
     <main class="main">
-        <header class="hero">
-            <h1 class="hero__header">Notatnik frontendowca</h1>
-        </header>
-        <article class="article">
-            <button class="article__button article__button--position" aria-label="otwórz menu sekcji"><span
-                    class="menuButton__line article__button__line--js">|</span></button>
-            <h2 class="article__header">Dev game</h2>
-            <div class="wrapper">
-                <section class="game">
-                    <h4 class="game__header">Gry dla programistów</h4>
-                    <ul class="game__list">
-                        <li class="game__item"><a href="https://codecombat.com/" target="_blank"
-                                rel="noopener noreferrer" class="game__link"><span class="game__title">Code
-                                    combat</span><span class="game__description">CodeCombat to oparty na grach program
-                                    komputerowy, w którym uczniowie
-                                    wpisują prawdziwy kod i obserwują, jak ich postacie reagują w czasie
-                                    rzeczywistym.</span></a>
-                        </li>
-                        <li class="game__item"><a href="https://flukeout.github.io/" target="_blank"
-                                rel="noopener noreferrer" class="game__link game__link--cover1"><span
-                                    class="game__title">CSS
-                                    Diner</span><span class="game__description">Dostań się do wszystkich elementów i
-                                    zostań mistrzem CSS 💪</span></a>
-                        </li>
-                        <li class="game__item"><a href="https://flexboxfroggy.com/#pl" target="_blank"
-                                rel="noopener noreferrer" class="game__link game__link--cover2"><span
-                                    class="game__title">Flexbox
-                                    Froggy</span><span class="game__description">Witaj w grze Flexbox Froggy. Grze, w
-                                    której pomagasz żabce Froggy i jej
-                                    przyjaciołom pisząc kod CSS! 🐸</span></a>
-                        </li>
-                        <li class="game__item"><a href="https://cssgridgarden.com/#pl" target="_blank"
-                                rel="noopener noreferrer" class="game__link game__link--cover3"><span
-                                    class="game__title">Grid
-                                    Garden</span><span class="game__description">Witaj w grze Grid Garden, w której
-                                    pisząc kod CSS rozwijasz swój ogród
-                                    z marchewkami! Podlewaj tylko pola z marchewkami, w ten sposób dbasz o nie!
-                                    🥕</span></a>
-                        </li>
-                        <li class="game__item"><a href="https://www.codewars.com/" target="_blank"
-                                rel="noopener noreferrer" class="game__link game__link--cover4"><span
-                                    class="game__title">codewars</span><span class="game__description">Popraw swoje
-                                    umiejętności, trenując z innymi
-                                    osobami podejmujesz wyzwanie prawdziwego kodera! Sięgnij po mistrzostwo!</span>
-                            </a>
-                        </li>
-                        <li class="game__item"><a href="https://www.codingame.com/start" target="_blank"
-                                rel="noopener noreferrer" class="game__link game__link--cover5"><span
-                                    class="game__title">CodinGame</span><span class="game__description">Nowy sposób na
-                                    poprawę umiejętności programistycznych podczas zabawy i bycia zauważonym.</span>
-                            </a>
-                        </li>
-                        <li class="game__item"><a href="https://pl.spoj.com/problems/latwe/" target="_blank"
-                                rel="noopener noreferrer" class="game__link game__link--cover6"><span
-                                    class="game__title">Sphere online judge</span><span class="game__description">Zostań
-                                    prawdziwym mistrzem programowania. Dowiedz się, jak kodować i budować wydajne
-                                    algorytmy.</span>
-                            </a>
-                        </li>
-                    </ul>
-                </section>
-            </div>
-        </article>
+      <header class="hero">
+        <h1 class="hero__header">Notatnik frontendowca</h1>
+      </header>
+      <article class="article">
+        <button
+          class="article__button article__button--position"
+          aria-label="otwórz menu sekcji"
+        >
+          <span class="menuButton__line article__button__line--js">|</span>
+        </button>
+        <h2 class="article__header">Dev game</h2>
+        <div class="wrapper">
+          <section class="game">
+            <h4 class="game__header">Gry dla programistów</h4>
+            <ul class="game__list">
+              <li class="game__item">
+                <a
+                  href="https://codecombat.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="game__link"
+                  ><span class="game__title">Code combat</span
+                  ><span class="game__description"
+                    >CodeCombat to oparty na grach program komputerowy, w którym
+                    uczniowie wpisują prawdziwy kod i obserwują, jak ich
+                    postacie reagują w czasie rzeczywistym.</span
+                  ></a
+                >
+              </li>
+              <li class="game__item">
+                <a
+                  href="https://flukeout.github.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="game__link game__link--cover1"
+                  ><span class="game__title">CSS Diner</span
+                  ><span class="game__description"
+                    >Dostań się do wszystkich elementów i zostań mistrzem CSS
+                    💪</span
+                  ></a
+                >
+              </li>
+              <li class="game__item">
+                <a
+                  href="https://flexboxfroggy.com/#pl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="game__link game__link--cover2"
+                  ><span class="game__title">Flexbox Froggy</span
+                  ><span class="game__description"
+                    >Witaj w grze Flexbox Froggy. Grze, w której pomagasz żabce
+                    Froggy i jej przyjaciołom pisząc kod CSS! 🐸</span
+                  ></a
+                >
+              </li>
+              <li class="game__item">
+                <a
+                  href="https://cssgridgarden.com/#pl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="game__link game__link--cover3"
+                  ><span class="game__title">Grid Garden</span
+                  ><span class="game__description"
+                    >Witaj w grze Grid Garden, w której pisząc kod CSS rozwijasz
+                    swój ogród z marchewkami! Podlewaj tylko pola z marchewkami,
+                    w ten sposób dbasz o nie! 🥕</span
+                  ></a
+                >
+              </li>
+              <li class="game__item">
+                <a
+                  href="https://www.codewars.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="game__link game__link--cover4"
+                  ><span class="game__title">codewars</span
+                  ><span class="game__description"
+                    >Popraw swoje umiejętności, trenując z innymi osobami
+                    podejmujesz wyzwanie prawdziwego kodera! Sięgnij po
+                    mistrzostwo!</span
+                  >
+                </a>
+              </li>
+              <li class="game__item">
+                <a
+                  href="https://www.codingame.com/start"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="game__link game__link--cover5"
+                  ><span class="game__title">CodinGame</span
+                  ><span class="game__description"
+                    >Nowy sposób na poprawę umiejętności programistycznych
+                    podczas zabawy i bycia zauważonym.</span
+                  >
+                </a>
+              </li>
+              <li class="game__item">
+                <a
+                  href="https://pl.spoj.com/problems/latwe/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="game__link game__link--cover6"
+                  ><span class="game__title">Sphere online judge</span
+                  ><span class="game__description"
+                    >Zostań prawdziwym mistrzem programowania. Dowiedz się, jak
+                    kodować i budować wydajne algorytmy.</span
+                  >
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </article>
     </main>
     <footer class="footer">
-        <p class="footer__paragraph">Projekt stworzony przez Andrzeja</p>
+      <p class="footer__paragraph">Projekt edukacyjny Andrzeja</p>
     </footer>
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>

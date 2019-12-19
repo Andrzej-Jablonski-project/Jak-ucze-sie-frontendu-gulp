@@ -1,290 +1,423 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Notatnik frontendowca</title>
-    <meta name="description" content="Notatnik - projekt, który powstał podczas uczenia się podstaw frontendu." />
+    <meta
+      name="description"
+      content="Notatnik - projekt, który powstał podczas uczenia się podstaw frontendu."
+    />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Notatnik frontendowca" />
-    <meta property="og:description"
-        content="Notatnik - projekt, który powstał podczas uczenia się podstaw frontendu." />
-    <meta property="og:url" content="https://andrzej-jablonski-project.github.io/Notatnik-frontendu/index.html" />
-    <meta property="og:image"
-        content="https://andrzej-jablonski-project.github.io/Notatnik-frontendu/assets/img/cover.png" />
+    <meta
+      property="og:description"
+      content="Notatnik - projekt, który powstał podczas uczenia się podstaw frontendu."
+    />
+    <meta
+      property="og:url"
+      content="https://andrzej-jablonski-project.github.io/Notatnik-frontendu/index.html"
+    />
+    <meta
+      property="og:image"
+      content="https://andrzej-jablonski-project.github.io/Notatnik-frontendu/assets/img/cover.png"
+    />
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/pwa/icons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/pwa/icons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/pwa/icons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/pwa/icons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/pwa/icons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/pwa/icons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/pwa/icons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/pwa/icons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/pwa/icons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/pwa/icons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/pwa/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/pwa/icons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/pwa/icons/favicon-16x16.png">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="assets/pwa/icons/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <link href="css/main.css" rel="stylesheet" type="text/css">
-</head>
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="assets/pwa/icons/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="assets/pwa/icons/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="assets/pwa/icons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="assets/pwa/icons/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="assets/pwa/icons/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="assets/pwa/icons/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="assets/pwa/icons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="assets/pwa/icons/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/pwa/icons/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/pwa/icons/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/pwa/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="assets/pwa/icons/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/pwa/icons/favicon-16x16.png"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="assets/pwa/icons/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<body>
-    <button class="menuButton" aria-label="otwórz menu strony"><span
-            class="menuButton__line menuButton__line--js">|</span></button>
+  <body>
+    <button class="menuButton" aria-label="otwórz menu strony">
+      <span class="menuButton__line menuButton__line--js">|</span>
+    </button>
     <nav class="menu">
-        <section class="menu__section">
-            <h2 class="menu__header">Co to za miejsce?</h2>
-            <p class="menu__text">Podczas jakiejkolwiek nauki każdy z nas
-                robi notatki. Jako że obecnie uczę się programowania webowego, również postanowiłem notować, jednak w
-                formie cyfrowej. Takim sposobem szybciej zapamiętuję oraz utrwalam nową wiedzę. Dodatkowym atutem
-                takiego rozwiązania może być dostępność z każdego miejsca. Więc w razie potrzeby skorzystania z notatek
-                będzie to możliwe w sposób szybki i wygodny. Może też okazać się bardzo pomocny na początku w pracy. To
-                miejsce jest moim cyfrowym notatnikiem. </p>
-        </section>
-        <ul class="menu__list">
-            <li class="menu__item"><a class="menu__link" href="index.html"><strong class="strong__header">rozdział
-                        pierwszy</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">Warstwy</li>
-                        <li class="menu__item">HTML</li>
-                        <li class="menu__item">CSS</li>
-                        <li class="menu__item">Programowanie</li>
-                    </ul>
-                </a></li>
-            <li class="menu__item"><a class="menu__link" href="second.html"><strong class="strong__header">rozdział
-                        drugi</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">Organizacja nauki/pracy</li>
-                        <li class="menu__item">HTML - znaczniki i atrybuty</li>
-                        <li class="menu__item">CSS - Sposoby stylowania</li>
-                        <li class="menu__item">Działanie przeglądarki</li>
-                        <li class="menu__item">JavaScript</li>
-                        <li class="menu__item">Terminal</li>
-                    </ul>
-                </a></li>
-            <li class="menu__item"><a class="menu__link" href="third.html"><strong class="strong__header">rozdział
-                        trzeci</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">Git</li>
-                        <li class="menu__item">Box model</li>
-                        <li class="menu__item">BEM</li>
-                        <li class="menu__item">DOM</li>
-                    </ul>
-                </a></li>
-            <li class="menu__item"><a class="menu__link" href="fourth.html"><strong class="strong__header">rozdział
-                        czwarty</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">JavaScript</li>
-                        <li class="menu__item">Funkcja w JS</li>
-                        <li class="menu__item">Debugging</li>
-                        <li class="menu__item">Markup</li>
-                        <li class="menu__item">Normalizacja</li>
-                        <li class="menu__item">Flexbox</li>
-                        <li class="menu__item">Tło</li>
-                    </ul>
-                </a></li>
-            <li class="menu__item"><a class="menu__link" href="fifth.html"><strong class="strong__header">rozdział
-                        piąty</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">Formularze</li>
-                        <li class="menu__item">Grid</li>
-                        <li class="menu__item">Media queries</li>
-                        <li class="menu__item">Event</li>
-                        <li class="menu__item">Hamburger</li>
-                    </ul>
-                </a></li>
-            <li class="menu__item"><a class="menu__link" href="sixth.html"><strong class="strong__header">rozdział
-                        szósty</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">Obiekty</li>
-                        <li class="menu__item">Pseudo*</li>
-                        <li class="menu__item">SASS</li>
-                        <li class="menu__item">Node.js</li>
-                        <li class="menu__item">Starter kit</li>
-                    </ul>
-                </a></li>
-            <li class="menu__item"><a class="menu__link" href="seventh.html"><strong class="strong__header">rozdział
-                        siódmy</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">Prefiksy</li>
-                        <li class="menu__item">Google fonts</li>
-                        <li class="menu__item">Branche</li>
-                        <li class="menu__item">Markdown</li>
-                        <li class="menu__item">Tablice</li>
-                        <li class="menu__item">Pętle</li>
-                        <li class="menu__item">Dane</li>
-                    </ul>
-                </a></li>
-            <li class="menu__item"><a class="menu__link" href="eight.html"><strong class="strong__header">rozdział
-                        ósmy</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">Przejścia</li>
-                        <li class="menu__item">Animacje</li>
-                        <li class="menu__item">SVG</li>
-                        <li class="menu__item">Head</li>
-                        <li class="menu__item">WCAG</li>
-                        <li class="menu__item">PWA</li>
-                    </ul>
-                </a></li>
-            <li class="menu__item"><a class="menu__link" href="ninth.html"><strong class="strong__header">rozdział
-                        dziewiąty</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">API</li>
-                        <li class="menu__item">CSS</li>
-                        <li class="menu__item">JS</li>
-                        <li class="menu__item">Typografia</li>
-                    </ul>
-                </a></li>
-            <li class="menu__item"><a class="menu__link" href="tenth.html"><strong class="strong__header">rozdział
-                        dziesiąty</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">Multimedia</li>
-                        <li class="menu__item">Bootstrap</li>
-                        <li class="menu__item">Kombinatory</li>
-                    </ul>
-                </a></li>
-            <li class="menu__item"><a class="menu__link" href="dev-tools.html"><strong class="strong__header">Dev
-                        tools</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">Do poczytania</li>
-                        <li class="menu__item">Dokumentacja</li>
-                        <li class="menu__item">Narzędzia</li>
-                        <li class="menu__item">Do obejrzenia</li>
-                        <li class="menu__item">Lista frontendu</li>
-                    </ul>
-                </a></li>
-            <li class="menu__item"><a class="menu__link" href="game.html"><strong class="strong__header">Dev
-                        game</strong>
-                    <ul class="menu__description">
-                        <li class="menu__item">CODE COMBAT</li>
-                        <li class="menu__item">CSS Diner</li>
-                        <li class="menu__item">Flexbox Froggy</li>
-                        <li class="menu__item">Grid Garden</li>
-                        <li class="menu__item">Codewars</li>
-                        <li class="menu__item">...</li>
-                    </ul>
-                </a></li>
-        </ul>
+      <section class="menu__section">
+        <h2 class="menu__header">Co to za miejsce?</h2>
+        <p class="menu__text">
+          Podczas jakiejkolwiek nauki każdy z nas robi notatki. Jako że obecnie
+          uczę się programowania webowego, również postanowiłem notować, jednak
+          w formie cyfrowej. Takim sposobem szybciej zapamiętuję oraz utrwalam
+          nową wiedzę. Dodatkowym atutem takiego rozwiązania może być dostępność
+          z każdego miejsca. Więc w razie potrzeby skorzystania z notatek będzie
+          to możliwe w sposób szybki i wygodny. Może też okazać się bardzo
+          pomocny na początku w pracy. To miejsce jest moim cyfrowym
+          notatnikiem.
+        </p>
+      </section>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="menu__link" href="index.html"
+            ><strong class="strong__header">rozdział pierwszy</strong>
+            <ul class="menu__description">
+              <li class="menu__item">Warstwy</li>
+              <li class="menu__item">HTML</li>
+              <li class="menu__item">CSS</li>
+              <li class="menu__item">Programowanie</li>
+            </ul>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="second.html"
+            ><strong class="strong__header">rozdział drugi</strong>
+            <ul class="menu__description">
+              <li class="menu__item">Organizacja nauki/pracy</li>
+              <li class="menu__item">HTML - znaczniki i atrybuty</li>
+              <li class="menu__item">CSS - Sposoby stylowania</li>
+              <li class="menu__item">Działanie przeglądarki</li>
+              <li class="menu__item">JavaScript</li>
+              <li class="menu__item">Terminal</li>
+            </ul>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="third.html"
+            ><strong class="strong__header">rozdział trzeci</strong>
+            <ul class="menu__description">
+              <li class="menu__item">Git</li>
+              <li class="menu__item">Box model</li>
+              <li class="menu__item">BEM</li>
+              <li class="menu__item">DOM</li>
+            </ul>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="fourth.html"
+            ><strong class="strong__header">rozdział czwarty</strong>
+            <ul class="menu__description">
+              <li class="menu__item">JavaScript</li>
+              <li class="menu__item">Funkcja w JS</li>
+              <li class="menu__item">Debugging</li>
+              <li class="menu__item">Markup</li>
+              <li class="menu__item">Normalizacja</li>
+              <li class="menu__item">Flexbox</li>
+              <li class="menu__item">Tło</li>
+            </ul>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="fifth.html"
+            ><strong class="strong__header">rozdział piąty</strong>
+            <ul class="menu__description">
+              <li class="menu__item">Formularze</li>
+              <li class="menu__item">Grid</li>
+              <li class="menu__item">Media queries</li>
+              <li class="menu__item">Event</li>
+              <li class="menu__item">Hamburger</li>
+            </ul>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="sixth.html"
+            ><strong class="strong__header">rozdział szósty</strong>
+            <ul class="menu__description">
+              <li class="menu__item">Obiekty</li>
+              <li class="menu__item">Pseudo*</li>
+              <li class="menu__item">SASS</li>
+              <li class="menu__item">Node.js</li>
+              <li class="menu__item">Starter kit</li>
+            </ul>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="seventh.html"
+            ><strong class="strong__header">rozdział siódmy</strong>
+            <ul class="menu__description">
+              <li class="menu__item">Prefiksy</li>
+              <li class="menu__item">Google fonts</li>
+              <li class="menu__item">Branche</li>
+              <li class="menu__item">Markdown</li>
+              <li class="menu__item">Tablice</li>
+              <li class="menu__item">Pętle</li>
+              <li class="menu__item">Dane</li>
+            </ul>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="eight.html"
+            ><strong class="strong__header">rozdział ósmy</strong>
+            <ul class="menu__description">
+              <li class="menu__item">Przejścia</li>
+              <li class="menu__item">Animacje</li>
+              <li class="menu__item">SVG</li>
+              <li class="menu__item">Head</li>
+              <li class="menu__item">WCAG</li>
+              <li class="menu__item">PWA</li>
+            </ul>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="ninth.html"
+            ><strong class="strong__header">rozdział dziewiąty</strong>
+            <ul class="menu__description">
+              <li class="menu__item">API</li>
+              <li class="menu__item">CSS</li>
+              <li class="menu__item">JS</li>
+              <li class="menu__item">Typografia</li>
+            </ul>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="tenth.html"
+            ><strong class="strong__header">rozdział dziesiąty</strong>
+            <ul class="menu__description">
+              <li class="menu__item">Multimedia</li>
+              <li class="menu__item">Bootstrap</li>
+              <li class="menu__item">Kombinatory</li>
+            </ul>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="dev-tools.html"
+            ><strong class="strong__header">Dev tools</strong>
+            <ul class="menu__description">
+              <li class="menu__item">Do poczytania</li>
+              <li class="menu__item">Dokumentacja</li>
+              <li class="menu__item">Narzędzia</li>
+              <li class="menu__item">Do obejrzenia</li>
+              <li class="menu__item">Lista frontendu</li>
+            </ul>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="game.html"
+            ><strong class="strong__header">Dev game</strong>
+            <ul class="menu__description">
+              <li class="menu__item">CODE COMBAT</li>
+              <li class="menu__item">CSS Diner</li>
+              <li class="menu__item">Flexbox Froggy</li>
+              <li class="menu__item">Grid Garden</li>
+              <li class="menu__item">Codewars</li>
+              <li class="menu__item">...</li>
+            </ul>
+          </a>
+        </li>
+      </ul>
     </nav>
     <main class="main">
-        <header class="hero">
-            <h1 class="hero__header">Notatnik frontendowca</h1>
+      <header class="hero">
+        <h1 class="hero__header">Notatnik frontendowca</h1>
+      </header>
+      <article class="article">
+        <button
+          class="article__button article__button--position"
+          aria-label="otwórz menu sekcji"
+        >
+          <span class="menuButton__line article__button__line--js">|</span>
+        </button>
+        <header class="article__nav">
+          <nav class="article__menu">
+            <ul class="article__list">
+              <li class="article__item">
+                <a class="article__link" href="#layer">Warstwy</a>
+              </li>
+              <li class="article__item">
+                <a class="article__link" href="#html">HTML</a>
+              </li>
+              <li class="article__item">
+                <a class="article__link" href="#css">CSS</a>
+              </li>
+              <li class="article__item">
+                <a class="article__link" href="#programming">Programowanie</a>
+              </li>
+            </ul>
+          </nav>
         </header>
-        <article class="article">
-            <button class="article__button article__button--position" aria-label="otwórz menu sekcji"><span
-                    class="menuButton__line article__button__line--js">|</span></button>
-            <header class="article__nav">
-                <nav class="article__menu">
-                    <ul class="article__list">
-                        <li class="article__item"><a class="article__link" href="#layer">Warstwy</a></li>
-                        <li class="article__item"><a class="article__link" href="#html">HTML</a></li>
-                        <li class="article__item"><a class="article__link" href="#css">CSS</a></li>
-                        <li class="article__item"><a class="article__link" href="#programming">Programowanie</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <h2 class="article__header">Rozdział pierwszy</h2>
-            <header class="article_hero">
-                <p class="article__paragraph">W notatniku znajduje się dwanaście tygodni intensywnej nauki podzielonej
-                    na rozdziały.</p>
-            </header>
+        <h2 class="article__header">Rozdział pierwszy</h2>
+        <header class="article_hero">
+          <p class="article__paragraph">
+            W notatniku znajduje się dwanaście tygodni intensywnej nauki
+            podzielonej na rozdziały.
+          </p>
+        </header>
 
-            <div class="wrapper">
-                <section class="section" id="layer">
-                    <h3 class="section__header">Warstwy</h3>
-                    <p class="section__paragraph">Każda strona składa się z warstw. Odliczając od zera, możemy wyróżnić
-                        trzy
-                        warstwy. </p>
-                    <ul class="section__list">
-                        <li>warstwa 0 - treść</li>
-                        <li>warstwa 1 - HTML (semantyka HTML)</li>
-                        <li>warstwa 2 - style CSS</li>
-                        <li>warstwa 3 - JavaScript</li>
-                    </ul>
-                    <p class="section__paragraph"> Treść stron jest najważniejsza. Bez treści stron by nie było. <br>
-                        HTML poprzez znaczniki nadaje sens treści. <br>
-                        CSS nadaje wygląd stronie. <br>
-                        Język JavaScript, za pomocą którego tworzymy interakcje na stronie.
-                    </p>
-                </section>
-                <section class="section" id="html">
-                    <h3 class="section__header">HTML - HyperText Markup Language</h3>
-                    <p class="section__paragraph">HTML to język znaczników odpowiedzialny za właściwe opakowanie treści.
-                    </p>
-                    <p class="section__paragraph">Semantyczny HTML jest wtedy, gdy napisany jest w sposób
-                        przedstawiający
-                        jakieś znaczenie dla
-                        przeglądarki oraz czytników ekranowych.
-                    </p>
-                    <p class="section__paragraph">
-                        Fundamentem każdej strony jest treść. Treścią na stronie są tekst, nagłówki, linki, listy,
-                        definicje, obrazki, video, audio, formularze, czyli wszystko, co jest nośnikiem informacji.
-                    </p>
-                    <p class="section__paragraph">
-                        HTML składa się ze znaczników, przykładowy znacznik znajduje się poniżej </p>
-                    <pre class="data-pre data-pre--white-space">
+        <div class="wrapper">
+          <section class="section" id="layer">
+            <h3 class="section__header">Warstwy</h3>
+            <p class="section__paragraph">
+              Każda strona składa się z warstw. Odliczając od zera, możemy
+              wyróżnić trzy warstwy.
+            </p>
+            <ul class="section__list">
+              <li>warstwa 0 - treść</li>
+              <li>warstwa 1 - HTML (semantyka HTML)</li>
+              <li>warstwa 2 - style CSS</li>
+              <li>warstwa 3 - JavaScript</li>
+            </ul>
+            <p class="section__paragraph">
+              Treść stron jest najważniejsza. Bez treści stron by nie było.
+              <br />
+              HTML poprzez znaczniki nadaje sens treści. <br />
+              CSS nadaje wygląd stronie. <br />
+              Język JavaScript, za pomocą którego tworzymy interakcje na
+              stronie.
+            </p>
+          </section>
+          <section class="section" id="html">
+            <h3 class="section__header">HTML - HyperText Markup Language</h3>
+            <p class="section__paragraph">
+              HTML to język znaczników odpowiedzialny za właściwe opakowanie
+              treści.
+            </p>
+            <p class="section__paragraph">
+              Semantyczny HTML jest wtedy, gdy napisany jest w sposób
+              przedstawiający jakieś znaczenie dla przeglądarki oraz czytników
+              ekranowych.
+            </p>
+            <p class="section__paragraph">
+              Fundamentem każdej strony jest treść. Treścią na stronie są tekst,
+              nagłówki, linki, listy, definicje, obrazki, video, audio,
+              formularze, czyli wszystko, co jest nośnikiem informacji.
+            </p>
+            <p class="section__paragraph">
+              HTML składa się ze znaczników, przykładowy znacznik znajduje się
+              poniżej
+            </p>
+            <pre class="data-pre data-pre--white-space">
                         <code class="language-html section__code">
                         &lt;znacznik atrybut=&quot;wartość&quot;&gt;treść&lt;/znacznik&gt;
                     </code>
                     </pre>
-                    <p class="section__paragraph">
-                        Dokumentację HTML, czyli opis wszystkich znaczników znajdziesz na stronie
-                        <a class="section__link" href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN Web
-                            Docs</a>
-                    </p>
-                </section>
-                <section class="section" id="css">
-                    <h3 class="section__header">CSS - Kaskadowe arkusze stylów (Cascading Style Sheets)</h3>
-                    <p class="section__paragraph">W języku polskim styl w liczbie mnogiej to stylów nie styli.
-                        Zapamiętaj
-                        to
-                        sobie!</p>
-                    <p class="section__paragraph">CSS odpowiadają za prezentację treści, czyli za wygląd strony na
-                        ekranie,
-                        wydrukach itp.</p>
-                    <p class="section__paragraph"><strong>Składnia CSS - reguły:</strong> </p>
-                    <pre class="data-pre data-pre--white-space">
+            <p class="section__paragraph">
+              Dokumentację HTML, czyli opis wszystkich znaczników znajdziesz na
+              stronie
+              <a
+                class="section__link"
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                >MDN Web Docs</a
+              >
+            </p>
+          </section>
+          <section class="section" id="css">
+            <h3 class="section__header">
+              CSS - Kaskadowe arkusze stylów (Cascading Style Sheets)
+            </h3>
+            <p class="section__paragraph">
+              W języku polskim styl w liczbie mnogiej to stylów nie styli.
+              Zapamiętaj to sobie!
+            </p>
+            <p class="section__paragraph">
+              CSS odpowiadają za prezentację treści, czyli za wygląd strony na
+              ekranie, wydrukach itp.
+            </p>
+            <p class="section__paragraph">
+              <strong>Składnia CSS - reguły:</strong>
+            </p>
+            <pre class="data-pre data-pre--white-space">
                         <code class="language-css section__code">selektor {
                             właściwość: wartość;
                             }
                         </code>
                     </pre>
-                    <p class="section__paragraph">
-                        Dokumentację CSS znajdziesz na stronie
-                        <a class="section__link" href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN Web
-                            Docs</a>
-                    </p>
-                </section>
-                <section class="section" id="programming">
-                    <h3 class="section__header">Programowanie</h3>
-                    <p class="section__paragraph">Programowanie jest to zamiana ludzkiego języka na język zrozumiały
-                        przez
-                        komputer.</p>
-                    <p class="section__paragraph">Na świecie istnieje bardzo dużo języków programowania. Ja uczę się
-                        języka
-                        JavaScript, jest to
-                        najbardziej popularny język wykorzystywany do frontendu.</p>
-                    <p class="section__paragraph">Do frontendu JavaScript jest używany przy modyfikowaniu treści, HTML,
-                        stylów dodatkowo dając im
-                        możliwość jakiejś interakcji. Te zmiany dokonywane są w obszarze DOM (Document Object Model).
-                    </p>
-                </section>
-            </div>
-        </article>
-
+            <p class="section__paragraph">
+              Dokumentację CSS znajdziesz na stronie
+              <a
+                class="section__link"
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                >MDN Web Docs</a
+              >
+            </p>
+          </section>
+          <section class="section" id="programming">
+            <h3 class="section__header">Programowanie</h3>
+            <p class="section__paragraph">
+              Programowanie jest to zamiana ludzkiego języka na język zrozumiały
+              przez komputer.
+            </p>
+            <p class="section__paragraph">
+              Na świecie istnieje bardzo dużo języków programowania. Ja uczę się
+              języka JavaScript, jest to najbardziej popularny język
+              wykorzystywany do frontendu.
+            </p>
+            <p class="section__paragraph">
+              Do frontendu JavaScript jest używany przy modyfikowaniu treści,
+              HTML, stylów dodatkowo dając im możliwość jakiejś interakcji. Te
+              zmiany dokonywane są w obszarze DOM (Document Object Model).
+            </p>
+          </section>
+        </div>
+      </article>
     </main>
     <footer class="footer">
-        <p class="footer__paragraph">Projekt stworzony przez Andrzeja</p>
+      <p class="footer__paragraph">Projekt edukacyjny Andrzeja</p>
     </footer>
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>

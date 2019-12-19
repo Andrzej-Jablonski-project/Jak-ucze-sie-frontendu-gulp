@@ -1,6 +1,7 @@
 "use strict";
 
-// main menu
+// site menu
+(function runningSiteMenu(){
 const menuButton = document.querySelector('.menuButton');
 const mainMenu = document.querySelector('.menu');
 const line = document.querySelector('.menuButton__line--js');
@@ -47,7 +48,8 @@ if (articleMenu) {
 } else {
 
 	articleButton.style.display = "none";
-}
+}})()
+
 //defer video iframe
 function loadVideo() {
 	const vidDefer = document.getElementsByTagName('iframe');
@@ -58,7 +60,8 @@ function loadVideo() {
 	}
 }
 window.onload = loadVideo;
-// main menu
+
+( function runningPrism(){
 /* PrismJS 1.16.0
 https://prismjs.com/download.html#themes=prism-funky&languages=markup+css+clike+javascript */
 var _self = (typeof window !== 'undefined') ?
@@ -889,3 +892,4 @@ if (Prism.languages.markup) {
 Prism.languages.js = Prism.languages.javascript;
 
 //end prism
+})();
